@@ -1,4 +1,4 @@
-import { Button, Table } from '@oceanbase/design';
+import { Button, Table } from '@eflag/design';
 import React, { useState } from 'react';
 
 const App: React.FC = () => {

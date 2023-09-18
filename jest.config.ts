@@ -11,7 +11,7 @@ const moduleNameMapper = {
 };
 
 pkgList.forEach((shortName: string) => {
-  const name = `@oceanbase/${shortName}`;
+  const name = `@eflag/${shortName}`;
   moduleNameMapper[name] = join(__dirname, `./packages/${shortName}/src`);
 });
 

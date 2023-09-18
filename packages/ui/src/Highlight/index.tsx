@@ -8,9 +8,9 @@ import hljs from 'highlight.js/lib/core';
 import React, { useEffect, useState } from 'react';
 import { default as javascript, default as jsx } from './languages/javascript';
 // tsx 本质上也是采用typescript进行解析，hljs做了支持
-import { CheckOutlined, CopyOutlined } from '@oceanbase/icons';
-import { token } from '@oceanbase/design';
-import { message } from '@oceanbase/design';
+import { CheckOutlined, CopyOutlined } from '@eflag/icons';
+import { token } from '@eflag/design';
+import { message } from '@eflag/design';
 import classNames from 'classnames';
 import CopyToClipboard from 'react-copy-to-clipboard';
 import type { LocaleWrapperProps } from '../locale/LocaleWrapper';

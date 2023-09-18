@@ -1,5 +1,5 @@
-import { Button, Form, Input } from '@oceanbase/design';
-import { Password } from '@oceanbase/ui';
+import { Button, Form, Input } from '@eflag/design';
+import { Password } from '@eflag/ui';
 import { useState } from 'react';
 
 export default () => {

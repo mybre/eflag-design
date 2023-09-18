@@ -1,19 +1,19 @@
 {
-  "name": "@oceanbase/icons",
-  "version": "0.2.4",
-  "description": "The Icon Library for OceanBase",
+  "name": "@eflag/icons",
+  "version": "0.2.5",
+  "description": "The Icon Library for Eflag",
   "keywords": [
-    "OceanBase",
+    "Eflag",
     "database",
     "design",
     "icon",
     "react",
     "component"
   ],
-  "homepage": "https://github.com/oceanbase/oceanbase-design/packages/icons",
+  "homepage": "https://github.com/mybre/eflag-design/packages/icons",
   "repository": {
     "type": "git",
-    "url": "git@github.com:oceanbase/design.git"
+    "url": "git@github.com:mybre/eflag-design.git"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
@@ -33,15 +33,17 @@
   ],
   "scripts": {
     "build": "npm run generate && father build",
-    "generate": "rm -rf src && ts-node scripts/generate.ts"
+    "generate": "rimraf src && ts-node scripts/generate.ts",
+    "cleanNodeModels": "rimraf node_modules"
   },
   "dependencies": {
     "@ant-design/colors": "^7.0.0",
-    "@ant-design/icons": "^5.2.5",
+    "@ant-design/icons": "^5.2.6",
     "@oceanbase/icons-svg": "^1.0.4"
   },
   "peerDependencies": {
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.9.0",
+    "rimraf": "^5.0.1"
   }
 }

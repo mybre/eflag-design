@@ -1,8 +1,8 @@
 /**
  * iframe: 600
  */
-import { Button, Card, Empty } from '@oceanbase/design';
-import { PageContainer } from '@oceanbase/ui';
+import { Button, Card, Empty } from '@eflag/design';
+import { PageContainer } from '@eflag/ui';
 
 export default () => {
   return (

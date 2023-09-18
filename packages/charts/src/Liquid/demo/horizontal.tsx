@@ -1,5 +1,5 @@
-import { Liquid } from '@oceanbase/charts';
-import { Col, Row } from '@oceanbase/design';
+import { Liquid } from '@eflag/charts';
+import { Col, Row } from '@eflag/design';
 
 export default () => {
   return (

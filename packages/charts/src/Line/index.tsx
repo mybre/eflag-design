@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { sortByMoment } from '@oceanbase/util';
+import { sortByMoment } from '@eflag/util';
 import type { LineConfig as AntLineConfig } from '@ant-design/charts';
 import { Line as AntLine } from '@ant-design/charts';
 import useResizeObserver from 'use-resize-observer';

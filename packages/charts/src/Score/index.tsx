@@ -1,7 +1,7 @@
 import React from 'react';
 import { calculateFontSize } from '../util/measureText';
 import classNames from 'classnames';
-import { sortByNumber } from '@oceanbase/util';
+import { sortByNumber } from '@eflag/util';
 import { toNumber, toString } from 'lodash';
 import { useTheme } from '../theme';
 import type { Theme } from '../theme';

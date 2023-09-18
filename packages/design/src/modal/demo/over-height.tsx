@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Modal, token } from '@oceanbase/design';
+import { Button, Modal, token } from '@eflag/design';
 
 export default () => {
   const [open, setOpen] = useState(false);

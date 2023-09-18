@@ -1,6 +1,6 @@
 import React from 'react';
-import { Alert, ConfigProvider, Space, Spin } from '@oceanbase/design';
-import { LoadingOutlined } from '@oceanbase/icons';
+import { Alert, ConfigProvider, Space, Spin } from '@eflag/design';
+import { LoadingOutlined } from '@eflag/icons';
 
 const App: React.FC = () => {
   return (

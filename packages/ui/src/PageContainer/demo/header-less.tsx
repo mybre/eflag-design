@@ -1,5 +1,5 @@
-import { Card, Table } from '@oceanbase/design';
-import { PageContainer } from '@oceanbase/ui';
+import { Card, Table } from '@eflag/design';
+import { PageContainer } from '@eflag/ui';
 
 export default () => {
   const dataSource = [

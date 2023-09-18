@@ -1,6 +1,6 @@
 import G6 from '@antv/g6';
-import { token } from '@oceanbase/design';
-import { findByValue } from '@oceanbase/util';
+import { token } from '@eflag/design';
+import { findByValue } from '@eflag/util';
 import { toLower } from 'lodash';
 
 /**

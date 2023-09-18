@@ -3,9 +3,9 @@
  * iframe: true
  */
 
-import { CloudUploadOutlined } from '@oceanbase/icons';
-import { message } from '@oceanbase/design';
-import { SideTip } from '@oceanbase/ui';
+import { CloudUploadOutlined } from '@eflag/icons';
+import { message } from '@eflag/design';
+import { SideTip } from '@eflag/ui';
 
 export default () => {
   return (

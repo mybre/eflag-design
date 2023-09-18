@@ -1,5 +1,5 @@
-import type { RadioChangeEvent } from '@oceanbase/design';
-import { Radio, Space, Tabs } from '@oceanbase/design';
+import type { RadioChangeEvent } from '@eflag/design';
+import { Radio, Space, Tabs } from '@eflag/design';
 import React, { useState } from 'react';
 
 type TabsPosition = 'left' | 'right' | 'top' | 'bottom';

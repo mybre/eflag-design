@@ -1,8 +1,8 @@
 /**
  * iframe: 600
  */
-import { message } from '@oceanbase/design';
-import { Login } from '@oceanbase/ui';
+import { message } from '@eflag/design';
+import { Login } from '@eflag/ui';
 import { useState } from 'react';
 // @ts-ignore
 import background_img from '../../assets/background_img.svg';
@@ -24,7 +24,7 @@ export default () => {
           setShowRegister(false);
         },
         isUserExists: async account => {
-          if (account == 'oceanbase') {
+          if (account == 'eflag') {
             return true;
           }
         },

@@ -3,7 +3,7 @@
   "version": "independent",
   "npmClient": "pnpm",
   "changelog": {
-    "repo": "oceanbase/design",
+    "repo": "eflag/design",
     "cacheDir": ".changelog"
   },
   "ignoreChanges": [

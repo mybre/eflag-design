@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Alert, Spin, Switch } from '@oceanbase/design';
+import { Alert, Spin, Switch } from '@eflag/design';
 
 const App: React.FC = () => {
   const [loading, setLoading] = useState(false);

@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { Form, Radio } from '@oceanbase/design';
-import { Lottie } from '@oceanbase/ui';
+import { Form, Radio } from '@eflag/design';
+import { Lottie } from '@eflag/ui';
 
 export default () => {
   const [speed, setSpeed] = useState(1);

@@ -1,7 +1,7 @@
 import type { FC, ReactNode } from 'react';
 import React from 'react';
-import { CodeOutlined, SkinOutlined } from '@oceanbase/icons';
-import { Tabs } from '@oceanbase/design';
+import { CodeOutlined, SkinOutlined } from '@eflag/icons';
+import { Tabs } from '@eflag/design';
 import { useRouteMeta } from 'dumi';
 import type { IContentTabsProps } from 'dumi/theme-default/slots/ContentTabs';
 import type { TabsProps } from 'rc-tabs';

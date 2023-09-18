@@ -1,5 +1,5 @@
 import { css } from '@emotion/react';
-import { Col, ConfigProvider, Menu } from '@oceanbase/design';
+import { Col, ConfigProvider, Menu } from '@eflag/design';
 import { useSidebarData } from 'dumi';
 import MobileMenu from 'rc-drawer';
 import React, { useContext } from 'react';
@@ -85,7 +85,7 @@ const useStyle = () => {
           }
         }
 
-        ${antCls}-menu-item-group:first-child {
+        ${antCls}-menu-item-group:first-of-child {
           ${antCls}-menu-item-group-title {
             margin-top: 0;
           }

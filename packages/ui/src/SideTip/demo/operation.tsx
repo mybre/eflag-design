@@ -3,10 +3,10 @@
  * iframe: true
  */
 
-import { SettingFilled } from '@oceanbase/icons';
+import { SettingFilled } from '@eflag/icons';
 import { useState } from 'react';
-import { Dropdown, Menu } from '@oceanbase/design';
-import { SideTip } from '@oceanbase/ui';
+import { Dropdown, Menu } from '@eflag/design';
+import { SideTip } from '@eflag/ui';
 
 export default () => {
   const [open, setOpen] = useState(false);

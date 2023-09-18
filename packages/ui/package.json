@@ -1,19 +1,19 @@
 {
-  "name": "@oceanbase/ui",
-  "version": "0.2.15",
-  "description": "The UI library based on OceanBase Design",
+  "name": "@eflag/ui",
+  "version": "0.2.17",
+  "description": "The UI library based on Eflag Design",
   "keywords": [
-    "OceanBase",
+    "Eflag",
     "database",
     "design",
     "ui",
     "react",
     "component"
   ],
-  "homepage": "https://github.com/oceanbase/oceanbase-design/packages/ui",
+  "homepage": "https://github.com/mybre/eflag-design/packages/ui",
   "repository": {
     "type": "git",
-    "url": "git@github.com:oceanbase/design.git"
+    "url": "git@github.com:mybre/eflag-design.git"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
@@ -32,14 +32,15 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "father build"
+    "build": "father build",
+    "cleanNodeModels": "rimraf node_modules"
   },
   "dependencies": {
     "@ant-design/cssinjs": "^1.16.2",
     "@ant-design/pro-components": "^2.6.12",
-    "@oceanbase/design": "workspace:^",
-    "@oceanbase/icons": "workspace:^",
-    "@oceanbase/util": "workspace:^",
+    "@eflag/design": "workspace:^",
+    "@eflag/icons": "workspace:^",
+    "@eflag/util": "workspace:^",
     "ahooks": "^2.10.14",
     "classnames": "^2.3.2",
     "dayjs": "^1.11.9",
@@ -59,7 +60,8 @@
     "screenfull": "^6.0.2"
   },
   "devDependencies": {
-    "@antv/g6": "3.4.10"
+    "@antv/g6": "3.4.10",
+    "rimraf": "^5.0.1"
   },
   "peerDependencies": {
     "@antv/g6": "3.4.10",

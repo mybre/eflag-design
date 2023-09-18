@@ -1,6 +1,6 @@
 import { css } from '@emotion/react';
-import { Button, Space, Typography } from '@oceanbase/design';
-import { GithubOutlined, RocketOutlined } from '@oceanbase/icons';
+import { Button, Space, Typography } from '@eflag/design';
+import { GithubOutlined, RocketOutlined } from '@eflag/icons';
 import { Link } from 'dumi';
 import * as React from 'react';
 import useLocale from '../../../hooks/useLocale';
@@ -11,12 +11,12 @@ import { GroupMask } from './Group';
 const locales = {
   cn: {
     slogan:
-      '基于 Ant Design 进行延展和二次开发的企业级设计系统，助力 OceanBase 生态，帮助设计开发者快速搭建具备「专业感」的产品～',
+      '基于 Ant Design 进行延展和二次开发的企业级设计系统，助力 Eflag 生态，帮助设计开发者快速搭建具备「专业感」的产品～',
     start: '开始使用',
   },
   en: {
     slogan:
-      'An enterprise-class design system based on Ant Design and extending it. Help OceanBase ecology and designers/developers building professional products',
+      'An enterprise-class design system based on Ant Design and extending it. Help Eflag ecology and designers/developers building professional products',
     start: 'Getting Started',
   },
 };
@@ -74,7 +74,7 @@ export default function Banner({ children }: BannerProps) {
       <img
         style={{ position: 'absolute', right: 0, top: 240, width: 240 }}
         src="https://gw.alipayobjects.com/zos/bmw-prod/b3b8dc41-dce8-471f-9d81-9a0204f27d03.svg"
-        alt="OceanBase Design"
+        alt="Eflag Design"
       />
 
       <GroupMask
@@ -98,7 +98,7 @@ export default function Banner({ children }: BannerProps) {
         />
 
         <Typography.Title level={1} css={[styles.titleBase, styles.title]}>
-          OceanBase Design
+          Eflag Design
         </Typography.Title>
         <Typography.Paragraph
           style={{
@@ -117,7 +117,7 @@ export default function Banner({ children }: BannerProps) {
               {locale.start}
             </Button>
           </Link>
-          <a href="https://github.com/oceanbase/oceanbase-design" target="_blank">
+          <a href="https://github.com/mybre/eflag-design" target="_blank">
             <Button size="large" icon={<GithubOutlined />}>
               GitHub
             </Button>

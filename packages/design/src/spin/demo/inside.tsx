@@ -1,5 +1,5 @@
 import React from 'react';
-import { Spin, token } from '@oceanbase/design';
+import { Spin, token } from '@eflag/design';
 
 const App: React.FC = () => (
   <div

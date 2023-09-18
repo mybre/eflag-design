@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import { Image } from '@oceanbase/design';
+import { Image } from '@eflag/design';
 import toArray from 'rc-util/lib/Children/toArray';
 
 interface ImagePreviewProps {

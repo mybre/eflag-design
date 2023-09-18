@@ -1,4 +1,4 @@
-import { Button } from '@oceanbase/design';
+import { Button } from '@eflag/design';
 import React, { useMemo } from 'react';
 import type { FunctionConfigType, FunctionStateType } from '../constant';
 

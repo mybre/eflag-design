@@ -1,7 +1,7 @@
-import { CheckCircleFilled, CloseCircleFilled, LoadingOutlined } from '@oceanbase/icons';
-import { Progress, Space } from '@oceanbase/design';
+import { CheckCircleFilled, CloseCircleFilled, LoadingOutlined } from '@eflag/icons';
+import { Progress, Space } from '@eflag/design';
 import React from 'react';
-import { token } from '@oceanbase/design';
+import { token } from '@eflag/design';
 
 export interface Validator {
   validate: (value?: string) => boolean;

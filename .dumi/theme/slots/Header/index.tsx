@@ -1,6 +1,6 @@
-import { GithubOutlined, MenuOutlined } from '@oceanbase/icons';
+import { GithubOutlined, MenuOutlined } from '@eflag/icons';
 import { ClassNames, css } from '@emotion/react';
-import { Col, Popover, Row } from '@oceanbase/design';
+import { Col, Popover, Row } from '@eflag/design';
 import classNames from 'classnames';
 import { useLocation, useSiteData } from 'dumi';
 import DumiSearchBar from 'dumi/theme-default/slots/SearchBar';
@@ -261,7 +261,7 @@ const Header: React.FC = () => {
     />,
     <a
       key="github"
-      href="https://github.com/oceanbase/oceanbase-design"
+      href="https://github.com/mybre/eflag-design"
       target="_blank"
       rel="noreferrer"
     >

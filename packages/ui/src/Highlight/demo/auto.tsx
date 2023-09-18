@@ -2,7 +2,7 @@
  * title: 不指定语言
  */
 
-import { Highlight } from '@oceanbase/ui';
+import { Highlight } from '@eflag/ui';
 
 export default () => (
   <Highlight>

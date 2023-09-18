@@ -1,4 +1,4 @@
-import { Descriptions } from '@oceanbase/design';
+import { Descriptions } from '@eflag/design';
 import React from 'react';
 
 const App: React.FC = () => (

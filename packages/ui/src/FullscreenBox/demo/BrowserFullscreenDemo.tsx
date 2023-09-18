@@ -2,7 +2,7 @@
  * title: 浏览器全屏
  */
 
-import { FullscreenBox } from '@oceanbase/ui';
+import { FullscreenBox } from '@eflag/ui';
 import { SimpleTable } from './SimpleTable';
 
 export default () => {

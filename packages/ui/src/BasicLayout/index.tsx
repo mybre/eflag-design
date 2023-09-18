@@ -1,10 +1,10 @@
-import { CaretRightFilled, LeftOutlined, RightOutlined } from '@oceanbase/icons';
+import { CaretRightFilled, LeftOutlined, RightOutlined } from '@eflag/icons';
 import { setAlpha } from '@ant-design/pro-components';
-import { token } from '@oceanbase/design';
-import { isNullValue } from '@oceanbase/util';
-import { ConfigProvider, Divider, Layout, Menu, Tooltip } from '@oceanbase/design';
-import type { BadgeProps } from '@oceanbase/design/es/badge';
-import type { MenuProps } from '@oceanbase/design/es/menu';
+import { token } from '@eflag/design';
+import { isNullValue } from '@eflag/util';
+import { ConfigProvider, Divider, Layout, Menu, Tooltip } from '@eflag/design';
+import type { BadgeProps } from '@eflag/design/es/badge';
+import type { MenuProps } from '@eflag/design/es/menu';
 import classNames from 'classnames';
 import { some } from 'lodash';
 import { pathToRegexp } from 'path-to-regexp';

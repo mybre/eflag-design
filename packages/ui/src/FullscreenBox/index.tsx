@@ -1,4 +1,4 @@
-import { FullscreenExitOutlined, FullscreenOutlined } from '@oceanbase/icons';
+import { FullscreenExitOutlined, FullscreenOutlined } from '@eflag/icons';
 import classnames from 'classnames';
 import type { ReactNode } from 'react';
 import React, { useEffect, useImperativeHandle, useRef, useState } from 'react';

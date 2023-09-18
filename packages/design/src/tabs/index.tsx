@@ -1,4 +1,4 @@
-import { isNullValue } from '@oceanbase/util';
+import { isNullValue } from '@eflag/util';
 import { Space, Tabs as AntTabs, Tag } from 'antd';
 import React, { useState, useRef, useContext } from 'react';
 import type { TabsProps as AntTabsProps, TabsPosition as AntTabsPosition } from 'antd/es/tabs';

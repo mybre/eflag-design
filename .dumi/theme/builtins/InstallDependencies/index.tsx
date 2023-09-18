@@ -1,5 +1,5 @@
-import type { TabsProps } from '@oceanbase/design';
-import { Tabs } from '@oceanbase/design';
+import type { TabsProps } from '@eflag/design';
+import { Tabs } from '@eflag/design';
 import SourceCode from 'dumi/theme-default/builtins/SourceCode';
 import React from 'react';
 import NpmLogo from './npm';
@@ -56,7 +56,7 @@ const InstallDependencies: React.FC<InstallProps> = props => {
       ].filter(item => item.children),
     [npm, yarn, pnpm]
   );
-  return <Tabs className="oceanbase-design-site-snippet" defaultActiveKey="npm" items={items} />;
+  return <Tabs className="eflag-design-site-snippet" defaultActiveKey="npm" items={items} />;
 };
 
 export default InstallDependencies;

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Card, Col, Row, Tooltip, Radio, Form } from '@oceanbase/design';
-import type { TooltipType } from '@oceanbase/design/es/tooltip';
+import { Card, Col, Row, Tooltip, Radio, Form } from '@eflag/design';
+import type { TooltipType } from '@eflag/design/es/tooltip';
 
 const App: React.FC = () => {
   const [type, setType] = useState<TooltipType>('default');

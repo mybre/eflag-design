@@ -1,10 +1,10 @@
 import React from 'react';
-import { Tooltip } from '@oceanbase/design';
-import { EditOutlined } from '@oceanbase/icons';
+import { Tooltip } from '@eflag/design';
+import { EditOutlined } from '@eflag/icons';
 import { css } from '@emotion/react';
 import useSiteToken from '../../hooks/useSiteToken';
 
-const branchUrl = 'https://github.com/oceanbase/oceanbase-design/edit/master/';
+const branchUrl = 'https://github.com/mybre/eflag-design/edit/master/';
 
 export interface EditButtonProps {
   title: React.ReactNode;

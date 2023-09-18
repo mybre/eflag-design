@@ -1,4 +1,4 @@
-import {TagSelect} from '@oceanbase/ui';
+import {TagSelect} from '@eflag/ui';
 
 export default () => {
 

@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react';
 import type { AreaConfig as AntAreaConfig } from '@ant-design/charts';
 import { Area as AntArea } from '@ant-design/charts';
-import { sortByMoment } from '@oceanbase/util';
+import { sortByMoment } from '@eflag/util';
 import useResizeObserver from 'use-resize-observer';
 import type { Tooltip } from '../hooks/useTooltipScrollable';
 import useTooltipScrollable from '../hooks/useTooltipScrollable';

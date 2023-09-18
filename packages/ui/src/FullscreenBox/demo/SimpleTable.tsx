@@ -1,4 +1,4 @@
-import { Divider, Table, Tag } from '@oceanbase/design';
+import { Divider, Table, Tag } from '@eflag/design';
 
 export const SimpleTable = () => {
   const data = [

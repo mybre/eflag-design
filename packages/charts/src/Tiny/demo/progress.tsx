@@ -1,5 +1,5 @@
-import { Progress } from '@oceanbase/charts';
-import { Col, Row } from '@oceanbase/design';
+import { Progress } from '@eflag/charts';
+import { Col, Row } from '@eflag/design';
 
 export default () => {
   const titleStyle = { width: 90 };

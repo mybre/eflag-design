@@ -16,7 +16,7 @@ exports[`Spin default indicator should render correctly 1`] = `
 <div
   aria-busy="true"
   aria-live="polite"
-  class="ant-spin ant-spin-spinning ant-spin-oceanbase"
+  class="ant-spin ant-spin-spinning ant-spin-eflag"
 >
   <div
     class="ant-spin-dot"
@@ -567,7 +567,7 @@ exports[`Spin gray default indicator should render correctly 1`] = `
 <div
   aria-busy="true"
   aria-live="polite"
-  class="ant-spin ant-spin-spinning ant-spin-oceanbase ant-spin-oceanbase-gray"
+  class="ant-spin ant-spin-spinning ant-spin-eflag ant-spin-eflag-gray"
 >
   <div
     class="ant-spin-dot"

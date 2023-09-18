@@ -1,9 +1,9 @@
 /**
  * iframe: 600
  */
-import Icon from '@oceanbase/icons';
-import { Alert, Menu, message } from '@oceanbase/design';
-import { BasicLayout, IconFont, Lottie } from '@oceanbase/ui';
+import Icon from '@eflag/icons';
+import { Alert, Menu, message } from '@eflag/design';
+import { BasicLayout, IconFont, Lottie } from '@eflag/ui';
 import { useState } from 'react';
 // @ts-ignore
 import { ReactComponent as MonitorSvg } from '../../assets/monitor.svg';

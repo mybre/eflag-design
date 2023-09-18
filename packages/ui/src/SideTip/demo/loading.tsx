@@ -3,8 +3,8 @@
  * iframe: true
  */
 
-import { HeartOutlined, HeartTwoTone } from '@oceanbase/icons';
-import { SideTip } from '@oceanbase/ui';
+import { HeartOutlined, HeartTwoTone } from '@eflag/icons';
+import { SideTip } from '@eflag/ui';
 
 export default () => {
   return (

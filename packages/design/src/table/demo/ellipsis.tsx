@@ -1,4 +1,4 @@
-import { Table, Tooltip } from '@oceanbase/design';
+import { Table, Tooltip } from '@eflag/design';
 import type { ColumnsType } from 'antd/es/table';
 import React from 'react';
 

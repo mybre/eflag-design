@@ -13,13 +13,16 @@ const genSizeStyle = (spinDotSize: number, token: SpinToken): CSSObject => {
   const spinDotWidth = spinDotSize;
   const spinDotHight = spinDotWidth * (295 / 397);
   return {
-    [`${componentCls}-dot`]: {
-      width: spinDotWidth,
-      height: spinDotHight,
-    },
-    [`${componentCls}-text`]: {
-      width: spinDotWidth,
-      color: colorText,
+    // only work for oceanbase indicator
+    [`&${componentCls}-eflag`]: {
+      [`${componentCls}-dot`]: {
+        width: spinDotWidth,
+        height: spinDotHight,
+      },
+      [`${componentCls}-text`]: {
+        width: spinDotWidth,
+        color: colorText,
+      },
     },
   };
 };
@@ -27,7 +30,7 @@ const genSizeStyle = (spinDotSize: number, token: SpinToken): CSSObject => {
 const genNestedSizeStyle = (spinDotSize: number, token: SpinToken): CSSObject => {
   const { componentCls, fontSize } = token;
   const spinDotWidth = spinDotSize;
-  // oceanbase indicator is rectangle instead of square, should calculate actual height by ratio
+  // eflag indicator is rectangle instead of square, should calculate actual height by ratio
   // width: 295px
   // height: 397px
   const spinDotHight = spinDotWidth * (295 / 397);
@@ -35,7 +38,7 @@ const genNestedSizeStyle = (spinDotSize: number, token: SpinToken): CSSObject =>
   const dotMarginTop = -spinDotHight / 2;
   const textPaddingTop = (spinDotHight - fontSize) / 2 + 2;
   return {
-    [`&${componentCls}-oceanbase`]: {
+    [`&${componentCls}-eflag`]: {
       [`${componentCls}-dot`]: {
         marginLeft: dotMarginLeft,
         marginTop: dotMarginTop,
@@ -53,11 +56,10 @@ const genNestedSizeStyle = (spinDotSize: number, token: SpinToken): CSSObject =>
 export const genSpinStyle: GenerateStyle<SpinToken> = (token: SpinToken): CSSObject => {
   const { componentCls, spinDotSize, spinDotSizeSM, spinDotSizeLG } = token;
   return {
-    // only work for oceanbase indicator
     [`${componentCls}`]: {
-      [`&-oceanbase`]: genSizeStyle(spinDotSize, token),
-      [`&-sm&-oceanbase`]: genSizeStyle(spinDotSizeSM, token),
-      [`&-lg&-oceanbase`]: genSizeStyle(spinDotSizeLG, token),
+      [`&`]: genSizeStyle(spinDotSize, token),
+      [`&-sm`]: genSizeStyle(spinDotSizeSM, token),
+      [`&-lg`]: genSizeStyle(spinDotSizeLG, token),
     },
     [`${componentCls}-nested-loading`]: {
       [`> div > ${componentCls}`]: {
@@ -71,7 +73,7 @@ export const genSpinStyle: GenerateStyle<SpinToken> = (token: SpinToken): CSSObj
 
 export default (prefixCls: string) => {
   const useStyle = genComponentStyleHook('Spin', token => {
-    // should expand by 2x for oceanbase indicator
+    // should expand by 2x for eflag indicator
     // because it's inner padding is smaller than antd default indicator
     // const ratio = 3;
     return [

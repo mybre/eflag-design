@@ -1,7 +1,7 @@
-import { Button, Space } from '@oceanbase/design';
-import { PauseCircleOutlined, PlayCircleFilled } from '@oceanbase/icons';
-import { Lottie } from '@oceanbase/ui';
-import { LottieRef } from '@oceanbase/ui/es/Lottie';
+import { Button, Space } from '@eflag/design';
+import { PauseCircleOutlined, PlayCircleFilled } from '@eflag/icons';
+import { Lottie } from '@eflag/ui';
+import { LottieRef } from '@eflag/ui/es/Lottie';
 import { useState, useRef } from 'react';
 
 export default () => {

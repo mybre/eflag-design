@@ -3,10 +3,10 @@
  * iframe: 600
  */
 
-import { FileTextOutlined } from '@oceanbase/icons';
-import { Badge, Card, Dropdown, Progress, Table } from '@oceanbase/design';
-import { SideTip } from '@oceanbase/ui';
-import { findByValue } from '@oceanbase/util';
+import { FileTextOutlined } from '@eflag/icons';
+import { Badge, Card, Dropdown, Progress, Table } from '@eflag/design';
+import { SideTip } from '@eflag/ui';
+import { findByValue } from '@eflag/util';
 import { useState } from 'react';
 
 export const STATUS_LIST = [

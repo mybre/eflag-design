@@ -1,4 +1,4 @@
-import { Descriptions, Tooltip } from '@oceanbase/design';
+import { Descriptions, Tooltip } from '@eflag/design';
 
 export default () => (
   <Descriptions title="User Info">
@@ -21,6 +21,15 @@ export default () => (
       }}
     >
       This is a description. This is a description. This is a description
+    </Descriptions.Item>
+    <Descriptions.Item
+      span={3}
+      label="has ellipsis"
+    >
+      This is ellipsis. This is ellipsis. This is ellipsis. This is ellipsis. This is
+      ellipsis. This is ellipsis. This is ellipsis. This is ellipsis. This is ellipsis.
+      This is ellipsis. This is ellipsis. This is ellipsis. This is ellipsis. This is
+      ellipsis. This is ellipsis. This is ellipsis. This is ellipsis. This is ellipsis. This is ellipsis. This is ellipsis. This is ellipsis. This is ellipsis. This is ellipsis. This is ellipsis. This is ellipsis.
     </Descriptions.Item>
     <Descriptions.Item
       span={3}

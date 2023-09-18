@@ -10,7 +10,7 @@ import {
   Space,
   Table,
   Tabs,
-} from '@oceanbase/design';
+} from '@eflag/design';
 import React, { useState } from 'react';
 
 const { TabPane } = Tabs;

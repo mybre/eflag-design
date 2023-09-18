@@ -1,7 +1,7 @@
-import { DownOutlined } from '@oceanbase/icons';
+import { DownOutlined } from '@eflag/icons';
 import { css } from '@emotion/react';
-import type { MenuProps } from '@oceanbase/design';
-import { Button, Dropdown } from '@oceanbase/design';
+import type { MenuProps } from '@eflag/design';
+import { Button, Dropdown } from '@eflag/design';
 import { FormattedMessage } from 'dumi';
 import React from 'react';
 import type { SharedProps } from './interface';

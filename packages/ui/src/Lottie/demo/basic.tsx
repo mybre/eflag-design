@@ -1,4 +1,4 @@
-import { Lottie } from '@oceanbase/ui';
+import { Lottie } from '@eflag/ui';
 
 export default () => {
   return (

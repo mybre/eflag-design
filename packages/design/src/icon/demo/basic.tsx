@@ -5,8 +5,8 @@ import {
   SettingFilled,
   SmileOutlined,
   SyncOutlined,
-} from '@oceanbase/icons';
-import { Space } from '@oceanbase/design';
+} from '@eflag/icons';
+import { Space } from '@eflag/design';
 
 const App: React.FC = () => (
   <Space>

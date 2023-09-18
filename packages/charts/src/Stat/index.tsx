@@ -3,7 +3,7 @@ import tinycolor from 'tinycolor2';
 import { toNumber, toString } from 'lodash';
 import classNames from 'classnames';
 import useResizeObserver from 'use-resize-observer';
-import { sortByNumber } from '@oceanbase/util';
+import { sortByNumber } from '@eflag/util';
 import type { TinyAreaConfig, TinyAreaRef } from '../Tiny/TinyArea';
 import TinyArea from '../Tiny/TinyArea';
 import { useTheme } from '../theme';

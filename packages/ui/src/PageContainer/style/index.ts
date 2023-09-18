@@ -1,6 +1,6 @@
 import type { CSSObject } from '@ant-design/cssinjs';
 import type { PageContainerToken } from '@ant-design/pro-layout/es/components/PageContainer/style';
-import type { GenerateStyle } from '@oceanbase/design/es/theme';
+import type { GenerateStyle } from '@eflag/design/es/theme';
 import { genComponentStyleHook } from '../../_util/genComponentStyleHook';
 
 export const genPageContainerStyle: GenerateStyle<PageContainerToken> = (
@@ -100,7 +100,7 @@ export const genPageContainerStyle: GenerateStyle<PageContainerToken> = (
 
 export default (prefixCls: string) => {
   const useStyle = genComponentStyleHook('PageContainer', token => {
-    return [genPageContainerStyle(token)];
+    return [genPageContainerStyle(token as PageContainerToken)];
   });
   return useStyle(prefixCls);
 };

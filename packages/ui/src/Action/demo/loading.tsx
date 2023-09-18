@@ -1,5 +1,5 @@
-import { message } from '@oceanbase/design';
-import { Action } from '@oceanbase/ui';
+import { message } from '@eflag/design';
+import { Action } from '@eflag/ui';
 
 import { useCallback } from 'react';
 

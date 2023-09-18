@@ -3,10 +3,10 @@
  * iframe: true
  */
 
-import { CloudUploadOutlined } from '@oceanbase/icons';
+import { CloudUploadOutlined } from '@eflag/icons';
 import { useState } from 'react';
-import { message } from '@oceanbase/design';
-import { SideTip } from '@oceanbase/ui';
+import { message } from '@eflag/design';
+import { SideTip } from '@eflag/ui';
 
 export default () => {
   const [open, setOpen] = useState(false);

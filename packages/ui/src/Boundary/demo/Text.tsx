@@ -1,5 +1,5 @@
 //@ts-nocheck
-import { Button } from '@oceanbase/design';
+import { Button } from '@eflag/design';
 import { useState } from 'react';
 import LocaleWrapper from '../../locale/LocaleWrapper';
 import zhCN from '../locale/zh-CN';

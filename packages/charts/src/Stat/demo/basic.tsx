@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { Stat } from '@oceanbase/charts';
-import { Col, Row, Form, Radio } from '@oceanbase/design';
+import { Stat } from '@eflag/charts';
+import { Col, Row, Form, Radio } from '@eflag/design';
 import { range } from 'lodash';
 
 export default () => {

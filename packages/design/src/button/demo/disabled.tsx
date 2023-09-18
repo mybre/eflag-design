@@ -1,4 +1,4 @@
-import { Button, Space } from '@oceanbase/design';
+import { Button, Space } from '@eflag/design';
 import React from 'react';
 
 const App: React.FC = () => (
@@ -65,7 +65,7 @@ const App: React.FC = () => (
       style={{
         backgroundColor: 'rgb(190, 200, 200)',
         padding: 16,
-        borderRadius: 6,
+        borderRadius: 3,
       }}
     >
       <Button ghost>Ghost</Button>

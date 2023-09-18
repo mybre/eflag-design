@@ -1,5 +1,5 @@
-import { Radio } from '@oceanbase/design';
-import { Boundary } from '@oceanbase/ui';
+import { Radio } from '@eflag/design';
+import { Boundary } from '@eflag/ui';
 import { useState } from 'react';
 import Text from './Text';
 

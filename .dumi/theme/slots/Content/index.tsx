@@ -1,7 +1,7 @@
-import { CalendarOutlined } from '@oceanbase/icons';
+import { CalendarOutlined } from '@eflag/icons';
 import { css } from '@emotion/react';
 import ContributorsList from '@qixian.cs/github-contributors-list';
-import { Affix, Anchor, Avatar, Col, Skeleton, Space, Typography } from '@oceanbase/design';
+import { Affix, Anchor, Avatar, Col, Skeleton, Space, Typography } from '@eflag/design';
 import classNames from 'classnames';
 import DayJS from 'dayjs';
 import { FormattedMessage, useIntl, useRouteMeta, useTabMeta } from 'dumi';
@@ -270,8 +270,8 @@ const Content: React.FC<{ children: ReactNode }> = ({ children }) => {
           {children}
           {/* {meta.frontmatter.filename && (
             <ContributorsList
-              repo="oceanbase-design"
-              owner="oceanbase"
+              repo="eflag-design"
+              owner="eflag"
               css={styles.contributorsList}
               cache
               fileName={meta.frontmatter.filename}

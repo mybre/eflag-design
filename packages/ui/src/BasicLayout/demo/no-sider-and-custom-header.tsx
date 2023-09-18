@@ -6,9 +6,9 @@ import {
   ClockCircleOutlined,
   HomeOutlined,
   ReadOutlined,
-} from '@oceanbase/icons';
-import { Button, Card, Space, Steps } from '@oceanbase/design';
-import { BasicLayout, PageContainer } from '@oceanbase/ui';
+} from '@eflag/icons';
+import { Button, Card, Space, Steps } from '@eflag/design';
+import { BasicLayout, PageContainer } from '@eflag/ui';
 import { useState } from 'react';
 
 export default () => {

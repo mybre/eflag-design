@@ -1,10 +1,10 @@
 import React, { useCallback, useMemo, useState } from 'react';
 import type { CSSProperties } from 'react';
-import Icon, * as ObIcons from '@oceanbase/icons';
+import Icon, * as ObIcons from '@eflag/icons';
 import * as AntdIcons from '@ant-design/icons';
 import type { IntlShape } from 'react-intl';
-import { Segmented, Input, Empty, Affix } from '@oceanbase/design';
-import type { SegmentedProps } from '@oceanbase/design';
+import { Segmented, Input, Empty, Affix } from '@eflag/design';
+import type { SegmentedProps } from '@eflag/design';
 import { css } from '@emotion/react';
 import { useIntl } from 'dumi';
 import debounce from 'lodash/debounce';

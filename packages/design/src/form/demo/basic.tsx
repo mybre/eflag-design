@@ -1,4 +1,4 @@
-import { Button, Checkbox, Form, Input, message } from '@oceanbase/design';
+import { Button, Checkbox, Form, Input, message } from '@eflag/design';
 import React from 'react';
 
 const onFinish = (values: any) => {

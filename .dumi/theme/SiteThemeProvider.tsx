@@ -1,5 +1,5 @@
-import { ConfigProvider, token } from '@oceanbase/design';
-import { ChartProvider } from '@oceanbase/charts';
+import { ConfigProvider, token } from '@eflag/design';
+import { ChartProvider } from '@eflag/charts';
 import type { ThemeProviderProps } from 'antd-style';
 import { ThemeProvider } from 'antd-style';
 import type { FC } from 'react';

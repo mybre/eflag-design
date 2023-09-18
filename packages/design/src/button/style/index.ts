@@ -8,22 +8,23 @@ export const genButtonStyle: GenerateStyle<ButtonToken> = (token: ButtonToken) =
   return {
     [`${componentCls}${componentCls}-primary:not([disabled]):not(${componentCls}-disabled):not(${componentCls}-dangerous):not(${componentCls}-background-ghost)`]:
       {
-        background: 'linear-gradient(-45deg, #002bff 0%, #0080ff 100%)',
-        border: 'none',
-        boxShadow: 'none',
-        ['&:hover']: {
-          background: 'linear-gradient(-45deg, #002bff 60%, #0080ff 100%)',
-        },
-        ['&:active']: {
-          background: 'linear-gradient(-45deg, #002bff 90%, #0080ff 100%)',
-        },
+        // background: 'linear-gradient(-45deg, #002bff 0%, #0080ff 100%)',
+        // border: 'none',
+        // boxShadow: 'none',
+        // borderRadius: token.borderRadius,
+        // ['&:hover']: {
+        //   background: 'linear-gradient(-45deg, #002bff 60%, #0080ff 100%)',
+        // },
+        // ['&:active']: {
+        //   background: 'linear-gradient(-45deg, #002bff 90%, #0080ff 100%)',
+        // },
       },
   };
 };
 
 export default (prefixCls: string) => {
   const useStyle = genComponentStyleHook('Button', token => {
-    return [genButtonStyle(token)];
+    return [genButtonStyle(token as ButtonToken)];
   });
   return useStyle(prefixCls);
 };

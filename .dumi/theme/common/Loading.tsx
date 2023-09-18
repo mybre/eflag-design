@@ -1,5 +1,5 @@
 import React from 'react';
-import { Skeleton, Space } from '@oceanbase/design';
+import { Skeleton, Space } from '@eflag/design';
 
 const Loading: React.FC = () => {
   return (

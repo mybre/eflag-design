@@ -1,16 +1,16 @@
 ---
-title: OceanBase Charts 介绍
+title: Eflag Charts 介绍
 order: 7
 group:
   title: 可视化图表
   order: 3
 ---
 
-OceanBase Charts 是 OceanBase 前端和设计团队出品的图表资产库，旨在提升 OceanBase 企业级产品的研发效能和产品体验一致性，包括多类型图表和样式主题。`@oceanbase/charts` 是其 React 实现，也是 OceanBase 的图表最佳实践，大多数情况下，只需指定数据相关属性、无需定制图表样式和交互，即可保证最佳展示效果。
+Eflag Charts 是 Eflag 前端和设计团队出品的图表资产库，旨在提升 Eflag 企业级产品的研发效能和产品体验一致性，包括多类型图表和样式主题。`@eflag/charts` 是其 React 实现，也是 Eflag 的图表最佳实践，大多数情况下，只需指定数据相关属性、无需定制图表样式和交互，即可保证最佳展示效果。
 
 ## ✨ 特性
 
-- 🌈 从业务中来，提炼自 OceanBase 全域产品的可视化最佳实践。
+- 🌈 从业务中来，提炼自 Eflag 全域产品的可视化最佳实践。
 - 🎨 与 AntV 设计体系一脉相承，完全兼容 [Ant Design Charts](https://charts.ant.design) 的能力和 API。
 - ⚙️ 全链路开发和设计工具体系，与 Umi 框架无缝对接。
 - 📦 开箱即用的高质量图表。

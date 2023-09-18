@@ -4,7 +4,7 @@ import {
   FullscreenExitOutlined,
   FullscreenOutlined,
   MinusOutlined,
-} from '@oceanbase/icons';
+} from '@eflag/icons';
 import type { MouseEvent, PointerEvent } from 'react';
 import React from 'react';
 import { createPortal } from 'react-dom';

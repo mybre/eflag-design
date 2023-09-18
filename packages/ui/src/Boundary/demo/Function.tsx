@@ -1,4 +1,4 @@
-import { Boundary } from '@oceanbase/ui';
+import { Boundary } from '@eflag/ui';
 import { useCallback, useState } from 'react';
 
 export default () => {

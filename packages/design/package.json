@@ -1,19 +1,19 @@
 {
-  "name": "@oceanbase/design",
-  "version": "0.2.14",
-  "description": "The Design System of OceanBase",
+  "name": "@eflag/design",
+  "version": "0.2.16",
+  "description": "The Design System of Eflag",
   "keywords": [
-    "OceanBase",
+    "Eflag",
     "database",
     "design",
     "ui",
     "react",
     "component"
   ],
-  "homepage": "https://github.com/oceanbase/oceanbase-design/packages/design",
+  "homepage": "https://github.com/mybre/eflag-design/packages/design",
   "repository": {
     "type": "git",
-    "url": "git@github.com:oceanbase/design.git"
+    "url": "git@github.com:mybre/eflag-design.git"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
@@ -33,14 +33,15 @@
   ],
   "scripts": {
     "build": "father build",
-    "postbuild": "cp src/style/reset.css dist/"
+    "postbuild": "cp src/style/reset.css dist/",
+    "cleanNodeModels": "rimraf node_modules"
   },
   "dependencies": {
     "@ant-design/cssinjs": "^1.16.2",
-    "@oceanbase/icons": "workspace:^",
-    "@oceanbase/util": "workspace:^",
+    "@eflag/icons": "workspace:^",
+    "@eflag/util": "workspace:^",
     "ahooks": "^2.10.14",
-    "antd": "^5.8.4",
+    "antd": "^5.9.0",
     "classnames": "^2.3.2",
     "lodash": "^4.17.21",
     "lottie-web": "^5.12.2",
@@ -48,9 +49,10 @@
     "react-sticky-mouse-tooltip": "^0.0.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.22.10",
-    "@babel/preset-env": "^7.22.10",
-    "antd-token-previewer": "^1.1.0"
+    "@babel/cli": "^7.22.15",
+    "@babel/preset-env": "^7.22.15",
+    "antd-token-previewer": "^1.1.0",
+    "rimraf": "^5.0.1"
   },
   "peerDependencies": {
     "react": "^16.9.0",

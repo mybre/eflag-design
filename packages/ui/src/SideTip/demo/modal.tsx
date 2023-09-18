@@ -3,9 +3,9 @@
  * iframe: 500
  */
 
-import { PlusOutlined } from '@oceanbase/icons';
-import { Modal } from '@oceanbase/design';
-import { SideTip } from '@oceanbase/ui';
+import { PlusOutlined } from '@eflag/icons';
+import { Modal } from '@eflag/design';
+import { SideTip } from '@eflag/ui';
 import { useState } from 'react';
 
 export default () => {

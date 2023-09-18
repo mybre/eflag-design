@@ -1,4 +1,4 @@
-import { Alert } from '@oceanbase/design';
+import { Alert } from '@eflag/design';
 import React from 'react';
 import Marquee from 'react-fast-marquee';
 

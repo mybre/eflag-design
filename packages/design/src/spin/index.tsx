@@ -35,8 +35,8 @@ const Spin = ({
   const { wrapSSR } = useStyle(prefixCls);
   const spinCls = classNames(
     {
-      [`${prefixCls}-oceanbase`]: isDefaultIndicator,
-      [`${prefixCls}-oceanbase-gray`]: isGrayIndicator,
+      [`${prefixCls}-eflag`]: isDefaultIndicator,
+      [`${prefixCls}-eflag-gray`]: isGrayIndicator,
     },
     className
   );

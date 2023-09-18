@@ -6,11 +6,11 @@ import React, {
   useMemo,
   useState,
 } from 'react';
-import { notification } from '@oceanbase/design';
+import { notification } from '@eflag/design';
 import type {
   GlobalConfigProps,
   NotificationInstance,
-} from '@oceanbase/design/es/notification/interface';
+} from '@eflag/design/es/notification/interface';
 import { REFRESH_FREQUENCY } from './constants';
 import { RefreshMan } from './RefreshMan';
 

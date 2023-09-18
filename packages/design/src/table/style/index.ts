@@ -32,45 +32,46 @@ export const genTableStyle: GenerateStyle<TableToken> = (token: TableToken): CSS
       color: colorTextBase,
       backgroundColor: colorBgBase,
       borderRadius: borderRadiusLG,
+
       // head 样式
-      [`${componentCls}-thead > tr`]: {
-        ['td, th']: {
-          // 弱化列标题
-          color: colorTextTertiary,
-          fontWeight: 'normal',
-          backgroundColor: colorBgBase,
-        },
-        [`td${componentCls}-row-expand-icon-cell`]: {
-          backgroundColor: colorBgBase,
-        },
-        // 去掉排序列表头的灰色背景
-        [`th${componentCls}-column-sort`]: {
-          backgroundColor: colorBgBase,
-        },
-        [`${componentCls}-cell-scrollbar`]: {
-          boxShadow: `0 1px 0 1px ${colorBgBase}`,
-        },
-      },
+      // [`${componentCls}-thead > tr`]: {
+      //   ['td, th']: {
+      //     // 弱化列标题
+      //     color: colorTextTertiary,
+      //     fontWeight: 'normal',
+      //     backgroundColor: colorBgBase,
+      //   },
+      //   [`td${componentCls}-row-expand-icon-cell`]: {
+      //     backgroundColor: colorBgBase,
+      //   },
+      //   // 去掉排序列表头的灰色背景
+      //   [`th${componentCls}-column-sort`]: {
+      //     backgroundColor: colorBgBase,
+      //   },
+      //   [`${componentCls}-cell-scrollbar`]: {
+      //     boxShadow: `0 1px 0 1px ${colorBgBase}`,
+      //   },
+      // },
       // body 样式
       [`${componentCls}-tbody`]: {
-        // 斑马纹样式
-        [`tr:nth-child(2n + 1):not(${componentCls}-placeholder):not(${componentCls}-row-selected):not(${antCls}-descriptions-row) > td`]:
-          {
-            backgroundColor: colorBgBase,
-          },
-        [`tr:nth-child(2n):not(${componentCls}-placeholder):not(${componentCls}-row-selected):not(${componentCls}-expanded-row):not(${antCls}-descriptions-row) > td`]:
-          {
-            backgroundColor: colorFillQuaternary,
-          },
-        // hover 行样式
-        [`tr:not(${componentCls}-placeholder):not(${componentCls}-expanded-row):not(${antCls}-descriptions-row):hover > td`]:
-          {
-            backgroundColor: `${colorPrimaryBgHover} !important`,
-          },
-        // 选中行样式
-        [`tr${componentCls}-row-selected > td`]: {
-          backgroundColor: colorPrimaryBg,
-        },
+        // // 斑马纹样式
+        // [`tr:nth-of-child(2n + 1):not(${componentCls}-placeholder):not(${componentCls}-row-selected):not(${antCls}-descriptions-row) > td`]:
+        //   {
+        //     backgroundColor: colorBgBase,
+        //   },
+        // [`tr:nth-of-child(2n):not(${componentCls}-placeholder):not(${componentCls}-row-selected):not(${componentCls}-expanded-row):not(${antCls}-descriptions-row) > td`]:
+        //   {
+        //     backgroundColor: colorFillQuaternary,
+        //   },
+        // // hover 行样式
+        // [`tr:not(${componentCls}-placeholder):not(${componentCls}-expanded-row):not(${antCls}-descriptions-row):hover > td`]:
+        //   {
+        //     backgroundColor: `${colorPrimaryBgHover} !important`,
+        //   },
+        // // 选中行样式
+        // [`tr${componentCls}-row-selected > td`]: {
+        //   backgroundColor: colorPrimaryBg,
+        // },
         // 展开行样式
         [`${componentCls}-expanded-row > td`]: {
           padding: `${paddingSM}px ${paddingLG}px ${paddingSM}px ${
@@ -99,7 +100,7 @@ export const genTableStyle: GenerateStyle<TableToken> = (token: TableToken): CSS
           },
           // 设置最后一行左右两列的圆角
           [`${componentCls}-tbody > tr:last-child`]: {
-            ['td:first-child, td:last-child']: {
+            ['td:first-of-child, td:last-child']: {
               borderRadius: borderRadiusLG,
             },
           },
@@ -139,7 +140,7 @@ export const genTableStyle: GenerateStyle<TableToken> = (token: TableToken): CSS
       [`${componentCls}`]: {
         [`${componentCls}-tbody`]: {
           // 去掉斑马纹
-          [`tr:nth-child(2n):not(${componentCls}-placeholder):not(${componentCls}-row-selected):not(${componentCls}-expanded-row)`]:
+          [`tr:nth-of-child(2n):not(${componentCls}-placeholder):not(${componentCls}-row-selected):not(${componentCls}-expanded-row)`]:
             {
               ['& > td']: {
                 backgroundColor: colorBgBase,
@@ -191,12 +192,20 @@ export const genTableStyle: GenerateStyle<TableToken> = (token: TableToken): CSS
         padding: 0,
       },
     },
+
+    // 表格撑满高度 scroll 滚动
+    [`${antCls}-spin-nested-loading`]: {
+      [`${antCls}-spin-container`]: {
+        display: 'flex',
+        flexDirection: 'column'
+      }
+    },
   };
 };
 
 export default (prefixCls: string) => {
   const useStyle = genComponentStyleHook('Table', token => {
-    return [genTableStyle(token)];
+    return [genTableStyle(token as TableToken)];
   });
   return useStyle(prefixCls);
 };

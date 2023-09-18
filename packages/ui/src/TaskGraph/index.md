@@ -35,4 +35,4 @@ nav:
   - `task_pending.svg`
   - `task_running.svg`
   - `task_successful.svg`
-- 以上图片的默认引用路径为 `/assets/XXX.svg`，如果与实际项目的部署情况不符，可以通过设置 `assetsPath` 属性，来自定义图片资源的引用路径 (`${assetsPath}/XXX.svg`)。所有的图片资源可以在 [此处](https://github.com/oceanbase/oceanbase-design/tree/master/public/assets) 进行下载。
+- 以上图片的默认引用路径为 `/assets/XXX.svg`，如果与实际项目的部署情况不符，可以通过设置 `assetsPath` 属性，来自定义图片资源的引用路径 (`${assetsPath}/XXX.svg`)。所有的图片资源可以在 [此处](https://github.com/mybre/eflag-design/tree/master/public/assets) 进行下载。

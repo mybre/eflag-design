@@ -3,9 +3,9 @@ import {
   FolderViewOutlined,
   ProfileOutlined,
   TableOutlined,
-} from '@oceanbase/icons';
-import { TreeSearch } from '@oceanbase/ui';
-import { DataNode } from '@oceanbase/design/es/tree';
+} from '@eflag/icons';
+import { TreeSearch } from '@eflag/ui';
+import { DataNode } from '@eflag/design/es/tree';
 import React from 'react';
 import './style.less';
 

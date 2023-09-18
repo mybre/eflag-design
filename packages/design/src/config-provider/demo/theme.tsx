@@ -1,4 +1,4 @@
-import { Button, ConfigProvider, Form, InputNumber, token } from '@oceanbase/design';
+import { Button, ConfigProvider, Form, InputNumber, token } from '@eflag/design';
 import React from 'react';
 import { SketchPicker } from 'react-color';
 

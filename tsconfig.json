@@ -13,17 +13,17 @@
     "baseUrl": "./",
     "paths": {
       "@@/*": [".dumi/tmp/*"],
-      "@oceanbase/design": ["packages/design/src/index.ts"],
-      "@oceanbase/design/es/*": ["packages/design/src/*"],
-      "@oceanbase/design/locale/*": ["packages/design/src/locale/*"],
-      "@oceanbase/icons": ["packages/icons/src/index.ts"],
-      "@oceanbase/icons/es/*": ["packages/icons/src/*"],
-      "@oceanbase/ui": ["packages/ui/src/index.ts"],
-      "@oceanbase/ui/es/*": ["packages/ui/src/*"],
-      "@oceanbase/ui/locale/*": ["packages/ui/src/locale/*"],
-      "@oceanbase/charts": ["packages/charts/src/index.ts"],
-      "@oceanbase/charts/es/*": ["packages/charts/src/*"],
-      "@oceanbase/util": ["packages/util/src/index.ts"]
+      "@eflag/design": ["packages/design/src/index.ts"],
+      "@eflag/design/es/*": ["packages/design/src/*"],
+      "@eflag/design/locale/*": ["packages/design/src/locale/*"],
+      "@eflag/icons": ["packages/icons/src/index.ts"],
+      "@eflag/icons/es/*": ["packages/icons/src/*"],
+      "@eflag/ui": ["packages/ui/src/index.ts"],
+      "@eflag/ui/es/*": ["packages/ui/src/*"],
+      "@eflag/ui/locale/*": ["packages/ui/src/locale/*"],
+      "@eflag/charts": ["packages/charts/src/index.ts"],
+      "@eflag/charts/es/*": ["packages/charts/src/*"],
+      "@eflag/util": ["packages/util/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "build", "es", "lib", "dist", "scripts"]

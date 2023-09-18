@@ -87,7 +87,7 @@ QueryParameter
 
 ```jsx
 import { useState } from 'react';
-import { useTableData } from '@oceanbase/util';
+import { useTableData } from '@eflag/util';
 
 const [name, setName] = useState('');
 const [age, setAge] = useState('');

@@ -1,5 +1,5 @@
-import { Button, Dropdown, Menu, Space, Tooltip, Typography } from '@oceanbase/design';
-import { EllipsisOutlined, LoadingOutlined } from '@oceanbase/icons';
+import { Button, Dropdown, Menu, Space, Tooltip, Typography } from '@eflag/design';
+import { EllipsisOutlined, LoadingOutlined } from '@eflag/icons';
 import { isBoolean, max, omit } from 'lodash';
 import React from 'react';
 import type { BaseProps } from './Item';

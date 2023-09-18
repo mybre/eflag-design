@@ -3,8 +3,8 @@ import type {
   ITaskMgrPreset,
   ITaskMgrQueue,
   TaskMgrID,
-} from '@oceanbase/ui';
-import { BackgroundTaskManager, BackgroundTaskManagerConstants } from '@oceanbase/ui';
+} from '@eflag/ui';
+import { BackgroundTaskManager, BackgroundTaskManagerConstants } from '@eflag/ui';
 import React, { useEffect, useRef } from 'react';
 import { getTaskById } from './mockApi';
 

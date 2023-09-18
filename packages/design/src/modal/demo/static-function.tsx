@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Modal, Space } from '@oceanbase/design';
+import { Button, Modal, Space } from '@eflag/design';
 
 export default () => (
   <Space>

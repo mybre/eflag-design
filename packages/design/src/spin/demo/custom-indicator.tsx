@@ -1,5 +1,5 @@
 import React from 'react';
-import { Alert, Space, Spin } from '@oceanbase/design';
+import { Alert, Space, Spin } from '@eflag/design';
 import { LoadingOutlined } from '@ant-design/icons';
 
 const indicator = <LoadingOutlined style={{ fontSize: 24 }} spin />;

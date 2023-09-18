@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { DumiDemoGrid, FormattedMessage } from 'dumi';
-import { Tooltip } from '@oceanbase/design';
-import { BugFilled, BugOutlined, CodeFilled, CodeOutlined } from '@oceanbase/icons';
+import { Tooltip } from '@eflag/design';
+import { BugFilled, BugOutlined, CodeFilled, CodeOutlined } from '@eflag/icons';
 import classNames from 'classnames';
 import DemoContext from '../../slots/DemoContext';
 import useLayoutState from '../../../hooks/useLayoutState';

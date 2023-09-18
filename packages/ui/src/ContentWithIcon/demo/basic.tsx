@@ -1,5 +1,5 @@
 import React from 'react';
-import { ContentWithIcon } from '@oceanbase/ui';
+import { ContentWithIcon } from '@eflag/ui';
 import { StepForwardOutlined } from '@ant-design/icons';
 
 export default () => {

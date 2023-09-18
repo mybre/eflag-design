@@ -48,7 +48,7 @@ export default ({
       <ReactJson
         enableClipboard={copyable && onCopyChange}
         src={json}
-        theme={isDarkTheme ? 'ocean' : undefined}
+        theme={isDarkTheme ? 'eflag' : undefined}
         displayDataTypes={false}
         style={{ height }}
         name={false}

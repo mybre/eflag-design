@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Alert, Button, Modal, Space } from '@oceanbase/design';
+import { Alert, Button, Modal, Space } from '@eflag/design';
 import { useInterval } from 'ahooks';
 
 export default () => {
@@ -44,7 +44,7 @@ export default () => {
         }}
         description={
           success
-            ? 'Congratulations! please enjoy your OceanBase journey.'
+            ? 'Congratulations! please enjoy your Eflag journey.'
             : 'Cluster is creating, please waiting for a few seconds.'
         }
         onOk={() => {

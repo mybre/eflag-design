@@ -4,8 +4,8 @@ import {
   CopyrightOutlined,
   ReadFilled,
   UserOutlined,
-} from '@oceanbase/icons';
-import { Button, Dropdown, Menu, Modal, Space, Tooltip } from '@oceanbase/design';
+} from '@eflag/icons';
+import { Button, Dropdown, Menu, Modal, Space, Tooltip } from '@eflag/design';
 import classNames from 'classnames';
 import moment from 'moment';
 import React, { useState } from 'react';

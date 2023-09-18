@@ -1,4 +1,4 @@
-import { Table } from '@oceanbase/design';
+import { Table } from '@eflag/design';
 import React from 'react';
 
 const App: React.FC = () => {

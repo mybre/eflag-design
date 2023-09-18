@@ -1,4 +1,4 @@
-import { createFromIconfontCN } from '@oceanbase/icons';
+import { createFromIconfontCN } from '@eflag/icons';
 import React from 'react';
 import './font/iconfont.css';
 

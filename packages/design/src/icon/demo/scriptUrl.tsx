@@ -1,6 +1,6 @@
 import React from 'react';
-import { createFromIconfontCN } from '@oceanbase/icons';
-import { Space } from '@oceanbase/design';
+import { createFromIconfontCN } from '@eflag/icons';
+import { Space } from '@eflag/design';
 
 const IconFont = createFromIconfontCN({
   scriptUrl: [

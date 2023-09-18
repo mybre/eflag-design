@@ -1,5 +1,5 @@
-import * as React from 'react';
-import type { DirectionType } from '@oceanbase/design/es/config-provider';
+import React from 'react';
+import type { DirectionType } from '@eflag/design/es/config-provider';
 import type { ThemeName } from '../common/ThemeSwitch';
 
 export interface SiteContextProps {

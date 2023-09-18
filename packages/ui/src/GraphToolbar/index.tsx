@@ -1,7 +1,7 @@
-import { FullscreenOutlined, MinusOutlined, PlusOutlined, SyncOutlined } from '@oceanbase/icons';
+import { FullscreenOutlined, MinusOutlined, PlusOutlined, SyncOutlined } from '@eflag/icons';
 import type { Graph } from '@antv/g6';
-import { toPercent } from '@oceanbase/util';
-import { Divider, Space, Tooltip } from '@oceanbase/design';
+import { toPercent } from '@eflag/util';
+import { Divider, Space, Tooltip } from '@eflag/design';
 import { debounce } from 'lodash';
 import React, { useEffect, useState } from 'react';
 import type { LocaleWrapperProps } from '../locale/LocaleWrapper';

@@ -1,5 +1,5 @@
-import { Button } from '@oceanbase/design';
-import { Dialog } from '@oceanbase/ui';
+import { Button } from '@eflag/design';
+import { Dialog } from '@eflag/ui';
 import { debounce } from 'lodash';
 import { useCallback, useEffect, useState } from 'react';
 

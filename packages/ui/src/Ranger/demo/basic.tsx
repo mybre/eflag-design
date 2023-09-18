@@ -1,4 +1,4 @@
-import { Ranger } from '@oceanbase/ui';
+import { Ranger } from '@eflag/ui';
 import dayjs from 'dayjs';
 
 export default () => (

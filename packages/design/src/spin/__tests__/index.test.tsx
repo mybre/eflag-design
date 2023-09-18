@@ -1,17 +1,17 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { Spin } from '@oceanbase/design';
+import { Spin } from '@eflag/design';
 
 describe('Spin', () => {
   it('default indicator should render correctly', () => {
     const { container, asFragment } = render(<Spin />);
-    expect(container.querySelector('.ant-spin-oceanbase')).toBeTruthy();
+    expect(container.querySelector('.ant-spin-eflag')).toBeTruthy();
     expect(asFragment().firstChild).toMatchSnapshot();
   });
 
   it('gray default indicator should render correctly', () => {
     const { container, asFragment } = render(<Spin gray={true} />);
-    expect(container.querySelector('.ant-spin-oceanbase-gray')).toBeTruthy();
+    expect(container.querySelector('.ant-spin-eflag-gray')).toBeTruthy();
     expect(asFragment().firstChild).toMatchSnapshot();
   });
 
@@ -20,7 +20,7 @@ describe('Spin', () => {
       <Spin indicator={<div className="custom-indicator" />} />
     );
     expect(container.querySelector('.custom-indicator')).toBeTruthy();
-    expect(container.querySelector('.ant-spin-oceanbase')).toBeFalsy();
+    expect(container.querySelector('.ant-spin-eflag')).toBeFalsy();
     expect(asFragment().firstChild).toMatchSnapshot();
   });
 });

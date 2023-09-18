@@ -1,6 +1,6 @@
 import React from 'react';
-import { CheckCircleTwoTone, HeartTwoTone, SmileTwoTone } from '@oceanbase/icons';
-import { Space } from '@oceanbase/design';
+import { CheckCircleTwoTone, HeartTwoTone, SmileTwoTone } from '@eflag/icons';
+import { Space } from '@eflag/design';
 
 const App: React.FC = () => (
   <Space>

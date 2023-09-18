@@ -1,5 +1,5 @@
 import React from 'react';
-import { Alert, Space, Spin, token } from '@oceanbase/design';
+import { Alert, Space, Spin, token } from '@eflag/design';
 
 const containerStyle = {
   padding: 50,

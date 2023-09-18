@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tabs } from '@oceanbase/design';
+import { Tabs } from '@eflag/design';
 
 const LANGS = {
   tsx: 'TypeScript',

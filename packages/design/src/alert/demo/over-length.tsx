@@ -1,5 +1,5 @@
 import React from 'react';
-import { Alert, Button, Space } from '@oceanbase/design';
+import { Alert, Button, Space } from '@eflag/design';
 
 const onClose = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
   console.log(e, 'I was closed.');

@@ -1,5 +1,5 @@
 import React from 'react';
-import Icon from '@oceanbase/icons';
+import Icon from '@eflag/icons';
 
 const LoadingSvg = () => (
   <svg

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Score } from '@oceanbase/charts';
+import { Score } from '@eflag/charts';
 
 export default () => {
   return (

@@ -5,8 +5,8 @@ import {
   parentSelectorLinter,
   StyleProvider,
 } from '@ant-design/cssinjs';
-import { App, theme as obTheme } from '@oceanbase/design';
-import type { DirectionType } from '@oceanbase/design/es/config-provider';
+import { App, theme as obTheme } from '@eflag/design';
+import type { DirectionType } from '@eflag/design/es/config-provider';
 import { usePrefersColor, createSearchParams, useOutlet, useSearchParams } from 'dumi';
 import React, { useCallback, useEffect, useMemo } from 'react';
 import useLayoutState from '../../hooks/useLayoutState';

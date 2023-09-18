@@ -6,7 +6,7 @@ nav:
 ---
 
 - 🔥 完全兼容 antd [Descriptions](https://ant.design/components/descriptions-cn) 的能力和 API，可无缝切换。
-- 💄 定制主题和全局样式，符合 OceanBase Design 设计规范。
+- 💄 定制主题和全局样式，符合 Eflag Design 设计规范。
 - 🆕 无边框模式下，Descriptions.Item 内容超长自动 `ellipsis`，并展示 `Tooltip`。
 - 🆕 无边框模式下，Descriptions.Item 新增 `contentProps` 属性，可设置省略、编辑、复制等内容属性。
 

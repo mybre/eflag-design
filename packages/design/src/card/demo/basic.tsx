@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card } from '@oceanbase/design';
+import { Card } from '@eflag/design';
 
 const App: React.FC = () => (
   <>

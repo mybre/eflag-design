@@ -1,4 +1,4 @@
-import { DualAxes } from '@oceanbase/charts';
+import { DualAxes } from '@eflag/charts';
 
 export default () => {
   const uvBillData = [

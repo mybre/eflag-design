@@ -22,7 +22,7 @@ nav:
 
 ```tsx | pure
 import React, { useState } from 'react';
-import { ConfigProvider } from '@oceanbase/design';
+import { ConfigProvider } from '@eflag/design';
 
 const App: React.FC = () => {
   return (

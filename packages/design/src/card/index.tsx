@@ -1,4 +1,4 @@
-import { isNullValue } from '@oceanbase/util';
+import { isNullValue } from '@eflag/util';
 import { Card as AntCard, Space, Tag } from 'antd';
 import type {
   CardProps as AntCardProps,

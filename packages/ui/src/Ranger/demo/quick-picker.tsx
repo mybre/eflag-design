@@ -1,4 +1,4 @@
-import { Ranger } from '@oceanbase/ui';
+import { Ranger } from '@eflag/ui';
 
 export default () => {
   const handleChange = range => {

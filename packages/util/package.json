@@ -1,16 +1,16 @@
 {
-  "name": "@oceanbase/util",
-  "version": "0.2.6",
-  "description": "The Util Library for OceanBase",
+  "name": "@eflag/util",
+  "version": "0.2.7",
+  "description": "The Util Library for Eflag",
   "keywords": [
-    "OceanBase",
+    "Eflag",
     "database",
     "util"
   ],
-  "homepage": "https://github.com/oceanbase/oceanbase-design/packages/util",
+  "homepage": "https://github.com/mybre/eflag-design/packages/util",
   "repository": {
     "type": "git",
-    "url": "git@github.com:oceanbase/design.git"
+    "url": "git@github.com:mybre/eflag-design.git"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
@@ -29,7 +29,8 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "father build"
+    "build": "father build",
+    "cleanNodeModels": "rimraf node_modules"
   },
   "dependencies": {
     "ahooks": "^2.10.14",
@@ -37,7 +38,8 @@
     "is-url": "^1.2.4",
     "lodash": "^4.17.21",
     "moment": "^2.29.4",
-    "query-string": "^8.1.0"
+    "query-string": "^8.1.0",
+    "rimraf": "^5.0.1"
   },
   "peerDependencies": {
     "react": ">=16.9.0"

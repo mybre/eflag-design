@@ -1,7 +1,7 @@
 /**
  * iframe: 600
  */
-import { GraphToolbar } from '@oceanbase/ui';
+import { GraphToolbar } from '@eflag/ui';
 
 export default () => {
   return <GraphToolbar mode="fixed" />;

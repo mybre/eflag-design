@@ -3,9 +3,9 @@
  * iframe: true
  */
 
-import { ArrowUpOutlined } from '@oceanbase/icons';
-import { BackTop } from '@oceanbase/design';
-import { SideTip } from '@oceanbase/ui';
+import { ArrowUpOutlined } from '@eflag/icons';
+import { BackTop } from '@eflag/design';
+import { SideTip } from '@eflag/ui';
 
 export default () => {
   return (

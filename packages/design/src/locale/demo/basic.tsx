@@ -12,9 +12,9 @@ import {
   Table,
   TimePicker,
   Transfer,
-} from '@oceanbase/design';
-import enUS from '@oceanbase/design/locale/en-US';
-import zhCN from '@oceanbase/design/locale/zh-CN';
+} from '@eflag/design';
+import enUS from '@eflag/design/locale/en-US';
+import zhCN from '@eflag/design/locale/zh-CN';
 import dayjs from 'dayjs';
 import 'dayjs/locale/zh-cn';
 import weekday from 'dayjs/plugin/weekday';

@@ -1,5 +1,5 @@
-import { Space } from '@oceanbase/design';
-import { Ranger } from '@oceanbase/ui';
+import { Space } from '@eflag/design';
+import { Ranger } from '@eflag/ui';
 
 export default () => (
   <Space size={24} direction="vertical">

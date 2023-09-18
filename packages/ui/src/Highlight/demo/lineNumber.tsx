@@ -2,7 +2,7 @@
  * title: 展示代码块行号
  */
 
-import { Highlight } from '@oceanbase/ui';
+import { Highlight } from '@eflag/ui';
 
 export default () => (
   <Highlight lineNumber={true}>

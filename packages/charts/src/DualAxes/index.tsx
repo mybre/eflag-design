@@ -5,7 +5,7 @@ import { DualAxes as AntDualAxes } from '@ant-design/charts';
 import type { GeometryColumnOption } from '@antv/g2plot/esm/plots/dual-axes/types';
 // @ts-ignore
 import type { Axis } from '@antv/g2plot/esm/types/axis';
-import { sortByMoment } from '@oceanbase/util';
+import { sortByMoment } from '@eflag/util';
 import useResizeObserver from 'use-resize-observer';
 import type { Tooltip } from '../hooks/useTooltipScrollable';
 import useTooltipScrollable from '../hooks/useTooltipScrollable';

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Area } from '@oceanbase/charts';
+import { Area } from '@eflag/charts';
 
 export default () => {
   const [data, setData] = useState([]);

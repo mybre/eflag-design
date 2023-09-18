@@ -1,4 +1,4 @@
-import { Button, Space, Tooltip } from '@oceanbase/design';
+import { Button, Space, Tooltip } from '@eflag/design';
 import React from 'react';
 
 const App: React.FC = () => {

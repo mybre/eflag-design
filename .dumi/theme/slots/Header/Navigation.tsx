@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { FormattedMessage, Link, useLocation } from 'dumi';
-import { Badge } from '@oceanbase/design';
-import type { MenuProps } from '@oceanbase/design';
-import { Menu } from '@oceanbase/design';
-import { MenuOutlined } from '@oceanbase/icons';
+import { Badge } from '@eflag/design';
+import type { MenuProps } from '@eflag/design';
+import { Menu } from '@eflag/design';
+import { MenuOutlined } from '@eflag/icons';
 import { css } from '@emotion/react';
 import { getEcosystemGroup } from './More';
 import type { SharedProps } from './interface';
@@ -120,7 +120,7 @@ export default ({
     {
       label: (
         <a
-          href="https://github.com/oceanbase/oceanbase-design"
+          href="https://github.com/mybre/eflag-design"
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -6,11 +6,11 @@ group: 基础组件
 
 ## 使用 CodeSandbox 快速创建
 
-- 可以使用我们提供的 [CodeSandbox 模板](https://codesandbox.io/s/oceanbase-design-reproduction-template-k26fm5) 快速创建和预览。
+- 可以使用我们提供的 [CodeSandbox 模板](https://codesandbox.io/s/oceanbase-design-reproduction-template-forked-p7vljw) 快速创建和预览。
 
-<iframe src="https://codesandbox.io/embed/oceanbase-design-reproduction-template-k26fm5?fontsize=14&hidenavigation=1&theme=dark"
+<iframe src="https://codesandbox.io/s/oceanbase-design-reproduction-template-forked-p7vljw?fontsize=14&hidenavigation=1&theme=dark"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
-     title="@oceanbase/design reproduction template"
+     title="@eflag/design reproduction template"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
@@ -20,13 +20,13 @@ group: 基础组件
 ### 安装
 
 ```bash
-$ npm i @oceanbase/design --save
+$ npm i @eflag/design --save
 ```
 
 ### 示例
 
 ```jsx | pure
-import { Table } from '@oceanbase/design';
+import { Table } from '@eflag/design';
 
 const App = () => {
   const dataSource = [

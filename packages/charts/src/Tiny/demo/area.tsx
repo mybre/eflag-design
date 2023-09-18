@@ -1,5 +1,5 @@
-import { TinyArea, useTheme } from '@oceanbase/charts';
-import { Col, Row } from '@oceanbase/design';
+import { TinyArea, useTheme } from '@eflag/charts';
+import { Col, Row } from '@eflag/design';
 
 export default () => {
   const themeConfig = useTheme();

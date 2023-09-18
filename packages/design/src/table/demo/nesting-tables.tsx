@@ -1,8 +1,8 @@
 import React from 'react';
-import type { TableColumnsType } from '@oceanbase/design';
-import { Badge, Dropdown, Space, Table } from '@oceanbase/design';
+import type { TableColumnsType } from '@eflag/design';
+import { Badge, Dropdown, Space, Table } from '@eflag/design';
 import type { SizeType } from 'antd/es/config-provider/SizeContext';
-import { DownOutlined } from '@oceanbase/icons';
+import { DownOutlined } from '@eflag/icons';
 
 interface DataType {
   key: React.Key;

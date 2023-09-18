@@ -191,7 +191,7 @@ const GlobalStyle: React.FC = () => {
             font-size: 30px;
           }
         }
-        .oceanbase-design-site-snippet {
+        .eflag-design-site-snippet {
           .ant-tabs-tab {
             .snippet-label {
               display: flex;
@@ -312,7 +312,7 @@ const GlobalStyle: React.FC = () => {
               text-align: left;
               border: 1px solid ${token.colorSplit};
 
-              &:first-child {
+              &:first-of-child {
                 border-left: 1px solid ${token.colorSplit};
               }
 
@@ -322,6 +322,12 @@ const GlobalStyle: React.FC = () => {
 
               img {
                 max-width: unset;
+              }
+            }
+
+            td {
+              &:nth-of-child(3) {
+                color: ${token.magenta7};
               }
             }
 
@@ -358,7 +364,7 @@ const GlobalStyle: React.FC = () => {
 
             td {
               border-width: 1px 0;
-              &:first-child {
+              &:first-of-child {
                 width: 18%;
                 min-width: 58px;
                 color: #595959;
@@ -366,32 +372,32 @@ const GlobalStyle: React.FC = () => {
                 white-space: nowrap;
               }
 
-              &:nth-child(2) {
+              &:nth-of-child(2) {
                 width: 55%;
                 min-width: 160px;
               }
 
-              &:nth-child(3) {
+              &:nth-of-child(3) {
                 width: 22%;
                 color: ${token.magenta7};
                 font-size: ${Math.max(token.fontSize - 1, 12)}px;
               }
 
-              &:nth-child(4) {
+              &:nth-of-child(4) {
                 width: 15%;
                 font-size: ${Math.max(token.fontSize - 1, 12)}px;
               }
 
-              &:nth-child(5) {
+              &:nth-of-child(5) {
                 width: 8%;
                 font-size: ${Math.max(token.fontSize - 1, 12)}px;
               }
 
-              &:nth-last-child(3):first-child {
+              &:nth-last-of-child(3):first-of-child {
                 width: 38%;
               }
 
-              &:nth-last-child(3):first-child ~ td:nth-last-child(2) {
+              &:nth-last-of-child(3):first-of-child ~ td:nth-last-of-child(2) {
                 width: 70%;
               }
             }
@@ -414,7 +420,7 @@ const GlobalStyle: React.FC = () => {
             padding: 16px 0;
             background: ${demoGridColor};
 
-            &:nth-child(2n + 1) {
+            &:nth-of-child(2n + 1) {
               background: ${new TinyColor(demoGridColor).setAlpha(0.75).toHex8String()};
             }
           }

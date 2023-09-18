@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Card, Form, Radio, Switch } from '@oceanbase/design';
+import { Card, Form, Radio, Switch } from '@eflag/design';
 
 const tabList = [
   {

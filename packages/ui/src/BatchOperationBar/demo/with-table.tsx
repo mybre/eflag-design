@@ -3,10 +3,10 @@
  * transform: true
  */
 
-import { Table } from '@oceanbase/design';
-import type { ColumnsType } from '@oceanbase/design/es/table';
-import { BatchOperationBar } from '@oceanbase/ui';
-import type { AlertRenderParams } from '@oceanbase/ui/es/BatchOperationBar';
+import { Table } from '@eflag/design';
+import type { ColumnsType } from '@eflag/design/es/table';
+import { BatchOperationBar } from '@eflag/ui';
+import type { AlertRenderParams } from '@eflag/ui/es/BatchOperationBar';
 import React, { useState } from 'react';
 
 interface DataType {

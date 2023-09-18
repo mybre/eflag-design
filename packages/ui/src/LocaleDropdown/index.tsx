@@ -1,7 +1,7 @@
-import { GlobalOutlined } from '@oceanbase/icons';
-import { findByValue } from '@oceanbase/util';
-import { Dropdown, Menu, Space } from '@oceanbase/design';
-import type { DropdownProps } from '@oceanbase/design/es/dropdown';
+import { GlobalOutlined } from '@eflag/icons';
+import { findByValue } from '@eflag/util';
+import { Dropdown, Menu, Space } from '@eflag/design';
+import type { DropdownProps } from '@eflag/design/es/dropdown';
 import React from 'react';
 import { LOCALE_LIST } from '../constant';
 import type { Locale } from '../interface';
