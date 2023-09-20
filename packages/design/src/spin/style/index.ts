@@ -13,7 +13,7 @@ const genSizeStyle = (spinDotSize: number, token: SpinToken): CSSObject => {
   const spinDotWidth = spinDotSize;
   const spinDotHight = spinDotWidth * (295 / 397);
   return {
-    // only work for oceanbase indicator
+    // only work for eflag indicator
     [`&${componentCls}-eflag`]: {
       [`${componentCls}-dot`]: {
         width: spinDotWidth,

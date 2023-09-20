@@ -37,7 +37,7 @@
     "cleanNodeModels": "rimraf node_modules"
   },
   "dependencies": {
-    "@ant-design/cssinjs": "^1.16.2",
+    "@ant-design/cssinjs": "^1.17.0",
     "@eflag/icons": "workspace:^",
     "@eflag/util": "workspace:^",
     "ahooks": "^2.10.14",
