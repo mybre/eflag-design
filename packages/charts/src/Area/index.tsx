@@ -1,7 +1,7 @@
 import React, { useRef, forwardRef } from 'react';
 import type { AreaConfig as AntAreaConfig } from '@ant-design/charts';
 import { Area as AntArea } from '@ant-design/charts';
-import { sortByMoment } from '@oceanbase/util';
+import { sortByMoment } from '@eflag/util';
 import { composeRef } from 'rc-util/es/ref';
 import type { Tooltip } from '../hooks/useTooltipScrollable';
 import useTooltipScrollable from '../hooks/useTooltipScrollable';
@@ -55,17 +55,17 @@ const Area = forwardRef<unknown, AreaConfig>(
           xAxis?.grid === null
             ? null
             : {
-                ...xAxis?.grid,
-                line: {
-                  ...xAxis?.grid?.line,
-                  style: {
-                    lineWidth: themeConfig.styleSheet.axisGridBorder,
-                    stroke: themeConfig.styleSheet.axisGridBorderColor,
-                    lineDash: [4, 4],
-                    ...xAxis?.grid?.line?.style,
-                  },
+              ...xAxis?.grid,
+              line: {
+                ...xAxis?.grid?.line,
+                style: {
+                  lineWidth: themeConfig.styleSheet.axisGridBorder,
+                  stroke: themeConfig.styleSheet.axisGridBorderColor,
+                  lineDash: [4, 4],
+                  ...xAxis?.grid?.line?.style,
                 },
               },
+            },
       },
       yAxis: yAxis !== false && {
         // 避免超出 Y 轴刻度线

@@ -1,9 +1,9 @@
 {
-  "name": "@oceanbase/design",
+  "name": "@eflag/design",
   "version": "0.2.20",
-  "description": "The Design System of OceanBase",
+  "description": "The Design System of eflag",
   "keywords": [
-    "oceanbase",
+    "eflag",
     "design",
     "ui",
     "react",
@@ -36,8 +36,8 @@
   },
   "dependencies": {
     "@ant-design/cssinjs": "^1.17.0",
-    "@oceanbase/icons": "workspace:^",
-    "@oceanbase/util": "workspace:^",
+    "@eflag/icons": "workspace:^",
+    "@eflag/util": "workspace:^",
     "ahooks": "^2.10.14",
     "antd": "^5.9.0",
     "classnames": "^2.3.2",

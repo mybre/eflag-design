@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { message } from '@oceanbase/design';
+import { message } from '@eflag/design';
 import { useIntl } from 'dumi';
 import CopyableIcon from './CopyableIcon';
 import type { ThemeType } from './index';

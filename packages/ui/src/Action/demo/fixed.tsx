@@ -1,4 +1,4 @@
-import { Action } from '@oceanbase/ui';
+import { Action } from '@eflag/ui';
 
 export default () => {
   return (

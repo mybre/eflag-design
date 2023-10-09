@@ -2,8 +2,8 @@
  * iframe: 600
  */
 import React from 'react';
-import { message } from '@oceanbase/design';
-import { Welcome } from '@oceanbase/ui';
+import { message } from '@eflag/design';
+import { Welcome } from '@eflag/ui';
 
 export default () => {
   const introduces = [
@@ -81,8 +81,8 @@ export default () => {
   ];
   return (
     <Welcome
-      title="Hi，欢迎使用 OceanBase 云平台"
-      description="OceanBase 云平台 (OceanBase Cloud Platform，OCP) 是用于管控 OceanBase 数据库集群的平台。通过 OCP，您可以对 OceanBase 集群进行安装、部署、监控、告警等全生命周期管理。我们致力于提供高效的管理服务，为您创造更多价值。"
+      title="Hi，欢迎使用 eflag 云平台"
+      description="eflag 云平台 (eflag Cloud Platform，OCP) 是用于管控 eflag 数据库集群的平台。通过 OCP，您可以对 eflag 集群进行安装、部署、监控、告警等全生命周期管理。我们致力于提供高效的管理服务，为您创造更多价值。"
       bgImage="https://gw-office.alipayobjects.com/bmw-prod/37822958-2b90-4414-a61b-581c0b744c13.png"
       introduces={introduces}
       steps={steps}

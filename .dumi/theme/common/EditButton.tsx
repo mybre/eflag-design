@@ -1,6 +1,6 @@
 import React from 'react';
-import { Tooltip } from '@oceanbase/design';
-import { EditOutlined } from '@oceanbase/icons';
+import { Tooltip } from '@eflag/design';
+import { EditOutlined } from '@eflag/icons';
 import { css } from '@emotion/react';
 import useSiteToken from '../../hooks/useSiteToken';
 

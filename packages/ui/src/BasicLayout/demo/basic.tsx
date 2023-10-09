@@ -2,9 +2,9 @@
  * iframe: 600
  */
 import React from 'react';
-import { Menu, message } from '@oceanbase/design';
-import { BasicLayout, IconFont, Lottie } from '@oceanbase/ui';
-import Icon from '@oceanbase/icons';
+import { Menu, message } from '@eflag/design';
+import { BasicLayout, IconFont, Lottie } from '@eflag/ui';
+import Icon from '@eflag/icons';
 import PageContainerCompleteDemo from '../../PageContainer/demo/complete';
 import { ReactComponent as MonitorSvg } from '../../assets/monitor.svg';
 

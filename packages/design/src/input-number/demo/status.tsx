@@ -1,6 +1,6 @@
 import React from 'react';
-import { InputNumber, Space } from '@oceanbase/design';
-import { ClockCircleOutlined } from '@oceanbase/icons';
+import { InputNumber, Space } from '@eflag/design';
+import { ClockCircleOutlined } from '@eflag/icons';
 
 const App: React.FC = () => (
   <Space direction="vertical" style={{ width: '100%' }}>

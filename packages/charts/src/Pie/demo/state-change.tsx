@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Pie } from '@oceanbase/charts';
+import { Pie } from '@eflag/charts';
 
 const Demo: React.FC = () => {
   const [count, setCount] = useState(1);

@@ -1,4 +1,4 @@
-[OceanBase Design](https://design.oceanbase.com) is an enterprise-class design system based on [Ant Design](https://ant.design) and extending it. Help OceanBase ecology and designers/developers building professional products.
+[eflag Design](https://design.oceanbase.com) is an enterprise-class design system based on [Ant Design](https://ant.design) and extending it. Help eflag ecology and designers/developers building professional products.
 
 ## 📋 Documentation
 
@@ -6,9 +6,9 @@
 
 ## 🔨 Usage
 
-- [@oceanbase/design](https://design.oceanbase.com/docs/design-introduce)
-- [@oceanbase/ui](https://design.oceanbase.com/docs/ui-introduce)
-- [@oceanbase/charts](https://design.oceanbase.com/docs/charts-introduce)
+- [@eflag/design](https://design.oceanbase.com/docs/design-introduce)
+- [@eflag/ui](https://design.oceanbase.com/docs/ui-introduce)
+- [@eflag/charts](https://design.oceanbase.com/docs/charts-introduce)
 
 ## ⌨️ Development
 
@@ -36,4 +36,4 @@ Open your browser and visit http://127.0.0.1:8000.
 
 ## ⚖️ License
 
-MIT © [OceanBase](https://github.com/oceanbase)
+MIT © [eflag](https://github.com/oceanbase)

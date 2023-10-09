@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
-import { Button } from '@oceanbase/design';
-import { Dialog } from '@oceanbase/ui';
+import { Button } from '@eflag/design';
+import { Dialog } from '@eflag/ui';
 import { debounce } from 'lodash';
 
 const docLink = 'https://www.oceanbase.com/docs/enterprise';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { InputNumber, Space } from '@oceanbase/design';
+import { InputNumber, Space } from '@eflag/design';
 
 const onChange = (value: number | string) => {
   console.log('changed', value);

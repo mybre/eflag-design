@@ -2,7 +2,7 @@
  * title: 指定语言
  */
 import React from 'react';
-import { Highlight } from '@oceanbase/ui';
+import { Highlight } from '@eflag/ui';
 
 export default () => (
   <Highlight language="java" theme="dark">

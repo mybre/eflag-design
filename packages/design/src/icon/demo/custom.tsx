@@ -1,7 +1,7 @@
 import React from 'react';
-import Icon, { HomeOutlined } from '@oceanbase/icons';
-import type { CustomIconComponentProps } from '@oceanbase/icons/es/components/Icon';
-import { Space } from '@oceanbase/design';
+import Icon, { HomeOutlined } from '@eflag/icons';
+import type { CustomIconComponentProps } from '@eflag/icons/es/components/Icon';
+import { Space } from '@eflag/design';
 
 const HeartSvg = () => (
   <svg width="1em" height="1em" fill="currentColor" viewBox="0 0 1024 1024">

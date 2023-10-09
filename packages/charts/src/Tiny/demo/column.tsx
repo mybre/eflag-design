@@ -1,6 +1,6 @@
 import React from 'react';
-import { TinyColumn } from '@oceanbase/charts';
-import { Col, Row } from '@oceanbase/design';
+import { TinyColumn } from '@eflag/charts';
+import { Col, Row } from '@eflag/design';
 
 export default () => {
   const data = [274, 337, 81, 497, 666, 219, 269];

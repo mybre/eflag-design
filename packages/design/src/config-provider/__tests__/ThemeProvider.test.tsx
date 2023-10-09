@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { ConfigProvider, useToken } from '@oceanbase/design';
-import { PageContainer } from '@oceanbase/ui';
+import { ConfigProvider, useToken } from '@eflag/design';
+import { PageContainer } from '@eflag/ui';
 import { ThemeProvider } from 'antd-style';
 
 describe('ConfigProvider theme with ThemeProvider', () => {

@@ -1,9 +1,9 @@
 {
-  "name": "@oceanbase/icons",
+  "name": "@eflag/icons",
   "version": "0.2.7",
-  "description": "The Icon Library for OceanBase",
+  "description": "The Icon Library for eflag",
   "keywords": [
-    "oceanbase",
+    "eflag",
     "design",
     "icon",
     "react",

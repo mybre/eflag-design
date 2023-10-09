@@ -1,6 +1,6 @@
 import React from 'react';
-import { Score } from '@oceanbase/charts';
-import { Col, Row } from '@oceanbase/design';
+import { Score } from '@eflag/charts';
+import { Col, Row } from '@eflag/design';
 import { range } from 'lodash';
 
 export default () => {

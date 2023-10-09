@@ -6,7 +6,7 @@ nav:
 ---
 
 - 🔥 完全兼容 antd [Card](https://ant.design/components/card-cn) 的能力和 API，可无缝切换。
-- 💄 定制主题和样式（火柴棍宽度等），符合 OceanBase Design 设计规范。
+- 💄 定制主题和样式（火柴棍宽度等），符合 eflag Design 设计规范。
 - 🆕 新增 `divided` 属性，控制是否展示分割线。
 - 🆕 `tabList` 新增 `tag` 属性，用于设置选项卡后面的标签。
 

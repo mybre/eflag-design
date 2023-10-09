@@ -7,7 +7,7 @@ import {
   Loading3QuartersOutlined,
   StopFilled,
   ClockCircleFilled,
-} from '@oceanbase/icons';
+} from '@eflag/icons';
 import classNames from 'classnames';
 import ConfigProvider from '../config-provider';
 import useStyle from './style';

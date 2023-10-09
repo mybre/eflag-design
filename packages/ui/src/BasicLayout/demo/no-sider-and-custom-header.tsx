@@ -2,14 +2,14 @@
  * iframe: 600
  */
 import React, { useState } from 'react';
-import { Button, Card, Space, Steps } from '@oceanbase/design';
-import { BasicLayout, PageContainer } from '@oceanbase/ui';
+import { Button, Card, Space, Steps } from '@eflag/design';
+import { BasicLayout, PageContainer } from '@eflag/ui';
 import {
   CheckCircleOutlined,
   ClockCircleOutlined,
   HomeOutlined,
   ReadOutlined,
-} from '@oceanbase/icons';
+} from '@eflag/icons';
 
 export default () => {
   const [current, setCurrent] = useState(0);

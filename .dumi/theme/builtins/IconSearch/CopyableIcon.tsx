@@ -1,8 +1,8 @@
 import * as React from 'react';
 import CopyToClipboard from 'react-copy-to-clipboard';
-import { Badge, message } from '@oceanbase/design';
+import { Badge, message } from '@eflag/design';
 import classNames from 'classnames';
-import * as ObIcons from '@oceanbase/icons';
+import * as ObIcons from '@eflag/icons';
 import type { ThemeType } from './index';
 
 const allIcons: {

@@ -1,5 +1,5 @@
-import { Button, Dropdown, Menu, Space, Tooltip, Typography } from '@oceanbase/design';
-import { EllipsisOutlined, LoadingOutlined } from '@oceanbase/icons';
+import { Button, Dropdown, Menu, Space, Tooltip, Typography } from '@eflag/design';
+import { EllipsisOutlined, LoadingOutlined } from '@eflag/icons';
 import { isBoolean, max, omit } from 'lodash';
 import React from 'react';
 import type { BaseProps } from './Item';
@@ -7,12 +7,12 @@ import type { BaseProps } from './Item';
 export interface GroupProps {
   size?: number;
   dropDownPlacement?:
-    | 'topLeft'
-    | 'topCenter'
-    | 'topRight'
-    | 'bottomLeft'
-    | 'bottomCenter'
-    | 'bottomRight';
+  | 'topLeft'
+  | 'topCenter'
+  | 'topRight'
+  | 'bottomLeft'
+  | 'bottomCenter'
+  | 'bottomRight';
   children: React.ReactElement<BaseProps> | React.ReactElement<BaseProps>[];
   shouldVisible?: (key: string) => boolean;
   shouldDisabled?: (key: string) => boolean;
@@ -46,12 +46,12 @@ export default ({
 }: GroupProps) => {
   const visibleActions = Array.isArray(children)
     ? children.filter(c => {
-        if (isBoolean(c.props.visible) && shouldVisible)
-          return c.props.visible && shouldVisible(c.key as string);
-        if (isBoolean(c.props.visible)) return c.props.visible;
-        else if (shouldVisible) return shouldVisible(c.key as string);
-        return true;
-      })
+      if (isBoolean(c.props.visible) && shouldVisible)
+        return c.props.visible && shouldVisible(c.key as string);
+      if (isBoolean(c.props.visible)) return c.props.visible;
+      else if (shouldVisible) return shouldVisible(c.key as string);
+      return true;
+    })
     : [children];
 
   const visibleActionsSort = visibleActions.slice(0);

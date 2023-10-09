@@ -1,6 +1,6 @@
 import React from 'react';
-import { Layout } from '@oceanbase/design';
-import { NavMenu } from '@oceanbase/ui';
+import { Layout } from '@eflag/design';
+import { NavMenu } from '@eflag/ui';
 import './style.less';
 
 const { Sider } = Layout;

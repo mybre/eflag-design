@@ -1,4 +1,4 @@
-import { Card } from '@oceanbase/design';
+import { Card } from '@eflag/design';
 import React from 'react';
 
 const App: React.FC = () => (

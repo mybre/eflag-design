@@ -2,7 +2,7 @@
  * title: 多段代码渲染
  */
 import React from 'react';
-import { Highlight } from '@oceanbase/ui';
+import { Highlight } from '@eflag/ui';
 
 export default () => (
   <Highlight innerHTML theme="dark">

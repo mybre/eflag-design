@@ -3,7 +3,7 @@ import 'jest-canvas-mock';
 import { enableFetchMocks } from 'jest-fetch-mock';
 import MockDate from 'mockdate';
 import React from 'react';
-import { theme } from '@oceanbase/design';
+import { theme } from '@eflag/design';
 
 // To ensure snapshot stable, should disable hashed in test env.
 theme.defaultConfig.hashed = false;
@@ -131,7 +131,7 @@ global.Worker = class {
     // @ts-ignore-next-line
     this.url = stringUrl;
     // @ts-ignore-next-line
-    this.onmessage = () => {};
+    this.onmessage = () => { };
   }
 
   postMessage(msg: string) {
@@ -141,7 +141,7 @@ global.Worker = class {
 };
 
 if (process.env.TEST_LOG === 'none') {
-  console.error = () => {};
-  console.warn = () => {};
-  console.log = () => {};
+  console.error = () => { };
+  console.warn = () => { };
+  console.log = () => { };
 }

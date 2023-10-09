@@ -1,5 +1,5 @@
 import type { CSSObject } from '@ant-design/cssinjs';
-import type { FullToken, GenerateStyle } from '@oceanbase/design/es/theme';
+import type { FullToken, GenerateStyle } from '@eflag/design/es/theme';
 import { genComponentStyleHook } from '../../_util/genComponentStyleHook';
 
 export type BasicLayoutToken = FullToken<any>;

@@ -1,4 +1,4 @@
-import { FloatButton } from '@oceanbase/design';
+import { FloatButton } from '@eflag/design';
 import { CompactTheme, DarkTheme, Motion } from 'antd-token-previewer/es/icons';
 import { FormattedMessage } from 'dumi';
 import React from 'react';

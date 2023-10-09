@@ -1,8 +1,8 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
-import { Tooltip } from '@oceanbase/design';
+import { Tooltip } from '@eflag/design';
 import { waitFakeTimer } from '../../../../../tests/util';
-import { CloseCircleOutlined } from '@oceanbase/icons';
+import { CloseCircleOutlined } from '@eflag/icons';
 
 describe('Tooltip', () => {
   beforeEach(() => {

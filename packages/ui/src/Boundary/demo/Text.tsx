@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button } from '@oceanbase/design';
+import { Button } from '@eflag/design';
 import LocaleWrapper from '../../locale/LocaleWrapper';
 import zhCN from '../locale/zh-CN';
 

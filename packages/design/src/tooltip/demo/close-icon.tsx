@@ -1,5 +1,5 @@
-import { Space, Tooltip, Button } from '@oceanbase/design';
-import { CloseCircleOutlined } from '@oceanbase/icons';
+import { Space, Tooltip, Button } from '@eflag/design';
+import { CloseCircleOutlined } from '@eflag/icons';
 import React, { useState } from 'react';
 
 const App: React.FC = () => {

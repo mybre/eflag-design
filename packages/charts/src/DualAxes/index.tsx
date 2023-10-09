@@ -5,7 +5,7 @@ import { DualAxes as AntDualAxes } from '@ant-design/charts';
 import type { GeometryColumnOption } from '@antv/g2plot/esm/plots/dual-axes/types';
 // @ts-ignore
 import type { Axis } from '@antv/g2plot/esm/types/axis';
-import { sortByMoment } from '@oceanbase/util';
+import { sortByMoment } from '@eflag/util';
 import { composeRef } from 'rc-util/es/ref';
 import type { Tooltip } from '../hooks/useTooltipScrollable';
 import useTooltipScrollable from '../hooks/useTooltipScrollable';
@@ -43,9 +43,9 @@ const DualAxes = forwardRef<unknown, DualAxesConfig>(
         // issue: https://github.com/antvis/G2/issues/3194
         xAxis && (xAxis?.type === 'time' || xAxis?.type === 'timeCat')
           ? [
-              data?.[0]?.sort((a, b) => sortByMoment(a, b, xField)) || [],
-              data?.[1]?.sort((a, b) => sortByMoment(a, b, xField)) || [],
-            ]
+            data?.[0]?.sort((a, b) => sortByMoment(a, b, xField)) || [],
+            data?.[1]?.sort((a, b) => sortByMoment(a, b, xField)) || [],
+          ]
           : data,
       xField,
       yField,
@@ -63,17 +63,17 @@ const DualAxes = forwardRef<unknown, DualAxesConfig>(
           xAxis?.grid === null
             ? null
             : {
-                ...xAxis?.grid,
-                line: {
-                  ...xAxis?.grid?.line,
-                  style: {
-                    lineWidth: themeConfig.styleSheet.axisGridBorder,
-                    stroke: themeConfig.styleSheet.axisGridBorderColor,
-                    lineDash: [4, 4],
-                    ...xAxis?.grid?.line?.style,
-                  },
+              ...xAxis?.grid,
+              line: {
+                ...xAxis?.grid?.line,
+                style: {
+                  lineWidth: themeConfig.styleSheet.axisGridBorder,
+                  stroke: themeConfig.styleSheet.axisGridBorderColor,
+                  lineDash: [4, 4],
+                  ...xAxis?.grid?.line?.style,
                 },
               },
+            },
       },
       yAxis: yAxis && {
         [yField1]: yAxis?.[yField1] !== false && {
@@ -127,8 +127,8 @@ const DualAxes = forwardRef<unknown, DualAxesConfig>(
                         seriesField &&
                         // 堆叠柱状图仅最后一段末端展示 2px 圆角
                         datum[seriesField] === lastStackValue)
-                    ? [2, 2, 0, 0]
-                    : [],
+                      ? [2, 2, 0, 0]
+                      : [],
               };
             },
           };

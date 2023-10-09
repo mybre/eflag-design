@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Stat } from '@oceanbase/charts';
-import type { StatConfig } from '@oceanbase/charts';
-import { Col, Row, Form, Radio } from '@oceanbase/design';
+import { Stat } from '@eflag/charts';
+import type { StatConfig } from '@eflag/charts';
+import { Col, Row, Form, Radio } from '@eflag/design';
 import { range } from 'lodash';
 
 export default () => {
@@ -16,8 +16,8 @@ export default () => {
     height,
     ...(extra
       ? {
-          [extra]: extra === 'prefix' ? '$' : 'USD',
-        }
+        [extra]: extra === 'prefix' ? '$' : 'USD',
+      }
       : {}),
     layout,
     colorMode,

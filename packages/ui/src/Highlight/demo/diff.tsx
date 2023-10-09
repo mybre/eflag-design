@@ -2,8 +2,8 @@
  * title: Diff 比较
  */
 import React from 'react';
-import { Select, Space, Switch } from '@oceanbase/design';
-import { Highlight } from '@oceanbase/ui';
+import { Select, Space, Switch } from '@eflag/design';
+import { Highlight } from '@eflag/ui';
 
 const languages = {
   // BASH
@@ -11,42 +11,42 @@ const languages = {
     // Source
     source: `
  #!/bin/bash
- 
+
  ###### CONFIG
  ACCEPTED_HOSTS="/root/.hag_accepted.conf"
  BE_VERBOSE=false
- 
+
  if [ "$UID" -ne 0 ]
  then
    echo "Superuser rights required"
    exit 2
  fi
- 
+
  genApacheConf(){
    echo -e "# Host \${HOME_DIR}$1/$2 :"
  }
- 
+
  echo '"quoted"' | tr -d \\/" > text.txt
      `.trim(),
 
     // Target
     target: `
  #!/bin/bash
- 
+
  ###### CONFIG
  ACCEPTED_HOSTS="/root/.backup_accepted.conf"
  BE_VERBOSE=true
- 
+
  if [ "$UID" -ne 0 ]
  then
    echo "Superuser rights required but not get"
    exit 2
  fi
- 
+
  genApacheConf(){
    echo -e "# Host \${HOME_DIR}$1/$2 :"
  }
- 
+
  echo '"quoted"' | tr -d \\/" > backup.txt
      `.trim(),
   },
@@ -56,8 +56,8 @@ const languages = {
     // Source
     source: `
  {
-   "name": "@oceanbase/design",
-   "description": "The Design System of OceanBase",
+   "name": "@eflag/design",
+   "description": "The Design System of eflag",
    "version": "1.0.0",
    "unpkg": "dist/design.min.js",
    "dumiAssets": "assets.json",
@@ -75,8 +75,8 @@ const languages = {
     // Target
     target: `
  {
-   "name": "@oceanbase/design",
-   "description": "The Design System of OceanBase",
+   "name": "@eflag/design",
+   "description": "The Design System of eflag",
    "version": "2.0.0",
    "main": "lib/index.js",
    "unpkg": "dist/design.min.js",
@@ -100,7 +100,7 @@ const languages = {
    value: string;
    onChange: (value: string) => void;
  }
- 
+
  const MyComponentProps = (props: MyComponentProps) => {
    const { value, onChange } = props;
    return (
@@ -118,7 +118,7 @@ const languages = {
    value?: string;
    onChange?: (value: string) => void;
  }
- 
+
  const MyComponentProps = ({ value, onChange }: MyComponentProps) => {
    return (
      <input
@@ -139,9 +139,9 @@ const languages = {
  function warning(...args) {
    console.error(...args);
  }
- 
+
  warning(\`[WARN]:
- You are using full version of @oceanbase/design. Please config TreeShaking to remove additional content.
+ You are using full version of @eflag/design. Please config TreeShaking to remove additional content.
  \`);
      `.trim(),
 
@@ -150,8 +150,8 @@ const languages = {
  function warning(...args) {
    console.error('[WARN]:', '\\n', ...args);
  }
- 
- warning('You are using full version of @oceanbase/design. Please config TreeShaking to remove additional content.');
+
+ warning('You are using full version of @eflag/design. Please config TreeShaking to remove additional content.');
      `.trim(),
   },
 };

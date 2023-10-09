@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { ConfigProvider, useToken } from '@oceanbase/design';
+import { ConfigProvider, useToken } from '@eflag/design';
 
 describe('ConfigProvider theme', () => {
   it('ConfigProvider theme token', () => {

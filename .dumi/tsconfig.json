@@ -6,11 +6,22 @@
     "resolveJsonModule": true,
     "baseUrl": "../",
     "paths": {
-      "@@/*": [".dumi/tmp/*"],
-      "@oceanbase/design": ["packages/design/src/index.ts"],
-      "@oceanbase/design/es/*": ["packages/design/src/*"],
-      "dumi/theme/*": [".dumi/theme/*"]
+      "@@/*": [
+        ".dumi/tmp/*"
+      ],
+      "@eflag/design": [
+        "packages/design/src/index.ts"
+      ],
+      "@eflag/design/es/*": [
+        "packages/design/src/*"
+      ],
+      "dumi/theme/*": [
+        ".dumi/theme/*"
+      ]
     }
   },
-  "include": ["./**/*", "../site/theme/template/Content"]
+  "include": [
+    "./**/*",
+    "../site/theme/template/Content"
+  ]
 }

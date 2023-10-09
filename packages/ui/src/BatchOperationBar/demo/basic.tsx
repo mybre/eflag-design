@@ -2,9 +2,9 @@
  * iframe: 500
  * transform: true
  */
-import { Button, Space, Table } from '@oceanbase/design';
-import type { ColumnsType } from '@oceanbase/design/es/table';
-import { BatchOperationBar } from '@oceanbase/ui';
+import { Button, Space, Table } from '@eflag/design';
+import type { ColumnsType } from '@eflag/design/es/table';
+import { BatchOperationBar } from '@eflag/ui';
 import React from 'react';
 
 interface DataType {

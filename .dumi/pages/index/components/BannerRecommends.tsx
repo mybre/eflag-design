@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { Typography, Carousel } from '@oceanbase/design';
-import { ArrowRightOutlined } from '@oceanbase/icons';
+import { Typography, Carousel } from '@eflag/design';
+import { ArrowRightOutlined } from '@eflag/icons';
 import type { SerializedStyles } from '@emotion/react';
 import { css } from '@emotion/react';
 import { Link } from 'dumi';
@@ -89,7 +89,7 @@ export interface BannerRecommendsProps {
   icons?: Icon[];
 }
 
-export default function BannerRecommends({}: BannerRecommendsProps) {
+export default function BannerRecommends({ }: BannerRecommendsProps) {
   const styles = useStyle();
   const { isMobile } = React.useContext(SiteContext);
 
@@ -97,19 +97,19 @@ export default function BannerRecommends({}: BannerRecommendsProps) {
     {
       key: 'components',
       title: '🌈 基础组件',
-      description: '基于 Ant Design 定制和扩展，形成 OceanBase 自有的视觉和交互风格',
+      description: '基于 Ant Design 定制和扩展，形成 eflag 自有的视觉和交互风格',
       href: '/components/button',
     },
     {
       key: 'biz-components',
       title: '📦 业务组件',
-      description: '从业务中来，提炼自 OceanBase 各个产品的通用能力',
+      description: '从业务中来，提炼自 eflag 各个产品的通用能力',
       href: '/biz-components/basic-layout',
     },
     {
       key: 'charts',
       title: '📈 可视化图表',
-      description: '基于 Ant Design Charts 定制和扩展，是 OceanBase 的图表最佳实践',
+      description: '基于 Ant Design Charts 定制和扩展，是 eflag 的图表最佳实践',
       href: '/charts/stat',
     },
   ];

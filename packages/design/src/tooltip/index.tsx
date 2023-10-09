@@ -1,7 +1,7 @@
 import { Tooltip as AntTooltip, Space } from 'antd';
 import type { TooltipPropsWithTitle as AntTooltipPropsWithTitle } from 'antd/es/tooltip';
 import React, { useContext, useMemo, useState } from 'react';
-import { CloseOutlined } from '@oceanbase/icons';
+import { CloseOutlined } from '@eflag/icons';
 import { isNil } from 'lodash';
 import { token } from '../static-function';
 import MouseTooltip from './MouseTooltip';

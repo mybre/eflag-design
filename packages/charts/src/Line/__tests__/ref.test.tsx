@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { render } from '@testing-library/react';
-import { Line } from '@oceanbase/charts';
+import { Line } from '@eflag/charts';
 
 describe('Line ref', () => {
   it('ref', () => {

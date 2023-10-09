@@ -2,8 +2,8 @@
  * iframe: 600
  */
 import React from 'react';
-import { message } from '@oceanbase/design';
-import { TaskGraph } from '@oceanbase/ui';
+import { message } from '@eflag/design';
+import { TaskGraph } from '@eflag/ui';
 
 export default () => {
   const data = {

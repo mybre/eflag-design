@@ -1,11 +1,11 @@
 import type { Graph } from '@antv/g6';
 import G6 from '@antv/g6';
 import type { GraphData } from '@antv/g6/lib/types';
-import { findByValue } from '@oceanbase/util';
-import { Dropdown, Menu, Typography } from '@oceanbase/design';
+import { findByValue } from '@eflag/util';
+import { Dropdown, Menu, Typography } from '@eflag/design';
 import { isEqual } from 'lodash';
 import React from 'react';
-import { token } from '@oceanbase/design';
+import { token } from '@eflag/design';
 import GraphToolbar from '../GraphToolbar';
 import type { LocaleWrapperProps } from '../locale/LocaleWrapper';
 import LocaleWrapper from '../locale/LocaleWrapper';

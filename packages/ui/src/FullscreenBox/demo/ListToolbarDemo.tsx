@@ -2,8 +2,8 @@
  * title: 和 ListToolbar 一起使用
  */
 import React, { useRef, useState } from 'react';
-import { Button } from '@oceanbase/design';
-import { FullscreenBox } from '@oceanbase/ui';
+import { Button } from '@eflag/design';
+import { FullscreenBox } from '@eflag/ui';
 import { SimpleTable } from './SimpleTable';
 
 export default () => {

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useContext } from 'react';
-import { Typography } from '@oceanbase/design';
+import { Typography } from '@eflag/design';
 import useSiteToken from '../../../hooks/useSiteToken';
 import SiteContext from '../../../theme/slots/SiteContext';
 
@@ -14,10 +14,10 @@ export function GroupMask({ children, style, disabled }: GroupMaskProps) {
   const additionalStyle: React.CSSProperties = disabled
     ? {}
     : {
-        position: 'relative',
-        backdropFilter: `blur(25px)`,
-        zIndex: 1,
-      };
+      position: 'relative',
+      backdropFilter: `blur(25px)`,
+      zIndex: 1,
+    };
 
   return (
     <div
@@ -55,11 +55,11 @@ export default function Group(props: GroupProps) {
   const marginStyle: React.CSSProperties = collapse
     ? {}
     : {
-        maxWidth: 1208,
-        marginInline: 'auto',
-        boxSizing: 'border-box',
-        paddingInline: isMobile ? token.margin : token.marginXXL,
-      };
+      maxWidth: 1208,
+      marginInline: 'auto',
+      boxSizing: 'border-box',
+      paddingInline: isMobile ? token.margin : token.marginXXL,
+    };
   const childNode = (
     <>
       <div style={{ textAlign: 'center' }}>

@@ -1,4 +1,4 @@
-import * as ObIcons from '@oceanbase/icons';
+import * as ObIcons from '@eflag/icons';
 
 const all = Object.keys(ObIcons)
   .map(n => n.replace(/(Outlined|Filled|TwoTone|Colored)$/, ''))
@@ -184,7 +184,7 @@ const logo = [
   'Google',
   'CodepenCircle',
   'Alipay',
-  '@oceanbase/designesign',
+  '@eflag/designesign',
   'AntCloud',
   'Aliyun',
   'Zhihu',

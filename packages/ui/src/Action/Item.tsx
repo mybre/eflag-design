@@ -1,5 +1,5 @@
-import { LoadingOutlined } from '@oceanbase/icons';
-import { Button, Tooltip, Typography } from '@oceanbase/design';
+import { LoadingOutlined } from '@eflag/icons';
+import { Button, Tooltip, Typography } from '@eflag/design';
 import React from 'react';
 
 export interface BaseProps {

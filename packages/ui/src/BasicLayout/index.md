@@ -28,8 +28,8 @@ nav:
 - 对于 `umi v4`:
 
 ```tsx | pure
-import { ConfigProvider } from '@oceanbase/design';
-import { BasicLayout } from '@oceanbase/ui';
+import { ConfigProvider } from '@eflag/design';
+import { BasicLayout } from '@eflag/ui';
 // for umi v4 with react-router-dom v6
 import { useNavigate } from 'umi';
 
@@ -46,8 +46,8 @@ const App = () => {
 - 对于 `umi v3`:
 
 ```tsx | pure
-import { ConfigProvider } from '@oceanbase/design';
-import { BasicLayout } from '@oceanbase/ui';
+import { ConfigProvider } from '@eflag/design';
+import { BasicLayout } from '@eflag/ui';
 import { useHistory } from 'react-router-dom';
 // for umi v3 with react-router-dom v5
 import { useHistory } from 'umi';

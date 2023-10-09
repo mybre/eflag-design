@@ -1,4 +1,4 @@
-import { Col } from '@oceanbase/design';
+import { Col } from '@eflag/design';
 import React from 'react';
 import LocaleWrapper from '../locale/LocaleWrapper';
 import { getPrefix } from '../_util';

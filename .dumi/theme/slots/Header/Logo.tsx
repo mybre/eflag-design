@@ -1,4 +1,4 @@
-import { Badge, Space } from '@oceanbase/design';
+import { Badge, Space } from '@eflag/design';
 import { css } from '@emotion/react';
 import { Link, useLocation } from 'dumi';
 import * as React from 'react';
@@ -63,7 +63,7 @@ const Logo: React.FC<LogoProps> = ({ isZhCN }) => {
           alt="logo"
         />
         <Space>
-          <span css={title}>OceanBase Design</span>
+          <span css={title}>eflag Design</span>
           <Badge count="BETA" color="purple" />
         </Space>
       </Link>

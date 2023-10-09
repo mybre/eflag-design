@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TagSelect } from '@oceanbase/ui';
+import { TagSelect } from '@eflag/ui';
 
 export default () => {
   const option = [

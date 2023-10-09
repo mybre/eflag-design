@@ -1,4 +1,4 @@
-import { Alert, Button } from '@oceanbase/design';
+import { Alert, Button } from '@eflag/design';
 import React from 'react';
 import type { LocaleWrapperProps } from '../../locale/LocaleWrapper';
 import LocaleWrapper from '../../locale/LocaleWrapper';

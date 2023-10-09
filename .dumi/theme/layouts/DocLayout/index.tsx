@@ -14,14 +14,14 @@ import SidebarLayout from '../SidebarLayout';
 
 const locales = {
   cn: {
-    title: 'OceanBase Design - 基于 Ant Design 进行延展和二次开发的企业级设计系统',
+    title: 'eflag Design - 基于 Ant Design 进行延展和二次开发的企业级设计系统',
     description: '基于 Ant Design 设计体系的 React UI 组件库，用于研发企业级中后台产品。',
   },
   en: {
     title:
-      'OceanBase Design - An enterprise-class design system based on Ant Design and extending it',
+      'eflag Design - An enterprise-class design system based on Ant Design and extending it',
     description:
-      'An enterprise-class design system of helping OceanBase ecology and designers/developers building professional products',
+      'An enterprise-class design system of helping eflag ecology and designers/developers building professional products',
   },
 };
 

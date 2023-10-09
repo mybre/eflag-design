@@ -1,7 +1,7 @@
 //@ts-nocheck
-import { DownOutlined, UpOutlined } from '@oceanbase/icons';
+import { DownOutlined, UpOutlined } from '@eflag/icons';
 import type { GraphData } from '@antv/g6/lib/types';
-import { Spin, Tabs } from '@oceanbase/design';
+import { Spin, Tabs } from '@eflag/design';
 import { find, noop } from 'lodash';
 import React, { useState } from 'react';
 import SplitPane from 'react-split-pane';

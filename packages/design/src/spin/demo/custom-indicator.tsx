@@ -1,6 +1,6 @@
 import React from 'react';
-import { Alert, Space, Spin } from '@oceanbase/design';
-import { LoadingOutlined } from '@oceanbase/icons';
+import { Alert, Space, Spin } from '@eflag/design';
+import { LoadingOutlined } from '@eflag/icons';
 
 const indicator = <LoadingOutlined style={{ fontSize: 24 }} spin />;
 

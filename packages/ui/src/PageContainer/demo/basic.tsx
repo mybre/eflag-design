@@ -2,9 +2,9 @@
  * iframe: 600
  */
 import React from 'react';
-import { EllipsisOutlined } from '@oceanbase/icons';
-import { Button, Descriptions, Dropdown, Radio } from '@oceanbase/design';
-import { PageContainer } from '@oceanbase/ui';
+import { EllipsisOutlined } from '@eflag/icons';
+import { Button, Descriptions, Dropdown, Radio } from '@eflag/design';
+import { PageContainer } from '@eflag/ui';
 
 export default () => {
   return (

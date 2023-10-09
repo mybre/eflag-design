@@ -3,9 +3,9 @@
  * iframe: 500
  */
 import React, { useState } from 'react';
-import { Modal } from '@oceanbase/design';
-import { SideTip } from '@oceanbase/ui';
-import { PlusOutlined } from '@oceanbase/icons';
+import { Modal } from '@eflag/design';
+import { SideTip } from '@eflag/ui';
+import { PlusOutlined } from '@eflag/icons';
 
 export default () => {
   const [open, setOpen] = useState(false);

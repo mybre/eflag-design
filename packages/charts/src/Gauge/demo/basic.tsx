@@ -1,5 +1,5 @@
 import React from 'react';
-import { Gauge } from '@oceanbase/charts';
+import { Gauge } from '@eflag/charts';
 
 export default () => {
   const config = {

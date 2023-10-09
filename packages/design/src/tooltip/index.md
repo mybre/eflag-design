@@ -6,7 +6,7 @@ nav:
 ---
 
 - 🔥 完全兼容 antd [Tooltip](https://ant.design/components/tooltip-cn) 的能力和 API，可无缝切换。
-- 💄 定制主题和样式，符合 OceanBase Design 设计规范。
+- 💄 定制主题和样式，符合 eflag Design 设计规范。
 - 🆕 新增 `type` 属性，支持 `default`、`light`、`info`、`success`、`warning` 和 `error` 五种类型的 Tooltip。
 - 🆕 新增 `mouseFollow` 属性，支持鼠标跟随。
 - 🆕 新增 `closeIcon` 属性，支持展示关闭按钮。

@@ -2,7 +2,7 @@
  * title: 基本使用
  */
 import React from 'react';
-import { FullscreenBox } from '@oceanbase/ui';
+import { FullscreenBox } from '@eflag/ui';
 import { SimpleTable } from './SimpleTable';
 
 export default () => {

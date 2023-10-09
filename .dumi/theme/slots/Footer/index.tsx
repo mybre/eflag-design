@@ -10,10 +10,10 @@ import AdditionalInfo from './AdditionalInfo';
 
 const locales = {
   cn: {
-    owner: 'OceanBase',
+    owner: 'eflag',
   },
   en: {
-    owner: 'OceanBase',
+    owner: 'eflag',
   },
 };
 

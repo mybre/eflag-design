@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
-import { Button, Divider } from '@oceanbase/design';
-import { TreeSearch } from '@oceanbase/ui';
-import type { Node, TreeSearchRef } from '@oceanbase/ui/es/TreeSearch';
+import { Button, Divider } from '@eflag/design';
+import { TreeSearch } from '@eflag/ui';
+import type { Node, TreeSearchRef } from '@eflag/ui/es/TreeSearch';
 
 export default () => {
   const ref = useRef<TreeSearchRef>();

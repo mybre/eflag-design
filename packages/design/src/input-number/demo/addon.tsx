@@ -1,6 +1,6 @@
 import React from 'react';
-import { Cascader, InputNumber, Select, Space } from '@oceanbase/design';
-import { SettingOutlined } from '@oceanbase/icons';
+import { Cascader, InputNumber, Select, Space } from '@eflag/design';
+import { SettingOutlined } from '@eflag/icons';
 
 const { Option } = Select;
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Badge, Space } from '@oceanbase/design';
+import { Badge, Space } from '@eflag/design';
 import {
   LoadingOutlined,
   AppleOutlined,

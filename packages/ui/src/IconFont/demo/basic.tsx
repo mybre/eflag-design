@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconFont } from '@oceanbase/ui';
+import { IconFont } from '@eflag/ui';
 import './basic.less';
 
 export default () => {

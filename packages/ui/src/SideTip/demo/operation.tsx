@@ -3,9 +3,9 @@
  * iframe: true
  */
 import React, { useState } from 'react';
-import { Dropdown, Menu } from '@oceanbase/design';
-import { SideTip } from '@oceanbase/ui';
-import { SettingFilled } from '@oceanbase/icons';
+import { Dropdown, Menu } from '@eflag/design';
+import { SideTip } from '@eflag/ui';
+import { SettingFilled } from '@eflag/icons';
 
 export default () => {
   const [open, setOpen] = useState(false);

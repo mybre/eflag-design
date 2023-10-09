@@ -1,4 +1,4 @@
-import { Button, message } from '@oceanbase/design';
+import { Button, message } from '@eflag/design';
 import React, { useCallback } from 'react';
 import NotificationCenter from './NotificationCenter';
 

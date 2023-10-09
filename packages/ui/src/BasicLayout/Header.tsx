@@ -4,8 +4,8 @@ import {
   CopyrightOutlined,
   ReadFilled,
   UserOutlined,
-} from '@oceanbase/icons';
-import { Button, Dropdown, Menu, Modal, Space, Tooltip } from '@oceanbase/design';
+} from '@eflag/icons';
+import { Button, Dropdown, Menu, Modal, Space, Tooltip } from '@eflag/design';
 import classNames from 'classnames';
 import moment from 'moment';
 import React, { useState } from 'react';
@@ -126,9 +126,8 @@ const Header: React.FC<HeaderProps> = ({
     >
       {welcomePath && <Menu.Item key="welcome">{locale.welcome}</Menu.Item>}
       {pdfPath && <Menu.Item key="downloadDocs">{locale.downloadDocs}</Menu.Item>}
-      <Menu.Item key="about">{`${locale.about}${
-        appData.shortName ? ` ${appData.shortName}` : ''
-      }`}</Menu.Item>
+      <Menu.Item key="about">{`${locale.about}${appData.shortName ? ` ${appData.shortName}` : ''
+        }`}</Menu.Item>
     </Menu>
   );
 

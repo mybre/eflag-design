@@ -4,7 +4,7 @@ import {
   FullscreenExitOutlined,
   FullscreenOutlined,
   MinusOutlined,
-} from '@oceanbase/icons';
+} from '@eflag/icons';
 import type { MouseEvent, PointerEvent } from 'react';
 import React from 'react';
 import { createPortal } from 'react-dom';
@@ -300,7 +300,7 @@ class DialogComp extends React.PureComponent<IDialogProps, IDialogStates> {
           >
             <path
               d="M880.0256 912.0256H144.0256a31.9488 31.9488 0 0 1-32.0512-32V144.0256c0-17.7152 14.336-32.0512 32.0512-32.0512h359.936c4.4544 0 8.0384 3.584 8.0384 8.0384v56.0128c0 4.352-3.584 7.9872-7.9872 7.9872h-320v655.9744h655.9744v-320c0-4.4032 3.584-7.9872 8.0384-7.9872h55.9616c4.4032 0 8.0384 3.584 8.0384 7.9872v359.9872c0 17.7152-14.336 32-32 32zM770.8672 199.1168l-52.224-52.224a8.0384 8.0384 0 0 1 4.7104-13.568l179.4048-20.992c5.12-0.6144 9.5232 3.6864 8.9088 8.9088l-20.992 179.4048a8.0384 8.0384 0 0 1-13.6192 4.6592L824.6784 252.928l-256.2048 256.2048c-3.072 3.072-8.192 3.072-11.264 0l-42.4448-42.3936a8.0384 8.0384 0 0 1 0-11.264l256.1024-256.3584z"
-              // p-id="2546"
+            // p-id="2546"
             />
           </svg>
         </a>
@@ -469,9 +469,8 @@ class DialogComp extends React.PureComponent<IDialogProps, IDialogStates> {
     return (
       <React.Fragment>
         <div
-          className={`${prefix}-container ${className} ${
-            isEmbed ? `${prefix}-container-embed` : ''
-          }`}
+          className={`${prefix}-container ${className} ${isEmbed ? `${prefix}-container-embed` : ''
+            }`}
           style={style}
           {...(this.state.minimize ? {} : { tabIndex: 0 })}
         >
@@ -519,17 +518,17 @@ class DialogComp extends React.PureComponent<IDialogProps, IDialogStates> {
     this.setState({
       ...(checkResult.widthShouldChange
         ? {
-            // @ts-ignore
-            left: this.originInfo.left + event.moveLeft,
-            width: newWidth,
-          }
+          // @ts-ignore
+          left: this.originInfo.left + event.moveLeft,
+          width: newWidth,
+        }
         : {}),
       ...(checkResult.heightShouldChange
         ? {
-            // @ts-ignore
-            top: this.originInfo.top + event.moveTop,
-            height: newHeight,
-          }
+          // @ts-ignore
+          top: this.originInfo.top + event.moveTop,
+          height: newHeight,
+        }
         : {}),
     });
   };

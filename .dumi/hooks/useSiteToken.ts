@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { ConfigProvider, theme } from '@oceanbase/design';
+import { ConfigProvider, theme } from '@eflag/design';
 
 const { useToken } = theme;
 

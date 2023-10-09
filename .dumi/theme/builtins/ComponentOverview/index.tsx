@@ -3,8 +3,8 @@ import type { CSSProperties } from 'react';
 import { Link, useIntl, useSidebarData, useLocation } from 'dumi';
 import { css } from '@emotion/react';
 import debounce from 'lodash/debounce';
-import { Card, Col, Divider, Input, Row, Space, Tag, Typography, Affix } from '@oceanbase/design';
-import { SearchOutlined } from '@oceanbase/icons';
+import { Card, Col, Divider, Input, Row, Space, Tag, Typography, Affix } from '@eflag/design';
+import { SearchOutlined } from '@eflag/icons';
 import useSiteToken from '../../../hooks/useSiteToken';
 import SiteContext from '../../slots/SiteContext';
 

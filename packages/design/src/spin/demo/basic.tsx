@@ -1,5 +1,5 @@
 import React from 'react';
-import { Spin } from '@oceanbase/design';
+import { Spin } from '@eflag/design';
 
 const App: React.FC = () => <Spin />;
 

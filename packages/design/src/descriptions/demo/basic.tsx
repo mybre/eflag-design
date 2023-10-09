@@ -1,5 +1,5 @@
 import React from 'react';
-import { Descriptions } from '@oceanbase/design';
+import { Descriptions } from '@eflag/design';
 
 const App: React.FC = () => (
   <Descriptions title="User Info">

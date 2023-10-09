@@ -1,5 +1,5 @@
 import React from 'react';
-import Icon from '@oceanbase/icons';
+import Icon from '@eflag/icons';
 
 const SVGIcon: React.FC<{ color?: string }> = ({ color = 'currentColor' }) => (
   <svg viewBox="0 0 1024 1024" width="1em" height="1em" fill={color}>

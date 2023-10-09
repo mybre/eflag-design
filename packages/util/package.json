@@ -1,7 +1,7 @@
 {
-  "name": "@oceanbase/util",
+  "name": "@eflag/util",
   "version": "0.2.9",
-  "description": "The Util Library for OceanBase",
+  "description": "The Util Library for eflag",
   "keywords": [
     "oceanbase",
     "util"

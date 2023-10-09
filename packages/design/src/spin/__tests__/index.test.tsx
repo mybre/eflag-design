@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { Spin } from '@oceanbase/design';
+import { Spin } from '@eflag/design';
 
 describe('Spin', () => {
   it('default indicator should render correctly', () => {

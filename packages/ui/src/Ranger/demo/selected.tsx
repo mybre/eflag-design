@@ -1,5 +1,5 @@
 import React from 'react';
-import { Ranger } from '@oceanbase/ui';
+import { Ranger } from '@eflag/ui';
 
 export default () => (
   <Ranger

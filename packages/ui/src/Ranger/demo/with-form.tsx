@@ -1,6 +1,6 @@
 import React from 'react';
-import { Form } from '@oceanbase/design';
-import { Ranger } from '@oceanbase/ui';
+import { Form } from '@eflag/design';
+import { Ranger } from '@eflag/ui';
 import dayjs from 'dayjs';
 
 export default () => {

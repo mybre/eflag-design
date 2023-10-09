@@ -1,6 +1,6 @@
-import { GithubOutlined, MenuOutlined } from '@oceanbase/icons';
+import { GithubOutlined, MenuOutlined } from '@eflag/icons';
 import { ClassNames, css } from '@emotion/react';
-import { Col, Popover, Row } from '@oceanbase/design';
+import { Col, Popover, Row } from '@eflag/design';
 import classNames from 'classnames';
 import { useLocation, useSiteData } from 'dumi';
 import DumiSearchBar from 'dumi/theme-default/slots/SearchBar';
@@ -278,9 +278,9 @@ const Header: React.FC = () => {
   const colProps = isHome
     ? [{ flex: 'none' }, { flex: 'auto' }]
     : [
-        { xxl: 4, xl: 5, lg: 6, md: 6, sm: 24, xs: 24 },
-        { xxl: 20, xl: 19, lg: 18, md: 18, sm: 0, xs: 0 },
-      ];
+      { xxl: 4, xl: 5, lg: 6, md: 6, sm: 24, xs: 24 },
+      { xxl: 20, xl: 19, lg: 18, md: 18, sm: 0, xs: 0 },
+    ];
 
   return (
     <header css={style.header} className={headerClassName}>

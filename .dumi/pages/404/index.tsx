@@ -1,5 +1,5 @@
-import { HomeOutlined } from '@oceanbase/icons';
-import { Button, Result } from '@oceanbase/design';
+import { HomeOutlined } from '@eflag/icons';
+import { Button, Result } from '@eflag/design';
 import { Link, useLocation } from 'dumi';
 import React from 'react';
 import * as utils from '../../theme/utils';

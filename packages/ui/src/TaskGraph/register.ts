@@ -1,6 +1,6 @@
 import G6 from '@antv/g6';
-import { token } from '@oceanbase/design';
-import { findByValue } from '@oceanbase/util';
+import { token } from '@eflag/design';
+import { findByValue } from '@eflag/util';
 import { toLower } from 'lodash';
 
 /**
@@ -203,9 +203,8 @@ export default function (statusList: StatusItem[], assetsPath: string) {
           path,
           // 自定义结束箭头，箭头的边长为 10，夹角为 60 度
           endArrow: {
-            path: `M${10 * Math.cos(Math.PI / 6)},${10 * Math.sin(Math.PI / 6)} L0,0 L${
-              10 * Math.cos(Math.PI / 6)
-            },-${10 * Math.sin(Math.PI / 6)}`,
+            path: `M${10 * Math.cos(Math.PI / 6)},${10 * Math.sin(Math.PI / 6)} L0,0 L${10 * Math.cos(Math.PI / 6)
+              },-${10 * Math.sin(Math.PI / 6)}`,
             fill: statusColor,
           },
 

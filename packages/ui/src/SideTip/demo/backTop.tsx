@@ -3,9 +3,9 @@
  * iframe: true
  */
 import React from 'react';
-import { BackTop } from '@oceanbase/design';
-import { SideTip } from '@oceanbase/ui';
-import { ArrowUpOutlined } from '@oceanbase/icons';
+import { BackTop } from '@eflag/design';
+import { SideTip } from '@eflag/ui';
+import { ArrowUpOutlined } from '@eflag/icons';
 
 export default () => {
   return (

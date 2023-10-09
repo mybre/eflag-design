@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { render } from '@testing-library/react';
-import { Modal } from '@oceanbase/design';
-import type { ModalProgressProps } from '@oceanbase/design/es/modal';
+import { Modal } from '@eflag/design';
+import type { ModalProgressProps } from '@eflag/design/es/modal';
 
 const ModalProgress: React.FC<ModalProgressProps> = props => {
   const [open, setOpen] = React.useState(false);

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Gauge, useTheme } from '@oceanbase/charts';
+import { Gauge, useTheme } from '@eflag/charts';
 
 export default () => {
   const themeConfig = useTheme();

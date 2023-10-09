@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { ChartProvider, useTheme } from '@oceanbase/charts';
+import { ChartProvider, useTheme } from '@eflag/charts';
 
 describe('ChartProvider theme', () => {
   it('default theme', () => {

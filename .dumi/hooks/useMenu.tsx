@@ -1,5 +1,5 @@
-import type { MenuProps } from '@oceanbase/design';
-import { Tag, theme } from '@oceanbase/design';
+import type { MenuProps } from '@eflag/design';
+import { Tag, theme } from '@eflag/design';
 import { Link, useFullSidebarData, useSidebarData } from 'dumi';
 import React, { useMemo } from 'react';
 import useLocation from './useLocation';

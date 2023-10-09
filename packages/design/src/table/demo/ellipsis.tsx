@@ -1,5 +1,5 @@
-import { Table, Tooltip } from '@oceanbase/design';
-import type { ColumnsType } from '@oceanbase/design/es/table';
+import { Table, Tooltip } from '@eflag/design';
+import type { ColumnsType } from '@eflag/design/es/table';
 import React from 'react';
 
 interface DataType {

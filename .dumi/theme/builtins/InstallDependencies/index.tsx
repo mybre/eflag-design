@@ -1,5 +1,5 @@
-import type { TabsProps } from '@oceanbase/design';
-import { Tabs } from '@oceanbase/design';
+import type { TabsProps } from '@eflag/design';
+import { Tabs } from '@eflag/design';
 import SourceCode from 'dumi/theme-default/builtins/SourceCode';
 import React from 'react';
 import NpmLogo from './npm';

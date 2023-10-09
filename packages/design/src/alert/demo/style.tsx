@@ -1,4 +1,4 @@
-import { Alert, Space } from '@oceanbase/design';
+import { Alert, Space } from '@eflag/design';
 import React from 'react';
 
 const App: React.FC = () => (

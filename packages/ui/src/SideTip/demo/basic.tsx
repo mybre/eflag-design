@@ -3,9 +3,9 @@
  * iframe: true
  */
 import React from 'react';
-import { message } from '@oceanbase/design';
-import { SideTip } from '@oceanbase/ui';
-import { CloudUploadOutlined } from '@oceanbase/icons';
+import { message } from '@eflag/design';
+import { SideTip } from '@eflag/ui';
+import { CloudUploadOutlined } from '@eflag/icons';
 
 export default () => {
   return (

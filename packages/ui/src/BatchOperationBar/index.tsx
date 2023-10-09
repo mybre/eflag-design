@@ -1,5 +1,5 @@
-import { DownOutlined, UpOutlined } from '@oceanbase/icons';
-import { Space } from '@oceanbase/design';
+import { DownOutlined, UpOutlined } from '@eflag/icons';
+import { Space } from '@eflag/design';
 import classnames from 'classnames';
 import { cloneDeep, isEmpty, isEqual, pullAllWith } from 'lodash';
 import type { ReactNode } from 'react';

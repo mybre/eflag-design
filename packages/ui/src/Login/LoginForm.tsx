@@ -3,12 +3,12 @@ import {
   SafetyCertificateOutlined,
   SyncOutlined,
   UserOutlined,
-} from '@oceanbase/icons';
-import { Alert, Button, Form, Input, Space } from '@oceanbase/design';
-import type { FormProps } from '@oceanbase/design/es/form';
+} from '@eflag/icons';
+import { Alert, Button, Form, Input, Space } from '@eflag/design';
+import type { FormProps } from '@eflag/design/es/form';
 import classNames from 'classnames';
 import React, { useState } from 'react';
-import { token } from '@oceanbase/design';
+import { token } from '@eflag/design';
 import type { LoginLocale } from '.';
 import { getPrefix } from '../_util';
 import './index.less';

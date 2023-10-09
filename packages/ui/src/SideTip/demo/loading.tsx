@@ -3,8 +3,8 @@
  * iframe: true
  */
 import React from 'react';
-import { SideTip } from '@oceanbase/ui';
-import { HeartOutlined, HeartTwoTone } from '@oceanbase/icons';
+import { SideTip } from '@eflag/ui';
+import { HeartOutlined, HeartTwoTone } from '@eflag/icons';
 
 export default () => {
   return (

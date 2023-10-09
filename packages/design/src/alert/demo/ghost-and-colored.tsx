@@ -1,4 +1,4 @@
-import { Alert, Form, Radio, Space } from '@oceanbase/design';
+import { Alert, Form, Radio, Space } from '@eflag/design';
 import React, { useState } from 'react';
 
 const App: React.FC = () => {

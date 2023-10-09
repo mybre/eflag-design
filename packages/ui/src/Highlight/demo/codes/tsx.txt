@@ -1,22 +1,22 @@
 import React from 'react';
-import { Button, Tag, Space } from '@oceanbase/design';
-import { ProList } from '@oceanbase/ui';
+import { Button, Tag, Space } from '@eflag/design';
+import { ProList } from '@eflag/ui';
 
 const dataSource = [
   {
-    name: 'OceanBase Design',
+    name: 'eflag Design',
     image:
       'https://mdn.alipayobjects.com/huamei_n8rchn/afts/img/A*d_ZTR7sdVzAAAAAAAAAAAAAADvSFAQ/original',
     desc: '我是一条测试的描述',
   },
   {
-    name: 'OceanBase Database',
+    name: 'eflag Database',
     image:
       'https://mdn.alipayobjects.com/huamei_n8rchn/afts/img/A*d_ZTR7sdVzAAAAAAAAAAAAAADvSFAQ/original',
     desc: '我是一条测试的描述',
   },
   {
-    name: 'OceanBase Cloud',
+    name: 'eflag Cloud',
     image:
       'https://mdn.alipayobjects.com/huamei_n8rchn/afts/img/A*d_ZTR7sdVzAAAAAAAAAAAAAADvSFAQ/original',
     desc: '我是一条测试的描述',
@@ -62,8 +62,8 @@ export default () => (
         render: () => {
           return (
             <Space size={0}>
-              <Tag color="blue">OceanBase Design</Tag>
-              <Tag color="#5BD8A6">OceanBase Design</Tag>
+              <Tag color="blue">eflag Design</Tag>
+              <Tag color="#5BD8A6">eflag Design</Tag>
             </Space>
           );
         },

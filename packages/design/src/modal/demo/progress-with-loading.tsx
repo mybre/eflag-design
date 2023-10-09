@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Alert, Button, Modal, Space } from '@oceanbase/design';
+import { Alert, Button, Modal, Space } from '@eflag/design';
 import { useTimeout } from 'ahooks';
 
 export default () => {
@@ -40,13 +40,13 @@ export default () => {
         progress={
           done
             ? {
-                percent: 100,
-              }
+              percent: 100,
+            }
             : {}
         }
         description={
           done
-            ? 'Congratulations! please enjoy your OceanBase journey.'
+            ? 'Congratulations! please enjoy your eflag journey.'
             : 'Cluster is creating, please waiting for 3 seconds.'
         }
         onOk={() => {
@@ -65,9 +65,9 @@ export default () => {
         progress={
           done
             ? {
-                percent: 100,
-                status: 'exception',
-              }
+              percent: 100,
+              status: 'exception',
+            }
             : {}
         }
         description={

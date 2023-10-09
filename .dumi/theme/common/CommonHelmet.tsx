@@ -7,11 +7,10 @@ const CommonHelmet = () => {
   const [title, description] = useMemo(() => {
     let helmetTitle;
     if (!meta.frontmatter.subtitle && !meta.frontmatter.title) {
-      helmetTitle = '404 Not Found - OceanBase Design';
+      helmetTitle = '404 Not Found - eflag Design';
     } else {
-      helmetTitle = `${meta.frontmatter.subtitle || ''} ${
-        meta.frontmatter?.title || ''
-      } - OceanBase Design`;
+      helmetTitle = `${meta.frontmatter.subtitle || ''} ${meta.frontmatter?.title || ''
+        } - eflag Design`;
     }
     const helmetDescription = meta.frontmatter.description || '';
     return [helmetTitle, helmetDescription];

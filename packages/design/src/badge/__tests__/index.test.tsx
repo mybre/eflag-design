@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { Badge } from '@oceanbase/design';
-import { TaobaoOutlined } from '@oceanbase/icons';
+import { Badge } from '@eflag/design';
+import { TaobaoOutlined } from '@eflag/icons';
 
 describe('Badge', () => {
   it('status dot', () => {

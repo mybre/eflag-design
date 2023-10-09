@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Button, Form } from '@oceanbase/design';
-import { Password } from '@oceanbase/ui';
+import { Button, Form } from '@eflag/design';
+import { Password } from '@eflag/ui';
 
 export default () => {
   const [passed, setPassed] = useState(false);

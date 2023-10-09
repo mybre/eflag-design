@@ -1,6 +1,6 @@
 import React from 'react';
-import { Gauge } from '@oceanbase/charts';
-import type { GaugeConfig } from '@oceanbase/charts';
+import { Gauge } from '@eflag/charts';
+import type { GaugeConfig } from '@eflag/charts';
 
 export default () => {
   const config: GaugeConfig = {

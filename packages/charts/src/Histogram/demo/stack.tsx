@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Histogram } from '@oceanbase/charts';
+import { Histogram } from '@eflag/charts';
 
 export default () => {
   const [data, setData] = useState([]);

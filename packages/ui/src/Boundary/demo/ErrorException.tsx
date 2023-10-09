@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Radio } from '@oceanbase/design';
-import { Boundary } from '@oceanbase/ui';
+import { Radio } from '@eflag/design';
+import { Boundary } from '@eflag/ui';
 import Text from './Text';
 
 export default () => {

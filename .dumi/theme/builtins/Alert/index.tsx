@@ -1,5 +1,5 @@
-import type { AlertProps } from '@oceanbase/design';
-import { Alert } from '@oceanbase/design';
+import type { AlertProps } from '@eflag/design';
+import { Alert } from '@eflag/design';
 import React from 'react';
 
 const MdAlert: React.FC<AlertProps> = ({ style, ...props }) => (

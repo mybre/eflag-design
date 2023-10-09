@@ -10,8 +10,8 @@ import {
   Space,
   Table,
   Tabs,
-} from '@oceanbase/design';
-import { SizeType } from '@oceanbase/design/es/config-provider';
+} from '@eflag/design';
+import { SizeType } from '@eflag/design/es/config-provider';
 import React, { useState } from 'react';
 
 const { TabPane } = Tabs;

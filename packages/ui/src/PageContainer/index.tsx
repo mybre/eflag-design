@@ -1,5 +1,5 @@
-import { SyncOutlined } from '@oceanbase/icons';
-import type { IconComponentProps } from '@oceanbase/icons/es/components/Icon';
+import { SyncOutlined } from '@eflag/icons';
+import type { IconComponentProps } from '@eflag/icons/es/components/Icon';
 import type {
   PageContainerProps as AntPageContainerProps,
   PageHeaderProps as AntPageHeaderProps,
@@ -8,7 +8,7 @@ import { PageContainer as AntPageContainer } from '@ant-design/pro-components';
 import classNames from 'classnames';
 import { isObject } from 'lodash';
 import React, { useContext } from 'react';
-import { ConfigProvider, Space, Tooltip } from '@oceanbase/design';
+import { ConfigProvider, Space, Tooltip } from '@eflag/design';
 import LocaleWrapper from '../locale/LocaleWrapper';
 import ItemRender from './ItemRender';
 import zhCN from './locale/zh-CN';

@@ -1,4 +1,4 @@
-import { ConfigProvider } from '@oceanbase/design';
+import { ConfigProvider } from '@eflag/design';
 import hoistNonReactStatic from 'hoist-non-react-statics';
 import type { Ref } from 'react';
 import React from 'react';

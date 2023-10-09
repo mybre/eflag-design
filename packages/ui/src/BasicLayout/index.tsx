@@ -1,10 +1,10 @@
-import { CaretRightFilled, LeftOutlined, RightOutlined } from '@oceanbase/icons';
+import { CaretRightFilled, LeftOutlined, RightOutlined } from '@eflag/icons';
 import { setAlpha } from '@ant-design/pro-components';
-import { token } from '@oceanbase/design';
-import { isNullValue } from '@oceanbase/util';
-import { ConfigProvider, Divider, Layout, Menu, Tooltip } from '@oceanbase/design';
-import type { BadgeProps } from '@oceanbase/design/es/badge';
-import type { MenuProps } from '@oceanbase/design/es/menu';
+import { token } from '@eflag/design';
+import { isNullValue } from '@eflag/util';
+import { ConfigProvider, Divider, Layout, Menu, Tooltip } from '@eflag/design';
+import type { BadgeProps } from '@eflag/design/es/badge';
+import type { MenuProps } from '@eflag/design/es/menu';
 import classNames from 'classnames';
 import { some } from 'lodash';
 import { pathToRegexp } from 'path-to-regexp';
@@ -168,7 +168,7 @@ const BasicLayout: React.FC<BasicLayoutProps> = ({
         item.children &&
         (isNullValue(item.accessible)
           ? // 如果子菜单本身没有设置 accessible，但只要其 children 之一可访问，则子菜单仍然展示
-            item.children?.some(({ accessible: childAccessible = true }) => childAccessible)
+          item.children?.some(({ accessible: childAccessible = true }) => childAccessible)
           : item.accessible)
       ) {
         pre.push(
@@ -183,10 +183,10 @@ const BasicLayout: React.FC<BasicLayoutProps> = ({
                 {...(isEnglish() && item.title && item.title.length > 15
                   ? {}
                   : {
-                      visible: false,
-                      // Support for antd 5.0
-                      open: false,
-                    })}
+                    visible: false,
+                    // Support for antd 5.0
+                    open: false,
+                  })}
                 getPopupContainer={() => document.body}
               >
                 <span>
@@ -217,10 +217,10 @@ const BasicLayout: React.FC<BasicLayoutProps> = ({
               {...(isEnglish() && item.title && item.title.length > 20
                 ? {}
                 : {
-                    visible: false,
-                    // Support for antd 5.0
-                    open: false,
-                  })}
+                  visible: false,
+                  // Support for antd 5.0
+                  open: false,
+                })}
               getPopupContainer={() => document.body}
             >
               <span>
@@ -256,7 +256,7 @@ const BasicLayout: React.FC<BasicLayoutProps> = ({
         item.children &&
         (isNullValue(item.accessible)
           ? // 如果子菜单本身没有设置 accessible，但只要其 children 之一可访问，则子菜单仍然展示
-            item.children?.some(({ accessible: childAccessible = true }) => childAccessible)
+          item.children?.some(({ accessible: childAccessible = true }) => childAccessible)
           : item.accessible)
       ) {
         pre.push(

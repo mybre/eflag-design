@@ -1,6 +1,6 @@
 import React from 'react';
-import { Bar } from '@oceanbase/charts';
-import { Col, Row } from '@oceanbase/design';
+import { Bar } from '@eflag/charts';
+import { Col, Row } from '@eflag/design';
 
 export default () => {
   const data = [

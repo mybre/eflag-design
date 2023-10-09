@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Modal, Space } from '@oceanbase/design';
+import { Button, Modal, Space } from '@eflag/design';
 
 export default () => (
   <Space>
@@ -13,7 +13,7 @@ export default () => (
               <p>some messages...some messages...</p>
             </div>
           ),
-          onOk() {},
+          onOk() { },
         });
       }}
     >
@@ -29,7 +29,7 @@ export default () => (
               <p>some messages...some messages...</p>
             </div>
           ),
-          onOk() {},
+          onOk() { },
         });
       }}
     >

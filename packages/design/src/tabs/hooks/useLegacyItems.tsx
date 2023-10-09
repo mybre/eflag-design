@@ -1,4 +1,4 @@
-import { isNullValue } from '@oceanbase/util';
+import { isNullValue } from '@eflag/util';
 import { Space, Tag } from 'antd';
 import warning from 'antd/es/_util/warning';
 import type { Tab } from 'rc-tabs/lib/interface';

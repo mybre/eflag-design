@@ -1,5 +1,5 @@
 import React from 'react';
-import { Badge, Descriptions } from '@oceanbase/design';
+import { Badge, Descriptions } from '@eflag/design';
 
 export default () => (
   <Descriptions title="User Info" bordered>

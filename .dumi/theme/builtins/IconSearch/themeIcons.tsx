@@ -1,5 +1,5 @@
 import * as React from 'react';
-import type { CustomIconComponentProps } from '@oceanbase/icons/es/components/Icon';
+import type { CustomIconComponentProps } from '@eflag/icons/es/components/Icon';
 
 type CustomIconComponent = React.ComponentType<
   CustomIconComponentProps | React.SVGProps<SVGSVGElement>

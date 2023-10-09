@@ -1,5 +1,5 @@
-import { Alert, Button, Form, Input } from '@oceanbase/design';
-import type { FormProps, RuleObject } from '@oceanbase/design/es/form';
+import { Alert, Button, Form, Input } from '@eflag/design';
+import type { FormProps, RuleObject } from '@eflag/design/es/form';
 import { isFunction, toString } from 'lodash';
 import React, { useCallback } from 'react';
 import { getPrefix } from '../_util';

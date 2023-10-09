@@ -2,9 +2,9 @@
  * iframe: 600
  */
 import React from 'react';
-import { Badge, Dropdown, Menu, message, Space } from '@oceanbase/design';
-import { BasicLayout, IconFont, Lottie } from '@oceanbase/ui';
-import { CaretDownFilled } from '@oceanbase/icons';
+import { Badge, Dropdown, Menu, message, Space } from '@eflag/design';
+import { BasicLayout, IconFont, Lottie } from '@eflag/ui';
+import { CaretDownFilled } from '@eflag/icons';
 import PageContainerEmptyDemo from '../../PageContainer/demo/empty';
 
 export default () => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Space, Spin } from '@oceanbase/design';
+import { Space, Spin } from '@eflag/design';
 
 const App: React.FC = () => (
   <Space size="middle">

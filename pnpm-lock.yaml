@@ -232,7 +232,7 @@ importers:
       '@ant-design/charts':
         specifier: ^1.4.2
         version: 1.4.2(@ant-design/icons@4.8.1)(antd@5.0.0-rc.3)(classnames@2.3.2)(lodash@4.17.21)(react-dom@16.14.0)(react@16.14.0)(reflect-metadata@0.1.13)
-      '@oceanbase/util':
+      '@eflag/util':
         specifier: workspace:^
         version: link:../util
       classnames:
@@ -324,10 +324,10 @@ importers:
       '@ant-design/cssinjs':
         specifier: ^1.17.0
         version: 1.17.0(react-dom@16.14.0)(react@16.14.0)
-      '@oceanbase/icons':
+      '@eflag/icons':
         specifier: workspace:^
         version: link:../icons
-      '@oceanbase/util':
+      '@eflag/util':
         specifier: workspace:^
         version: link:../util
       ahooks:
@@ -400,13 +400,13 @@ importers:
       '@ant-design/pro-layout':
         specifier: ^7.17.4
         version: 7.17.4(antd@5.9.0)(react-dom@18.2.0)(react@18.2.0)
-      '@oceanbase/design':
+      '@eflag/design':
         specifier: workspace:^
         version: link:../design
-      '@oceanbase/icons':
+      '@eflag/icons':
         specifier: workspace:^
         version: link:../icons
-      '@oceanbase/util':
+      '@eflag/util':
         specifier: workspace:^
         version: link:../util
       ahooks:

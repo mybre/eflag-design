@@ -1,6 +1,6 @@
 import React from 'react';
-import { TreeSearch } from '@oceanbase/ui';
-import type { DataNode } from '@oceanbase/design/es/tree';
+import { TreeSearch } from '@eflag/ui';
+import type { DataNode } from '@eflag/design/es/tree';
 import './style.less';
 
 interface Node extends DataNode {

@@ -1,7 +1,7 @@
-import { CloseOutlined } from '@oceanbase/icons';
-import { Badge, Tooltip } from '@oceanbase/design';
-import type { BadgeProps } from '@oceanbase/design/es/badge/index';
-import type { TooltipPropsWithTitle } from '@oceanbase/design/es/tooltip/index';
+import { CloseOutlined } from '@eflag/icons';
+import { Badge, Tooltip } from '@eflag/design';
+import type { BadgeProps } from '@eflag/design/es/badge/index';
+import type { TooltipPropsWithTitle } from '@eflag/design/es/tooltip/index';
 import classnames from 'classnames';
 import React, { createRef, useEffect, useState } from 'react';
 import type { LocaleWrapperProps } from '../locale/LocaleWrapper';

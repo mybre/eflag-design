@@ -1,5 +1,5 @@
 import { css } from '@emotion/react';
-import { Tooltip } from '@oceanbase/design';
+import { Tooltip } from '@eflag/design';
 import React from 'react';
 import useSiteToken from '../../../hooks/useSiteToken';
 

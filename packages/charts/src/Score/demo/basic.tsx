@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Score } from '@oceanbase/charts';
-import { Col, Row, Form, Radio } from '@oceanbase/design';
+import { Score } from '@eflag/charts';
+import { Col, Row, Form, Radio } from '@eflag/design';
 
 export default () => {
   const [size, setSize] = useState('middle');

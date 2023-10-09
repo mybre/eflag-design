@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { render } from '@testing-library/react';
-import { DualAxes } from '@oceanbase/charts';
+import { DualAxes } from '@eflag/charts';
 
 describe('DualAxes ref', () => {
   it('ref', () => {

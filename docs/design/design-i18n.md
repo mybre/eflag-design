@@ -4,15 +4,15 @@ order: 4
 group: 基础组件
 ---
 
-`@oceanbase/design` 默认语言是中文，如果要支持其他语言，需要手动开启国际化。
+`@eflag/design` 默认语言是中文，如果要支持其他语言，需要手动开启国际化。
 
 ## 开启国际化
 
 可通过 ConfigProvider 全局配置开启国际化，`ConfigProvider` 使用 `React` 的 `context` 特性，只需在应用外围包裹一次即可全局生效。
 
 ```jsx | pure
-import { ConfigProvider } from '@oceanbase/design';
-import zhCN from '@oceanbase/design/es/locale/zh-CN';
+import { ConfigProvider } from '@eflag/design';
+import zhCN from '@eflag/design/es/locale/zh-CN';
 
 return (
   <ConfigProvider locale={zhCN}>

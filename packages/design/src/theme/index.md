@@ -5,14 +5,14 @@ nav:
   path: /components
 ---
 
-OceanBase Design 的设计体系遵循 Ant Design 5.0 设计规范，并在此基础上扩展出了很多具备 OceanBase 产品风格的设计规范模式，包括但不限于全局样式（色板、圆角、边框）和特定组件的视觉定制，以传递 OceanBase 科技、活力、专注和关怀的品牌特点。
+eflag Design 的设计体系遵循 Ant Design 5.0 设计规范，并在此基础上扩展出了很多具备 eflag 产品风格的设计规范模式，包括但不限于全局样式（色板、圆角、边框）和特定组件的视觉定制，以传递 eflag 科技、活力、专注和关怀的品牌特点。
 
-OceanBase Design Token 由设计师进行维护和更新，在技术上 @oceanbase/design 支持和 [antd](https://ant.design/docs/react/customize-theme-cn) 完全一致的主题定制能力。
+eflag Design Token 由设计师进行维护和更新，在技术上 @eflag/design 支持和 [antd](https://ant.design/docs/react/customize-theme-cn) 完全一致的主题定制能力。
 
 ## 主题配置
 
 ```tsx | pure
-import { ConfigProvider } from '@oceanbase/design';
+import { ConfigProvider } from '@eflag/design';
 
 export default () {
   return (
@@ -28,12 +28,12 @@ export default () {
 ### 在 React 中使用
 
 - <Badge>⭐️ 推荐</Badge> 通过 `token` 对象来获取 Design Token，和 `useToken` 获取的值完全相同，且有两大优势:
-  - 使用时不用声明 `useToken`，`@oceanbase/design` 会帮你在 ConfigProvider 中自动注入，以降低业务调用成本。
+  - 使用时不用声明 `useToken`，`@eflag/design` 会帮你在 ConfigProvider 中自动注入，以降低业务调用成本。
   - 支持在 React 类组件中使用。
 
 ```tsx | pure
 // 无需声明 useToken，即引即用
-import { Button, ConfigProvider, token } from '@oceanbase/design';
+import { Button, ConfigProvider, token } from '@eflag/design';
 import React from 'react';
 
 const App: React.FC = () => {
@@ -49,7 +49,7 @@ export default App;
 
 ```tsx | pure
 // 支持在 React 类组件中使用
-import { Button, ConfigProvider, token } from '@oceanbase/design';
+import { Button, ConfigProvider, token } from '@eflag/design';
 import React from 'react';
 
 class App extends React.Component {
@@ -68,7 +68,7 @@ export default App;
 - 当然，也可以通过 `useToken` hook 来获取 Design Token。只不过在实际的业务场景中会比较繁琐，而且只能在函数组件中使用。
 
 ```tsx | pure
-import { Button, useToken } from '@oceanbase/design';
+import { Button, useToken } from '@eflag/design';
 import React from 'react';
 
 const App: React.FC = () => {
@@ -85,7 +85,7 @@ export default App;
 - 在常量文件、dva model 等非 React 环境下，也可以使用 `token` 对象来获取 Design Token。
 
 ```ts
-import { token } from '@oceanbase/design';
+import { token } from '@eflag/design';
 
 export const taskStatusList = [
   {
@@ -98,10 +98,10 @@ export const taskStatusList = [
 
 ### 在 less 中使用
 
-- 通过引用 @oceanbase/design 提供的 `less` 主题文件，可直接使用 Design Token 对应的 less 变量:
+- 通过引用 @eflag/design 提供的 `less` 主题文件，可直接使用 Design Token 对应的 less 变量:
 
 ```less
-@import '~@oceanbase/design/es/theme/index.less';
+@import '~@eflag/design/es/theme/index.less';
 
 .button {
   color: @colorPrimary;
@@ -116,7 +116,7 @@ export const taskStatusList = [
 ## 暗色和紧凑主题
 
 ```ts | pure
-import {  ConfigProvider } from '@oceanbase/design';
+import {  ConfigProvider } from '@eflag/design';
 
 export default () {
   return (

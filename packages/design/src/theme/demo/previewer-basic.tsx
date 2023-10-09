@@ -2,14 +2,14 @@
  * transform: true
  * compact: true
  */
-import { theme } from '@oceanbase/design';
+import { theme } from '@eflag/design';
 import { PreviewDemo } from 'antd-token-previewer';
 
 export default () => {
   return (
     <PreviewDemo
       theme={{
-        name: 'OceanBase Design',
+        name: 'eflag Design',
         key: 'ob',
         config: theme,
       }}

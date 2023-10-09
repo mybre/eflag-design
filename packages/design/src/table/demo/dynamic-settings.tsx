@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { Form, Radio, Space, Switch, Table } from '@oceanbase/design';
-import type { RadioChangeEvent } from '@oceanbase/design';
-import type { SizeType } from '@oceanbase/design/es/config-provider';
-import type { ColumnsType, TableProps } from '@oceanbase/design/es/table';
-import type { ExpandableConfig, TableRowSelection } from '@oceanbase/design/es/table/interface';
-import { DownOutlined } from '@oceanbase/icons';
+import { Form, Radio, Space, Switch, Table } from '@eflag/design';
+import type { RadioChangeEvent } from '@eflag/design';
+import type { SizeType } from '@eflag/design/es/config-provider';
+import type { ColumnsType, TableProps } from '@eflag/design/es/table';
+import type { ExpandableConfig, TableRowSelection } from '@eflag/design/es/table/interface';
+import { DownOutlined } from '@eflag/icons';
 
 interface DataType {
   key: number;

@@ -1,4 +1,4 @@
-import { Button } from '@oceanbase/design';
+import { Button } from '@eflag/design';
 import React, { useMemo } from 'react';
 import type { LocaleWrapperProps } from '../../locale/LocaleWrapper';
 import LocaleWrapper from '../../locale/LocaleWrapper';

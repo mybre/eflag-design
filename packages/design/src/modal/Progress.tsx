@@ -5,7 +5,7 @@ import type { ProgressProps } from 'antd/es/progress';
 import classNames from 'classnames';
 import ConfigProvider from '../config-provider';
 import Modal from './Modal';
-import { LoadingOutlined } from '@oceanbase/icons';
+import { LoadingOutlined } from '@eflag/icons';
 
 export interface ModalProgressProps extends ModalProps {
   loading?: boolean;

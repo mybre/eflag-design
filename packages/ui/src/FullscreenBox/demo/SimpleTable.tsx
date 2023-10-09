@@ -1,5 +1,5 @@
 import React from 'react';
-import { Divider, Table, Tag } from '@oceanbase/design';
+import { Divider, Table, Tag } from '@eflag/design';
 
 export const SimpleTable = () => {
   const data = [
@@ -78,7 +78,7 @@ export const SimpleTable = () => {
 
   return (
     <Table
-      rowSelection={{ onChange: () => {} }}
+      rowSelection={{ onChange: () => { } }}
       columns={columns}
       dataSource={data}
       pagination={false}

@@ -1,6 +1,6 @@
 import React from 'react';
-import { ContentWithIcon } from '@oceanbase/ui';
-import { StepForwardOutlined } from '@oceanbase/icons';
+import { ContentWithIcon } from '@eflag/ui';
+import { StepForwardOutlined } from '@eflag/icons';
 
 export default () => {
   return (

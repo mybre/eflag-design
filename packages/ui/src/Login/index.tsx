@@ -1,8 +1,8 @@
 import { useControllableValue } from 'ahooks';
-import { App, Button, Divider, Menu, Typography } from '@oceanbase/design';
-import type { AlertProps } from '@oceanbase/design/es/alert';
-import type { FormProps } from '@oceanbase/design/es/form';
-import { message } from '@oceanbase/design';
+import { App, Button, Divider, Menu, Typography } from '@eflag/design';
+import type { AlertProps } from '@eflag/design/es/alert';
+import type { FormProps } from '@eflag/design/es/form';
+import { message } from '@eflag/design';
 import classNames from 'classnames';
 import React, { useCallback } from 'react';
 import { LOCALE_LIST } from '../constant';

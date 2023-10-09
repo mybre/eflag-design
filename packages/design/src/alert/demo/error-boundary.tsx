@@ -1,4 +1,4 @@
-import { Alert, Button } from '@oceanbase/design';
+import { Alert, Button } from '@eflag/design';
 import React, { useState } from 'react';
 
 const { ErrorBoundary } = Alert;

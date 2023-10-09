@@ -3,11 +3,11 @@
  * iframe: 600
  */
 import React, { useState } from 'react';
-import { Badge, Card, Dropdown, Progress, Table } from '@oceanbase/design';
-import type { PresetStatusColorType } from '@oceanbase/design';
-import { SideTip } from '@oceanbase/ui';
-import { FileTextOutlined } from '@oceanbase/icons';
-import { findByValue } from '@oceanbase/util';
+import { Badge, Card, Dropdown, Progress, Table } from '@eflag/design';
+import type { PresetStatusColorType } from '@eflag/design';
+import { SideTip } from '@eflag/ui';
+import { FileTextOutlined } from '@eflag/icons';
+import { findByValue } from '@eflag/util';
 
 export const STATUS_LIST = [
   { label: '全部', badgeStatus: 'default', value: 'all' },

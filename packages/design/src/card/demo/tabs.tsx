@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Card, Form, Radio, Switch } from '@oceanbase/design';
-import type { CardSize } from '@oceanbase/design/es/card';
+import { Card, Form, Radio, Switch } from '@eflag/design';
+import type { CardSize } from '@eflag/design/es/card';
 
 const tabList = [
   {

@@ -2,7 +2,7 @@ import path from 'path';
 import { defineConfig } from 'dumi';
 
 export default defineConfig({
-  mfsu: {},
+  // mfsu: {},
   // 默认重定向到子包的 src 文件夹
   // ref: https://d.umijs.org/config#monoreporedirect
   monorepoRedirect: {},
@@ -22,7 +22,7 @@ export default defineConfig({
   metas: [
     {
       property: 'og:site_name',
-      content: 'OceanBase Design',
+      content: 'eflag Design',
     },
     {
       'data-rh': 'keywords',
@@ -37,7 +37,7 @@ export default defineConfig({
     {
       name: 'keywords',
       content:
-        'OceanBase,oceanbase,OceanBase Design,oceanbase design,ui,react,component,library,typescript,chart',
+        'eflag,oceanbase,eflag Design,oceanbase design,ui,react,component,library,typescript,chart',
     },
     {
       name: 'description',
@@ -80,18 +80,18 @@ export default defineConfig({
     codeBlockMode: 'passive',
   },
   alias: {
-    '@oceanbase/design': path.join(__dirname, 'packages/design/src'),
-    '@oceanbase/design/es': path.join(__dirname, 'packages/design/src'),
-    '@oceanbase/design/locale': path.join(__dirname, 'packages/design/src/locale'),
+    '@eflag/design': path.join(__dirname, 'packages/design/src'),
+    '@eflag/design/es': path.join(__dirname, 'packages/design/src'),
+    '@eflag/design/locale': path.join(__dirname, 'packages/design/src/locale'),
     // for @import in less
-    '~@oceanbase/design/es': path.join(__dirname, 'packages/design/src'),
-    '@oceanbase/icons': path.join(__dirname, 'packages/icons/src'),
-    '@oceanbase/ui': path.join(__dirname, 'packages/ui/src'),
-    '@oceanbase/ui/es': path.join(__dirname, 'packages/ui/src'),
-    '@oceanbase/ui/locale': path.join(__dirname, 'packages/ui/src/locale'),
-    '@oceanbase/charts': path.join(__dirname, 'packages/charts/src'),
-    '@oceanbase/charts/es': path.join(__dirname, 'packages/charts/src'),
-    '@oceanbase/util': path.join(__dirname, 'packages/util/src'),
+    '~@eflag/design/es': path.join(__dirname, 'packages/design/src'),
+    '@eflag/icons': path.join(__dirname, 'packages/icons/src'),
+    '@eflag/ui': path.join(__dirname, 'packages/ui/src'),
+    '@eflag/ui/es': path.join(__dirname, 'packages/ui/src'),
+    '@eflag/ui/locale': path.join(__dirname, 'packages/ui/src/locale'),
+    '@eflag/charts': path.join(__dirname, 'packages/charts/src'),
+    '@eflag/charts/es': path.join(__dirname, 'packages/charts/src'),
+    '@eflag/util': path.join(__dirname, 'packages/util/src'),
   },
   favicons: [
     'https://mdn.alipayobjects.com/huamei_n8rchn/afts/img/A*d_ZTR7sdVzAAAAAAAAAAAAAADvSFAQ/original',

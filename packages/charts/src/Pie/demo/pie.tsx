@@ -1,7 +1,7 @@
 import React from 'react';
-import { Pie } from '@oceanbase/charts';
-import type { PieConfig } from '@oceanbase/charts';
-import { Col, Row } from '@oceanbase/design';
+import { Pie } from '@eflag/charts';
+import type { PieConfig } from '@eflag/charts';
+import { Col, Row } from '@eflag/design';
 
 export default () => {
   const data = [

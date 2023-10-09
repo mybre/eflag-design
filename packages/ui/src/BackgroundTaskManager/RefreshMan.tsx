@@ -1,5 +1,5 @@
 import { useInterval, useTimeout } from 'ahooks';
-import { Spin } from '@oceanbase/design';
+import { Spin } from '@eflag/design';
 import React, { forwardRef, useCallback, useEffect, useImperativeHandle, useState } from 'react';
 import { REFRESH_FREQUENCY } from './constants';
 

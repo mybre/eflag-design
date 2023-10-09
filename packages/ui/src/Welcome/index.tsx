@@ -1,6 +1,6 @@
-import { PlusOutlined } from '@oceanbase/icons';
-import { Button, Card, Col, Row } from '@oceanbase/design';
-import type { ButtonProps } from '@oceanbase/design/es/button';
+import { PlusOutlined } from '@eflag/icons';
+import { Button, Card, Col, Row } from '@eflag/design';
+import type { ButtonProps } from '@eflag/design/es/button';
 import classNames from 'classnames';
 import React from 'react';
 import LocaleWrapper from '../locale/LocaleWrapper';

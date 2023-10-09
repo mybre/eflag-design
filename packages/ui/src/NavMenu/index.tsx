@@ -1,4 +1,4 @@
-import { Menu } from '@oceanbase/design';
+import { Menu } from '@eflag/design';
 import { isArray } from 'lodash';
 import { pathToRegexp } from 'path-to-regexp';
 import React, { useCallback, useEffect, useState } from 'react';

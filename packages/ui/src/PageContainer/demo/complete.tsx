@@ -1,6 +1,6 @@
-import { EllipsisOutlined } from '@oceanbase/icons';
-import { Button, Card, Descriptions, Dropdown, message, Radio, Table } from '@oceanbase/design';
-import { PageContainer } from '@oceanbase/ui';
+import { EllipsisOutlined } from '@eflag/icons';
+import { Button, Card, Descriptions, Dropdown, message, Radio, Table } from '@eflag/design';
+import { PageContainer } from '@eflag/ui';
 import React, { useState } from 'react';
 
 export default () => {

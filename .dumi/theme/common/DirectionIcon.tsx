@@ -1,5 +1,5 @@
-import Icon from '@oceanbase/icons';
-import type { DirectionType } from '@oceanbase/design/es/config-provider';
+import Icon from '@eflag/icons';
+import type { DirectionType } from '@eflag/design/es/config-provider';
 import React from 'react';
 
 const ltrD =

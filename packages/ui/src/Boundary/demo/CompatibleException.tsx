@@ -1,5 +1,5 @@
 import React from 'react';
-import { Boundary } from '@oceanbase/ui';
+import { Boundary } from '@eflag/ui';
 
 export default () => {
   return (

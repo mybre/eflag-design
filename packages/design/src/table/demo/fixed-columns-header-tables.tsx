@@ -1,6 +1,6 @@
 import React from 'react';
-import { Table } from '@oceanbase/design';
-import { ColumnProps } from '@oceanbase/design/es/table';
+import { Table } from '@eflag/design';
+import { ColumnProps } from '@eflag/design/es/table';
 
 interface DataType {
   key: string;

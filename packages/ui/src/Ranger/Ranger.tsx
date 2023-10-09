@@ -1,5 +1,5 @@
-import { DatePicker, Space } from '@oceanbase/design';
-import type { RangePickerProps } from '@oceanbase/design/es/date-picker';
+import { DatePicker, Space } from '@eflag/design';
+import type { RangePickerProps } from '@eflag/design/es/date-picker';
 import type { Dayjs } from 'dayjs';
 import dayjs from 'dayjs';
 import { isNil, noop, omit } from 'lodash';

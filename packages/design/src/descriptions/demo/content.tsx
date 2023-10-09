@@ -1,5 +1,5 @@
 import React from 'react';
-import { Descriptions, Tooltip } from '@oceanbase/design';
+import { Descriptions, Tooltip } from '@eflag/design';
 
 export default () => (
   <Descriptions title="User Info">
