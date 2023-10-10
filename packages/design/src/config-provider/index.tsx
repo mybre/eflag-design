@@ -64,12 +64,12 @@ const ConfigProvider = ({ children, theme, navigate, spin, ...restProps }: Confi
           // Because defaultThemeToken is designed for light theme
           token: theme?.isDark
             ? {
-                ...defaultSeed,
-              }
+              ...defaultSeed,
+            }
             : {
-                ...defaultSeed,
-                ...defaultThemeToken,
-              },
+              ...defaultSeed,
+              // ...defaultThemeToken,
+            },
           components: {
             ...components,
             InputNumber: {

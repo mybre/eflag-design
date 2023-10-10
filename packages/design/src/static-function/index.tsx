@@ -17,7 +17,7 @@ const { defaultAlgorithm, defaultSeed, useToken } = theme;
 // 设置默认 token
 const mapToken = {
   ...defaultAlgorithm(defaultSeed),
-  ...defaultThemeToken,
+  // ...defaultThemeToken,
   override: {},
 };
 let token = formatToken(mapToken);
