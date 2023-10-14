@@ -14,6 +14,7 @@ export type {
   TaskMgrID,
 } from './BackgroundTaskManager';
 export { default as BasicLayout } from './BasicLayout';
+export { default as BasicLayoutCopy } from './BasicLayoutCopy';
 export { default as BatchOperationBar } from './BatchOperationBar';
 export { default as Boundary } from './Boundary';
 export * from './constant';

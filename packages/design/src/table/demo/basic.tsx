@@ -30,7 +30,9 @@ const App: React.FC = () => {
     });
   }
 
-  return <Table columns={columns} dataSource={dataSource} />;
+  return <div style={{ "--scroll-height": "200px" } as React.CSSProperties}>
+    <Table columns={columns} dataSource={dataSource} scroll={{y: "var(--scroll-height)"}}/>
+  </div>
 };
 
 export default App;

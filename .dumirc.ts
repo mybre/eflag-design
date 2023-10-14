@@ -144,6 +144,7 @@ export default defineConfig({
           title: '布局',
           children: [
             { title: 'BasicLayout 导航和布局', link: '/biz-components/basic-layout' },
+            { title: 'BasicLayout 导航和布局(拷贝)', link: '/biz-components/basic-layout-copy' },
             { title: 'PageContainer 页容器', link: '/biz-components/page-container' },
             // { title: 'NavMenu', link: '/biz-components/nav-menu' },
             { title: 'Welcome 欢迎页', link: '/biz-components/welcome' },

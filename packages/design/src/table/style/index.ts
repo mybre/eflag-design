@@ -54,11 +54,11 @@ export const genTableStyle: GenerateStyle<TableToken> = (token: TableToken): CSS
       // body 样式
       [`${componentCls}-tbody`]: {
         // 斑马纹样式
-        [`tr:nth-of-type(2n + 1):not(${componentCls}-placeholder):not(${componentCls}-row-selected):not(${antCls}-descriptions-row) > td`]:
+        [`tr:nth-child(2n + 1):not(${componentCls}-placeholder):not(${componentCls}-row-selected):not(${antCls}-descriptions-row) > td`]:
         {
           backgroundColor: colorBgBase,
         },
-        [`tr:nth-of-type(2n):not(${componentCls}-placeholder):not(${componentCls}-row-selected):not(${componentCls}-expanded-row):not(${antCls}-descriptions-row) > td`]:
+        [`tr:nth-child(2n):not(${componentCls}-placeholder):not(${componentCls}-row-selected):not(${componentCls}-expanded-row):not(${antCls}-descriptions-row) > td`]:
         {
           backgroundColor: colorFillQuaternary,
         },
@@ -98,7 +98,7 @@ export const genTableStyle: GenerateStyle<TableToken> = (token: TableToken): CSS
           },
           // 设置最后一行左右两列的圆角
           [`${componentCls}-tbody > tr:last-child`]: {
-            ['td:first-of-type, td:last-child']: {
+            ['td:first-child, td:last-child']: {
               borderRadius: borderRadiusLG,
             },
           },
@@ -138,7 +138,7 @@ export const genTableStyle: GenerateStyle<TableToken> = (token: TableToken): CSS
       [`${componentCls}`]: {
         [`${componentCls}-tbody`]: {
           // 去掉斑马纹
-          [`tr:nth-of-type(2n):not(${componentCls}-placeholder):not(${componentCls}-row-selected):not(${componentCls}-expanded-row)`]:
+          [`tr:nth-child(2n):not(${componentCls}-placeholder):not(${componentCls}-row-selected):not(${componentCls}-expanded-row)`]:
           {
             ['& > td']: {
               backgroundColor: colorBgBase,

@@ -107,6 +107,12 @@ export default function BannerRecommends({ }: BannerRecommendsProps) {
       href: '/biz-components/basic-layout',
     },
     {
+      key: 'biz-components-copy',
+      title: '📦 业务组件(拷贝)',
+      description: '从业务中来，提炼自 eflag 各个产品的通用能力',
+      href: '/biz-components/basic-layout-copy',
+    },
+    {
       key: 'charts',
       title: '📈 可视化图表',
       description: '基于 Ant Design Charts 定制和扩展，是 eflag 的图表最佳实践',
