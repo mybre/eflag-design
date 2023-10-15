@@ -1,9 +1,9 @@
 {
   "name": "@eflag/ui",
-  "version": "0.2.21",
+  "version": "0.2.22",
   "description": "The UI library based on eflag Design",
   "keywords": [
-    "oceanbase",
+    "eflag",
     "design",
     "ui",
     "react",
