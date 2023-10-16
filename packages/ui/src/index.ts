@@ -18,6 +18,7 @@ export { default as BasicLayoutCopy } from './BasicLayoutCopy';
 export { default as BatchOperationBar } from './BatchOperationBar';
 export { default as Boundary } from './Boundary';
 export * from './constant';
+export { default as ContentWithQuestion } from './ContentWithQuestion';
 export { default as ContentWithIcon } from './ContentWithIcon';
 export { default as Dialog } from './Dialog';
 export { default as DocDialog } from './DocDialog';
