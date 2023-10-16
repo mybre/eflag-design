@@ -1,5 +1,5 @@
 import React from 'react';
-import { ContentWithQuestion } from '@oceanbase/ui';
+import { ContentWithQuestion } from '@eflag/ui';
 
 export default () => {
   return (

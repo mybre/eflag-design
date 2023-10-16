@@ -1,5 +1,5 @@
-import { QuestionCircleOutlined } from '@oceanbase/icons';
-import { Space, Tooltip } from '@oceanbase/design';
+import { QuestionCircleOutlined } from '@eflag/icons';
+import { Space, Tooltip } from '@eflag/design';
 import classNames from 'classnames';
 import React, { isValidElement } from 'react';
 import { getPrefix } from '../_util';

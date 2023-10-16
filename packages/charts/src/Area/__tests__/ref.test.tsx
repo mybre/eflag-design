@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { render } from '@testing-library/react';
-import { Area } from '@oceanbase/charts';
+import { Area } from '@eflag/charts';
 
 describe('Area ref', () => {
   it('ref', () => {
