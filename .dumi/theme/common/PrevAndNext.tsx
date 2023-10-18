@@ -1,7 +1,7 @@
 import { LeftOutlined, RightOutlined } from '@eflag/icons';
 import { css } from '@emotion/react';
 import type { MenuProps } from '@eflag/design';
-import type { MenuItemType } from '@eflag/design/es/menu/hooks/useItems';
+import type { MenuItemType } from '@eflag/design/es/menu';
 import React, { useMemo } from 'react';
 import useMenu from '../../hooks/useMenu';
 import useSiteToken from '../../hooks/useSiteToken';
