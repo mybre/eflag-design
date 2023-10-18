@@ -1,6 +1,6 @@
 {
   "name": "@eflag/util",
-  "version": "0.2.9",
+  "version": "0.2.10",
   "description": "The Util Library for eflag",
   "keywords": [
     "oceanbase",
@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "ahooks": "^2.10.14",
-    "filesize": "^10.0.12",
+    "filesize": "^10.1.0",
     "is-url": "^1.2.4",
     "lodash": "^4.17.21",
     "moment": "^2.29.4",

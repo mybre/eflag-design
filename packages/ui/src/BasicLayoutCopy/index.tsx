@@ -9,9 +9,9 @@ import { css } from '@emotion/css';
 import { MenuFoldOutlined, MenuUnfoldOutlined } from '@eflag/icons';
 import { useState } from 'react';
 export default () => {
-  const [collapsed, setCollapsed] = useState(false);
+  const [collapsed, setCollapsed] = useState(true);
   const { token } = theme.useToken();
-  const items = new Array(3).fill(null).map((_, i) => {
+  const items = new Array(30).fill(null).map((_, i) => {
     const id = String(i + 1);
     return {
       label: `Tab ${id}`,
@@ -39,6 +39,7 @@ export default () => {
           pathname: '/admin/process/edit/123',
         }}
         layout="mix"
+        siderWidth={212}
         collapsed={collapsed}
         onCollapse={setCollapsed}
         collapsedButtonRender={false}
@@ -95,11 +96,15 @@ export default () => {
             <ConfigProvider theme={{
               components: {
                 Tabs: {
-                  horizontalMargin: '0'
+                  horizontalMargin: '0',
+                  cardPaddingSM: '3px 8px',
+                  cardBg: token.colorPrimary,
+                  itemColor: 'white',
+                  itemHoverColor: 'white'
                 },
               },
             }}>
-              <Tabs size="small" hideAdd type="editable-card" tabBarExtraContent={tabBarCollapse} items={items} />
+              <Tabs tabBarGutter={4} size="small" hideAdd type="editable-card" tabBarExtraContent={tabBarCollapse} items={items} />
             </ConfigProvider>
           </div>
         </Affix>
