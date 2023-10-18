@@ -4,21 +4,29 @@ import {
   ProCard,
   ProLayout,
 } from '@ant-design/pro-components';
-import { Affix, Button } from '@eflag/design';
-import { createStyles } from 'antd-style';
-
-
+import { Affix, Button, ConfigProvider, Tabs, theme } from '@eflag/design';
+import { css } from '@emotion/css';
+import { MenuFoldOutlined, MenuUnfoldOutlined } from '@eflag/icons';
+import { useState } from 'react';
 export default () => {
-  const useStyles = createStyles(({ token: antToken, css }) => ({
-
-    // 也支持通过 css 字符串模板获得和 普通 css 一致的书写体验
-    ProBreadcrumbWrap: css`
-    background-color: ${antToken.colorBgBase} !important;
-    padding: 10px;
-    border: 1px solid rgba(5, 5, 5, 0.06);
-  `,
-  }));
-  const { styles, cx, theme } = useStyles();
+  const [collapsed, setCollapsed] = useState(false);
+  const { token } = theme.useToken();
+  const items = new Array(3).fill(null).map((_, i) => {
+    const id = String(i + 1);
+    return {
+      label: `Tab ${id}`,
+      key: id,
+    };
+  });
+  const tabBarCollapse = {
+    left:
+      <div
+        onClick={() => setCollapsed(!collapsed)}
+        style={{ cursor: 'pointer', paddingRight: '10px' }}
+      >
+        {collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
+      </div>
+  }
 
   return (
     <div
@@ -31,8 +39,10 @@ export default () => {
           pathname: '/admin/process/edit/123',
         }}
         layout="mix"
+        collapsed={collapsed}
+        onCollapse={setCollapsed}
+        collapsedButtonRender={false}
         ErrorBoundary={false}
-        // headerContentRender={() => <ProBreadcrumb />}
         breadcrumbRender={(routers = []) => [
           {
             path: '/',
@@ -75,14 +85,37 @@ export default () => {
             ],
           },
         ]}
+        token={{ header: { heightLayoutHeader: 58 } }}
       >
-        <Affix offsetTop={58}>
-          <div style={{ padding: '10px 10px 0', background: '#F5F5F5' }}>
-            <div className={cx(styles.ProBreadcrumbWrap)}>
+        <Affix offsetTop={59}>
+          <div className={css`
+               background: ${token.colorBgBase};
+               padding: 4px 10px 0;
+              `}>
+            <ConfigProvider theme={{
+              components: {
+                Tabs: {
+                  horizontalMargin: '0'
+                },
+              },
+            }}>
+              <Tabs size="small" hideAdd type="editable-card" tabBarExtraContent={tabBarCollapse} items={items} />
+            </ConfigProvider>
+          </div>
+        </Affix>
+
+        {/* <Affix offsetTop={116}>
+          <div style={{ padding: '10px', background: '#F5F5F5' }}>
+            <div className={css`
+               background: ${token.colorBgBase};
+               padding: 4px 10px;
+               border-radius: 3px;
+              `}>
               <ProBreadcrumb />
             </div>
           </div>
-        </Affix>
+        </Affix> */}
+
 
         <PageContainer header={{ title: false }} breadcrumbRender={false}>
           <ProCard
@@ -104,3 +137,4 @@ export default () => {
     </div>
   )
 };
+
