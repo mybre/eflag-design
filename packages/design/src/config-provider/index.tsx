@@ -84,7 +84,7 @@ const ConfigProvider = ({
             }
             : {
               ...defaultSeed,
-              // ...defaultThemeToken,
+              ...defaultThemeToken,
             },
           components: {
             ...components,

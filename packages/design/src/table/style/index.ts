@@ -55,26 +55,27 @@ export const genTableStyle: GenerateStyle<TableToken> = (token: TableToken): CSS
       [`${componentCls}-tbody`]: {
         // 斑马纹样式
         [`tr:nth-child(2n + 1):not(${componentCls}-placeholder):not(${componentCls}-row-selected):not(${antCls}-descriptions-row) > td`]:
-        {
-          backgroundColor: colorBgBase,
-        },
+          {
+            backgroundColor: colorBgBase,
+          },
         [`tr:nth-child(2n):not(${componentCls}-placeholder):not(${componentCls}-row-selected):not(${componentCls}-expanded-row):not(${antCls}-descriptions-row) > td`]:
-        {
-          backgroundColor: colorFillQuaternary,
-        },
+          {
+            backgroundColor: colorFillQuaternary,
+          },
         // hover 行样式
         [`tr:not(${componentCls}-placeholder):not(${componentCls}-expanded-row):not(${antCls}-descriptions-row):hover > td`]:
-        {
-          backgroundColor: `${colorPrimaryBgHover} !important`,
-        },
+          {
+            backgroundColor: `${colorPrimaryBgHover} !important`,
+          },
         // 选中行样式
         [`tr${componentCls}-row-selected > td`]: {
           backgroundColor: colorPrimaryBg,
         },
         // 展开行样式
         [`${componentCls}-expanded-row > td`]: {
-          padding: `${paddingSM}px ${paddingLG}px ${paddingSM}px ${padding + paddingLG
-            }px !important`,
+          padding: `${paddingSM}px ${paddingLG}px ${paddingSM}px ${
+            padding + paddingLG
+          }px !important`,
           backgroundColor: colorBgBase,
           // 除内嵌子表格外，设置其他内嵌元素样式
           [`& > *:not(${componentCls}-wrapper)`]: {
@@ -158,16 +159,16 @@ export const genTableStyle: GenerateStyle<TableToken> = (token: TableToken): CSS
         [`${componentCls}-tbody`]: {
           // 去掉斑马纹
           [`tr:nth-child(2n):not(${componentCls}-placeholder):not(${componentCls}-row-selected):not(${componentCls}-expanded-row)`]:
-          {
-            ['& > td']: {
-              backgroundColor: colorBgBase,
-            },
-            ['&:hover']: {
-              td: {
-                backgroundColor: colorPrimaryBgHover,
+            {
+              ['& > td']: {
+                backgroundColor: colorBgBase,
+              },
+              ['&:hover']: {
+                td: {
+                  backgroundColor: colorPrimaryBgHover,
+                },
               },
             },
-          },
         },
       },
       [`${componentCls}-pagination`]: {

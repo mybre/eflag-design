@@ -31,7 +31,7 @@ const App: React.FC = () => {
   }
 
   return <div style={{ "--scroll-height": "200px" } as React.CSSProperties}>
-    <Table columns={columns} dataSource={dataSource} scroll={{y: "var(--scroll-height)"}}/>
+    <Table columns={columns} dataSource={dataSource} scroll={{ y: "var(--scroll-height)" }} />
   </div>
 };
 
