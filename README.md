@@ -8,7 +8,9 @@
 
 - [@eflag/design](https://design.oceanbase.com/docs/design-introduce)
 - [@eflag/ui](https://design.oceanbase.com/docs/ui-introduce)
+- [@eflag/icons](https://design.oceanbase.com/components/icon)
 - [@eflag/charts](https://design.oceanbase.com/docs/charts-introduce)
+- [@eflag/util](https://github.com/oceanbase/oceanbase-design/tree/master/packages/util)
 
 ## ⌨️ Development
 
@@ -19,7 +21,7 @@ Use Gitpod, a free online dev environment for GitHub.
 Or clone locally:
 
 ```bash
-$ git clone git@github.com:oceanbase/design.git
+$ git clone git@github.com:oceanbase/oceanbase-design.git
 $ cd design
 $ npm install -g pnpm
 $ pnpm install
