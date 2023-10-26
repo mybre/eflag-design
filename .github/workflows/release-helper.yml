@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Release Oceanbase Design
-        uses: dengfuping/monorepo-release-helper@v1
+        uses: dengfuping/monorepo-release-helper@v1.7
         with:
           changelogs: 'docs/design/design-CHANGELOG.md, docs/ui/ui-CHANGELOG.md, docs/charts/charts-CHANGELOG.md, docs/codemod/codemod-CHANGELOG.md'
           dingding-changelogs: 'docs/design/design-CHANGELOG.md, docs/ui/ui-CHANGELOG.md, docs/charts/charts-CHANGELOG.md, docs/codemod/codemod-CHANGELOG.md'
