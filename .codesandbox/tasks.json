@@ -1,0 +1,128 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "pnpm install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "build": {
+      "name": "build",
+      "command": "pnpm build",
+      "runAtStart": false
+    },
+    "build:watch": {
+      "name": "build:watch",
+      "command": "pnpm build:watch",
+      "runAtStart": false
+    },
+    "ci": {
+      "name": "ci",
+      "command": "pnpm ci",
+      "runAtStart": false
+    },
+    "deploy": {
+      "name": "deploy",
+      "command": "pnpm deploy",
+      "runAtStart": false
+    },
+    "dev": {
+      "name": "dev",
+      "command": "pnpm dev",
+      "runAtStart": true
+    },
+    "prepare": {
+      "name": "prepare",
+      "command": "pnpm prepare",
+      "runAtStart": false
+    },
+    "prepublishOnly": {
+      "name": "prepublishOnly",
+      "command": "pnpm prepublishOnly",
+      "runAtStart": false
+    },
+    "publish": {
+      "name": "publish",
+      "command": "pnpm publish",
+      "runAtStart": false
+    },
+    "publish:from-package": {
+      "name": "publish:from-package",
+      "command": "pnpm publish:from-package",
+      "runAtStart": false
+    },
+    "site:build": {
+      "name": "site:build",
+      "command": "pnpm site:build",
+      "runAtStart": false
+    },
+    "site:deploy": {
+      "name": "site:deploy",
+      "command": "pnpm site:deploy",
+      "runAtStart": false
+    },
+    "start": {
+      "name": "start",
+      "command": "pnpm start",
+      "runAtStart": false
+    },
+    "postpublish": {
+      "name": "postpublish",
+      "command": "pnpm postpublish",
+      "runAtStart": false
+    },
+    "sync:other-npm": {
+      "name": "sync:other-npm",
+      "command": "pnpm sync:other-npm",
+      "runAtStart": false
+    },
+    "test": {
+      "name": "test",
+      "command": "pnpm test",
+      "runAtStart": false
+    },
+    "test:coverage": {
+      "name": "test:coverage",
+      "command": "pnpm test:coverage",
+      "runAtStart": false
+    },
+    "test:update": {
+      "name": "test:update",
+      "command": "pnpm test:update",
+      "runAtStart": false
+    },
+    "lint": {
+      "name": "lint",
+      "command": "pnpm lint",
+      "runAtStart": false
+    },
+    "lint:fix": {
+      "name": "lint:fix",
+      "command": "pnpm lint:fix",
+      "runAtStart": false
+    },
+    "prettier": {
+      "name": "prettier",
+      "command": "pnpm prettier",
+      "runAtStart": false
+    },
+    "tsc": {
+      "name": "tsc",
+      "command": "pnpm tsc",
+      "runAtStart": false
+    },
+    "tsc:clean": {
+      "name": "tsc:clean",
+      "command": "pnpm tsc:clean",
+      "runAtStart": false
+    },
+    "locale:remove-useless": {
+      "name": "locale:remove-useless",
+      "command": "pnpm locale:remove-useless",
+      "runAtStart": false
+    }
+  }
+}
