@@ -2,7 +2,7 @@ import { useMouse, useSize } from 'ahooks';
 import type { TooltipPropsWithTitle as AntTooltipPropsWithTitle } from 'antd/es/tooltip';
 import React, { useRef, useState } from 'react';
 import ReactStickyMouseTooltip from 'react-sticky-mouse-tooltip';
-import { token } from '../static-function';
+import theme from '../theme';
 
 interface MouseTooltipProps extends AntTooltipPropsWithTitle {
   /* 外部传入的 visible 并不完全控制显示和隐藏，只是作为是否显示的前提条件 */
@@ -24,6 +24,7 @@ const MouseTooltip: React.FC<MouseTooltipProps> = ({
   mouseLeaveDelay = 0.1,
   ...restProps
 }) => {
+  const { token } = theme.useToken();
   const [visible, setVisible] = useState(false);
 
   const { color: textColor, ...restOverlayInnerStyle } = overlayInnerStyle || {};
@@ -35,7 +36,7 @@ const MouseTooltip: React.FC<MouseTooltipProps> = ({
   };
 
   // 获取鼠标位置
-  const mouse = useMouse();
+  const { clientX = 0, clientY = 0 } = useMouse();
   const ref = useRef<HTMLDivElement>(null);
   const size = useSize(ref);
   // tooltip 宽高，由于 ref 是设置在内容区上的，因此还需要加上外部的 padding
@@ -46,9 +47,9 @@ const MouseTooltip: React.FC<MouseTooltipProps> = ({
   const pageHeight = document.body.clientHeight || 0;
 
   // 是否横向超出浏览器，需要留出 8px 缓冲区，避免到达页面边界时位置调整不生效
-  const isOverWidth = mouse.clientX + tooltipWidth + 8 > pageWidth;
+  const isOverWidth = clientX + tooltipWidth + 8 > pageWidth;
   // 是否纵向超出浏览器，需要留出 8px 缓冲区，避免到达页面边界时位置调整不生效
-  const isOverHeight = mouse.clientY + tooltipHeight + 8 > pageHeight;
+  const isOverHeight = clientY + tooltipHeight + 8 > pageHeight;
 
   // tooltip 和鼠标之间的偏移
   const offset = 8;
@@ -82,8 +83,8 @@ const MouseTooltip: React.FC<MouseTooltipProps> = ({
             borderRadius: token.borderRadius,
             color: textColor || token.colorTextLightSolid,
             backgroundColor: backgroundColor || token.colorBgSpotlight,
-            left: isOverWidth ? mouse.clientX - tooltipWidth - offset : mouse.clientX + offset,
-            top: isOverHeight ? mouse.clientY - tooltipHeight - offset : mouse.clientY + offset,
+            left: isOverWidth ? clientX - tooltipWidth - offset : clientX + offset,
+            top: isOverHeight ? clientY - tooltipHeight - offset : clientY + offset,
             ...restOverlayInnerStyle,
           }}
           {...restProps}

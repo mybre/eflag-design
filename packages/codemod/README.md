@@ -1,6 +1,6 @@
 # OceanBase Codemod
 
-A collection of codemod scripts that help migrate from `antd`, `@alipay/ob-ui`, `@alipay/tech-ui`, `@ant-design/pro-components` and `@ant-design/charts` to OceanBase Design System by using [jscodeshift](https://github.com/facebook/jscodeshift) and [postcss](https://github.com/postcss/postcss). (Inspired by [@ant-design/codemod-v5](https://github.com/ant-design/codemod-v5))
+A collection of codemod transformers that help migrate from `antd`, `@alipay/ob-ui`, `@alipay/tech-ui`, `@ant-design/pro-components` and `@ant-design/charts` to OceanBase Design System by using [jscodeshift](https://github.com/facebook/jscodeshift) and [postcss](https://github.com/postcss/postcss). (Inspired by [@ant-design/codemod-v5](https://github.com/ant-design/codemod-v5))
 
 [![NPM version](https://img.shields.io/npm/v/@oceanbase/codemod.svg?style=flat)](https://npmjs.org/package/@oceanbase/codemod) [![NPM downloads](http://img.shields.io/npm/dm/@oceanbase/codemod.svg?style=flat)](https://npmjs.org/package/@oceanbase/codemod) [![Github Action](https://github.com/oceanbase/oceanbase-design/actions/workflows/ci.yml/badge.svg)](https://github.com/oceanbase/oceanbase-design/actions/workflows/ci.yml)
 
@@ -10,14 +10,24 @@ A collection of codemod scripts that help migrate from `antd`, `@alipay/ob-ui`, 
 
 ## Usage
 
-Before run codemod scripts, you'd better make sure to commit your local git changes firstly.
+Before run codemod, you'd better make sure to commit your local git changes firstly.
 
 ```shell
 # Run directly through npx
+# `src` is the target directory or file that you want to transform.
 npx -p @oceanbase/codemod codemod src
+# options
+# --transformer=t1,t2     // run specify transformers
+# --disablePrettier       // disable prettier
 ```
 
-## Codemod scripts introduction
+Run specific transformers:
+
+```shell
+npx -p @oceanbase/codemod codemod src --transformer=style-to-token,less-to-token
+```
+
+## Codemod transformers introduction
 
 ### `antd-to-oceanbase-design`
 
@@ -154,7 +164,7 @@ transform fixed style to antd v5 design token.
     return (
 -     <div>
 -       <Alert style={{ color: 'rgba(0, 0, 0, 0.85)', background: 'rgba(0, 0, 0,0.65)', backgroundColor: 'rgba(0,0,0,0.45)', border: '1px solid #d9d9d9' }} />
--       <Button style={{ color: '#1890ff', background: '#52c41a', backgroundColor: '#faad14', borderColor: '#ff4D4F' }}></Button>
+-       <Button style={{ color: '#1890ff', background: '#52c41a', backgroundColor: '#faad14', borderColor: '#ff4d4f' }}></Button>
 -     </div>
 +     (<div>
 +       <Alert style={{ color: token.colorText, background: token.colorTextSecondary, backgroundColor: token.colorTextTertiary, border: `1px solid ${token.colorBorder}` }} />
@@ -183,11 +193,13 @@ export default Demo;
       return (
 -       <div>
 -         <Alert style={{ color: 'rgba(0, 0, 0, 0.85)', background: 'rgba(0, 0, 0,0.65)', backgroundColor: 'rgba(0,0,0,0.45)', border: '#d9d9d9' }} />
--         <Button style={{ color: '#1890ff', background: '#52c41a', backgroundColor: '#faad14', borderColor: '#ff4D4F' }}></Button>
+-         <Button style={{ color: '#1890ff', background: '#52c41a', backgroundColor: '#faad14', borderColor: '#ff4d4f' }}></Button>
+-         <div color="#fafafa" border="1px solid #fafafa" />
 -       </div>
 +       (<div>
 +         <Alert style={{ color: token.colorText, background: token.colorTextSecondary, backgroundColor: token.colorTextTertiary, border: `1px solid ${token.colorBgLayout}` }} />
 +         <Button style={{ color: token.colorInfo, background: token.colorSuccess, backgroundColor: token.colorWarning, borderColor: token.colorError }}></Button>
++         <div color={token.colorBgLayout} border={`1px solid ${token.colorBgLayout}`} />
 +       </div>)
       );
     }
@@ -200,11 +212,15 @@ export default Demo;
 
 ```diff
 + import { token } from '@oceanbase/design';
+- const color = '#fafafa';
+- const border = '1px solid #fafafa';
++ const color = token.colorBgLayout;
++ const border = `1px solid ${token.colorBgLayout}`;
   const colorMap = {
 -   info: '#1890ff',
 -   success: '#52c41a',
 -   warning: '#faad14',
--   error: '#ff4D4F',
+-   error: '#ff4d4f',
 -   border: '1px solid #d9d9d9',
 +   info: token.colorInfo,
 +   success: token.colorSuccess,
@@ -232,7 +248,7 @@ export default Demo;
       },
       {
         type: 'error',
--       color: '#ff4D4F',
+-       color: '#ff4d4f',
 +       color: token.colorError,
       },
       {
@@ -254,7 +270,7 @@ transform fixed less style to antd v5 design token.
 -   color: #1890ff;
 -   background: #52c41a;
 -   background-color: #faad14;
--   border-color: #ff4D4F;
+-   border-color: #ff4d4f;
 +   color: @colorInfo;
 +   background: @colorSuccess;
 +   background-color: @colorWarning;

@@ -7,11 +7,17 @@ import type {
 } from 'antd/es/config-provider';
 import type { ComponentStyleConfig } from 'antd/es/config-provider/context';
 import type { SpinIndicator } from 'antd/es/spin';
+import { StyleProvider } from '@ant-design/cssinjs';
+import type { StyleProviderProps } from '@ant-design/cssinjs';
+import StyleContext from '@ant-design/cssinjs/es/StyleContext';
+import type { StyleContextProps } from '@ant-design/cssinjs/es/StyleContext';
 import { merge } from 'lodash';
 import StaticFunction from '../static-function';
-import defaultTheme from '../theme';
-import defaultThemeToken from '../theme/default';
+import themeConfig from '../theme';
+import defaultTheme from '../theme/default';
+import darkTheme from '../theme/dark';
 import type { NavigateFunction } from './navigate';
+import type { Locale } from '../locale';
 
 export * from './navigate';
 export * from 'antd/es/config-provider/context';
@@ -30,7 +36,9 @@ export type SpinConfig = ComponentStyleConfig & {
 export interface ConfigConsumerProps extends AntConfigConsumerProps {
   theme?: ThemeConfig;
   navigate?: NavigateFunction;
+  hideOnSinglePage?: boolean;
   spin?: SpinConfig;
+  locale?: Locale;
 }
 
 export interface ConfigProviderProps extends AntConfigProviderProps {
@@ -39,31 +47,45 @@ export interface ConfigProviderProps extends AntConfigProviderProps {
   // for react-router-dom v5: history.push
   // for react-router-dom v6: navigate
   navigate?: NavigateFunction;
+  hideOnSinglePage?: boolean;
   spin?: SpinConfig;
+  // StyleProvider props
+  styleProviderProps?: StyleProviderProps;
 }
 
 export interface ExtendedConfigConsumerProps {
   navigate?: NavigateFunction;
+  hideOnSinglePage?: boolean;
 }
 
 const ExtendedConfigContext = React.createContext<ExtendedConfigConsumerProps>({
   navigate: undefined,
+  hideOnSinglePage: true,
 });
 
-const { defaultSeed, components } = defaultTheme;
+const { defaultSeed } = themeConfig;
 
 const ConfigProvider = ({
   children,
   theme,
   navigate,
+  hideOnSinglePage,
   spin,
   tabs,
+  styleProviderProps,
   ...restProps
 }: ConfigProviderProps) => {
   // inherit from parent ConfigProvider
   const parentContext = React.useContext<ConfigConsumerProps>(AntConfigProvider.ConfigContext);
   const parentExtendedContext =
     React.useContext<ExtendedConfigConsumerProps>(ExtendedConfigContext);
+  const mergedTheme = merge(parentContext.theme, theme);
+  const currentTheme = mergedTheme?.isDark ? darkTheme : defaultTheme;
+
+  // inherit from parent StyleProvider
+  const parentStyleContext = React.useContext<StyleContextProps>(StyleContext);
+  const mergedStyleProviderProps = merge(parentStyleContext, styleProviderProps);
+
   return (
     <AntConfigProvider
       spin={merge(parentContext.spin, spin)}
@@ -76,39 +98,33 @@ const ConfigProvider = ({
       )}
       theme={merge(
         {
-          // Only set seed token for dark theme
-          // Because defaultThemeToken is designed for light theme
-          token: theme?.isDark
-            ? {
-                ...defaultSeed,
-              }
-            : {
-                ...defaultSeed,
-                ...defaultThemeToken,
-              },
-          components: {
-            ...components,
-            InputNumber: {
-              ...components?.InputNumber,
-            },
+          token: {
+            ...defaultSeed,
+            ...currentTheme.token,
           },
+          components: currentTheme.components,
         },
-        parentContext.theme,
-        theme
+        mergedTheme
       )}
       {...restProps}
     >
       <ExtendedConfigContext.Provider
         value={{
           navigate: navigate === undefined ? parentExtendedContext.navigate : navigate,
+          hideOnSinglePage:
+            hideOnSinglePage === undefined
+              ? parentExtendedContext.hideOnSinglePage
+              : hideOnSinglePage,
         }}
       >
-        {/* Nested App component for static function of message, notification and Modal to consume ConfigProvider config */}
-        {/* ref: https://ant.design/components/app */}
-        <App>
-          {children}
-          <StaticFunction />
-        </App>
+        <StyleProvider {...mergedStyleProviderProps}>
+          {/* Nested App component for static function of message, notification and Modal to consume ConfigProvider config */}
+          {/* ref: https://ant.design/components/app */}
+          <App>
+            {children}
+            <StaticFunction />
+          </App>
+        </StyleProvider>
       </ExtendedConfigContext.Provider>
     </AntConfigProvider>
   );
@@ -117,8 +133,7 @@ const ConfigProvider = ({
 ConfigProvider.ConfigContext =
   AntConfigProvider.ConfigContext as React.Context<ConfigConsumerProps>;
 ConfigProvider.ExtendedConfigContext = ExtendedConfigContext;
-// SizeContext is deprecated
-// ConfigProvider.SizeContext = AntConfigProvider.SizeContext;
+ConfigProvider.SizeContext = AntConfigProvider.SizeContext;
 ConfigProvider.config = AntConfigProvider.config;
 ConfigProvider.useConfig = AntConfigProvider.useConfig;
 

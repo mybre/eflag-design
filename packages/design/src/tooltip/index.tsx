@@ -1,13 +1,16 @@
 import { Tooltip as AntTooltip, Space } from 'antd';
-import type { TooltipPropsWithTitle as AntTooltipPropsWithTitle } from 'antd/es/tooltip';
-import React, { useContext, useMemo, useState } from 'react';
+import type {
+  TooltipPropsWithTitle as AntTooltipPropsWithTitle,
+  TooltipRef,
+} from 'antd/es/tooltip';
+import React, { useContext, useEffect, useState } from 'react';
 import { CloseOutlined } from '@oceanbase/icons';
+import classNames from 'classnames';
 import { isNil } from 'lodash';
-import { token } from '../static-function';
 import MouseTooltip from './MouseTooltip';
 import ConfigProvider from '../config-provider';
 import useStyle from './style';
-import classNames from 'classnames';
+import { useTooltipTypeList } from './hooks/useTooltipTypeList';
 
 export * from 'antd/es/tooltip';
 
@@ -20,138 +23,134 @@ export interface TooltipProps extends AntTooltipPropsWithTitle {
   onClose?: (e: React.MouseEvent<HTMLElement>) => void;
 }
 
-export const getTooltipTypeList = () => [
-  {
-    type: 'light',
-    color: token.colorText,
-    backgroundColor: token.colorBgElevated,
-  },
-  {
-    type: 'success',
-    color: token.colorSuccess,
-    backgroundColor: token.colorSuccessBg,
-  },
-  {
-    type: 'info',
-    color: token.colorInfo,
-    backgroundColor: token.colorInfoBg,
-  },
-  {
-    type: 'warning',
-    color: token.colorWarning,
-    backgroundColor: token.colorWarningBg,
-  },
-  {
-    type: 'error',
-    color: token.colorError,
-    backgroundColor: token.colorErrorBg,
-  },
-];
-
-type CompoundedComponent = React.FC<TooltipProps> & {
+type CompoundedComponent = React.ForwardRefExoticComponent<
+  TooltipProps & React.RefAttributes<TooltipRef | undefined>
+> & {
   /** @internal */
   __ANT_TOOLTIP: boolean;
+  _InternalPanelDoNotUseOrYouWillBeFired: typeof AntTooltip._InternalPanelDoNotUseOrYouWillBeFired;
 };
 
-const Tooltip: CompoundedComponent = ({
-  children,
-  type = 'default',
-  color,
-  overlayInnerStyle,
-  mouseFollow,
-  closeIcon = false,
-  onClose,
-  title,
-  className,
-  open: propOpen,
-  ...restProps
-}) => {
-  const { getPrefixCls } = useContext(ConfigProvider.ConfigContext);
+const Tooltip = React.forwardRef<TooltipRef, TooltipProps>(
+  (
+    {
+      children,
+      title,
+      type = 'default',
+      color,
+      mouseFollow,
+      closeIcon = false,
+      onClose,
+      open,
+      defaultOpen,
+      onOpenChange,
+      visible,
+      defaultVisible,
+      onVisibleChange,
+      overlayInnerStyle,
+      className,
+      ...restProps
+    },
+    ref
+  ) => {
+    const { getPrefixCls } = useContext(ConfigProvider.ConfigContext);
 
-  const { prefixCls: customizePrefixCls } = restProps;
-  const prefixCls = getPrefixCls('tooltip', customizePrefixCls);
-  const { wrapSSR, hashId } = useStyle(prefixCls);
+    const { prefixCls: customizePrefixCls } = restProps;
+    const prefixCls = getPrefixCls('tooltip', customizePrefixCls);
+    const { wrapSSR, hashId } = useStyle(prefixCls);
 
-  const tooltipCls = classNames(className, hashId);
-  const [innerOpen, setInnerOpen] = useState(undefined);
+    const tooltipCls = classNames(className, hashId);
+    const [innerOpen, setInnerOpen] = useState(open ?? visible ?? defaultOpen ?? defaultVisible);
 
-  const open = isNil(propOpen) ? innerOpen : propOpen;
+    const newOpen = open ?? visible ?? innerOpen;
 
-  const handleCloseClick = (e: React.MouseEvent<HTMLElement>) => {
-    e.stopPropagation();
-    onClose?.(e);
+    useEffect(() => {
+      if (!isNil(open)) {
+        setInnerOpen(open);
+      } else if (!isNil(visible)) {
+        setInnerOpen(visible);
+      }
+    }, [open, visible]);
 
-    if (e.defaultPrevented) {
-      return;
-    }
+    const handleCloseClick = (e: React.MouseEvent<HTMLElement>) => {
+      e.stopPropagation();
+      onClose?.(e);
 
-    setInnerOpen(false);
-  };
+      if (e.defaultPrevented) {
+        return;
+      }
 
-  const hasCloseIcon = !!closeIcon;
+      setInnerOpen(false);
+    };
 
-  const CloseIconNode = useMemo(() => {
-    if (!hasCloseIcon) {
-      return null;
-    }
-    return closeIcon === true ? (
-      <CloseOutlined className={`${prefixCls}-close-icon`} onClick={handleCloseClick} />
+    const closeIconNode = closeIcon ? (
+      closeIcon === true ? (
+        <CloseOutlined className={`${prefixCls}-close-icon`} onClick={handleCloseClick} />
+      ) : (
+        <span className={`${prefixCls}-close-icon`} onClick={handleCloseClick}>
+          {closeIcon}
+        </span>
+      )
+    ) : null;
+
+    const titleNode = typeof title === 'function' ? title() : title;
+    const newTitle = closeIcon ? (
+      <Space className={`${prefixCls}-close-icon-wrap`}>
+        {titleNode}
+        {closeIconNode}
+      </Space>
     ) : (
-      <span className={`${prefixCls}-close-icon`} onClick={handleCloseClick}>
-        {closeIcon}
-      </span>
+      titleNode
     );
-  }, [closeIcon]);
 
-  const titleNode = typeof title === 'function' ? title() : title;
-  const titleWithCloseIcon = (
-    <Space className={`${prefixCls}-close-icon-wrap`}>
-      {titleNode}
-      {CloseIconNode}
-    </Space>
-  );
-
-  const typeList = getTooltipTypeList();
-  const typeItem = typeList.find(item => item.type === type);
-  return wrapSSR(
-    mouseFollow ? (
-      <MouseTooltip
-        title={title}
-        color={color || typeItem?.backgroundColor}
-        overlayInnerStyle={{
-          color: typeItem?.color,
-          ...overlayInnerStyle,
-        }}
-        className={tooltipCls}
-        {...restProps}
-      >
-        {children}
-      </MouseTooltip>
-    ) : (
-      <AntTooltip
-        title={hasCloseIcon ? titleWithCloseIcon : title}
-        color={color || typeItem?.backgroundColor}
-        open={open}
-        onOpenChange={newOpen => {
-          setInnerOpen(newOpen);
-        }}
-        overlayInnerStyle={{
-          color: typeItem?.color,
-          ...overlayInnerStyle,
-        }}
-        className={tooltipCls}
-        {...restProps}
-      >
-        {children}
-      </AntTooltip>
-    )
-  );
-};
+    const typeList = useTooltipTypeList();
+    const typeItem = typeList.find(item => item.type === type);
+    return wrapSSR(
+      mouseFollow ? (
+        <MouseTooltip
+          title={title}
+          color={color || typeItem?.backgroundColor}
+          overlayInnerStyle={{
+            color: typeItem?.color,
+            ...overlayInnerStyle,
+          }}
+          className={tooltipCls}
+          {...restProps}
+        >
+          {children}
+        </MouseTooltip>
+      ) : (
+        <AntTooltip
+          ref={ref}
+          title={newTitle}
+          color={color || typeItem?.backgroundColor}
+          open={newOpen}
+          defaultOpen={defaultOpen}
+          onOpenChange={value => {
+            setInnerOpen(value);
+            onVisibleChange?.(value);
+            onOpenChange?.(value);
+          }}
+          overlayInnerStyle={{
+            color: typeItem?.color,
+            ...overlayInnerStyle,
+          }}
+          className={tooltipCls}
+          {...restProps}
+        >
+          {children}
+        </AntTooltip>
+      )
+    );
+  }
+) as CompoundedComponent;
 
 if (process.env.NODE_ENV !== 'production') {
   Tooltip.displayName = AntTooltip.displayName;
 }
 
 Tooltip.__ANT_TOOLTIP = true;
+
+Tooltip._InternalPanelDoNotUseOrYouWillBeFired = AntTooltip._InternalPanelDoNotUseOrYouWillBeFired;
 
 export default Tooltip;

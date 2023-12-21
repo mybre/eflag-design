@@ -1,14 +1,18 @@
-import { Popover, Space, Table as AntTable, Typography } from 'antd';
+import { Popover, Space, Table as AntTable } from 'antd';
 import type { TableProps as AntTableProps } from 'antd';
 import type { ColumnsType } from 'antd/es/table';
 import type { RowSelectMethod, TableLocale as AntTableLocale } from 'antd/es/table/interface';
+import type { Reference } from 'rc-table';
+import type Summary from 'rc-table/es/Footer/Summary';
 import classNames from 'classnames';
 import { isEmpty } from 'lodash';
 import type { ReactElement, ReactNode } from 'react';
 import React, { useContext, useEffect, useState } from 'react';
 import ConfigProvider from '../config-provider';
+import Typography from '../typography';
 import enUS from '../locale/en-US';
 import useStyle from './style';
+import type { AnyObject } from '../_util/type';
 
 export * from 'antd/es/table';
 
@@ -31,7 +35,7 @@ export interface TableProps<T> extends AntTableProps<T> {
   locale?: TableLocale;
 }
 
-function Table<T>(props: TableProps<T>) {
+function Table<T>(props: TableProps<T>, ref: React.Ref<Reference>) {
   const {
     locale: customLocale,
     columns,
@@ -45,6 +49,8 @@ function Table<T>(props: TableProps<T>) {
     prefixCls: customizePrefixCls,
     className,
   } = props;
+  const extendedContext = useContext(ConfigProvider.ExtendedConfigContext);
+
   const { batchOperationBar, ...restLocale } = {
     ...customLocale,
     batchOperationBar: {
@@ -63,7 +69,7 @@ function Table<T>(props: TableProps<T>) {
     className
   );
 
-  const [openPopver, setOpenPopver] = useState<boolean>(false);
+  const [openPopover, setOpenPopover] = useState<boolean>(false);
   const [currentSelectedRowKeys, setCurrentSelectedRowKeys] = useState<any[]>();
   const [currentSelectedRows, setCurrentSelectedRows] = useState<any[]>([]);
   const [currentSelectedInfo, setCurrentSelectedInfo] = useState<any>({});
@@ -118,7 +124,7 @@ function Table<T>(props: TableProps<T>) {
 
   useEffect(() => {
     if (isEmpty(currentSelectedRows) && toolSelectedContent) {
-      setOpenPopver(false);
+      setOpenPopover(false);
     }
   }, [currentSelectedRows]);
 
@@ -156,10 +162,10 @@ function Table<T>(props: TableProps<T>) {
                 overlayClassName={`${prefixCls}-batch-operation-selection-popover`}
                 content={toolSelectedContent?.(currentSelectedRowKeys, currentSelectedRows)}
                 trigger="click"
-                open={openPopver}
+                open={openPopover}
               >
-                <a onClick={() => setOpenPopver(!openPopver)}>
-                  {openPopver ? batchOperationBar?.collapse : batchOperationBar?.open}
+                <a onClick={() => setOpenPopover(!openPopover)}>
+                  {openPopover ? batchOperationBar?.collapse : batchOperationBar?.open}
                 </a>
               </Popover>
             )}
@@ -179,6 +185,7 @@ function Table<T>(props: TableProps<T>) {
   return wrapSSR(
     <AntTable
       {...props}
+      ref={ref}
       prefixCls={customizePrefixCls}
       className={tableCls}
       locale={restLocale}
@@ -204,8 +211,11 @@ function Table<T>(props: TableProps<T>) {
         pagination === false
           ? false
           : {
+              hideOnSinglePage:
+                extendedContext.hideOnSinglePage !== undefined
+                  ? extendedContext.hideOnSinglePage
+                  : true,
               ...pagination,
-              // @ts-ignore
               showTotal: renderOptionsBar,
             }
       }
@@ -213,13 +223,19 @@ function Table<T>(props: TableProps<T>) {
   );
 }
 
-Table.SELECTION_COLUMN = AntTable.SELECTION_COLUMN;
-Table.EXPAND_COLUMN = AntTable.EXPAND_COLUMN;
-Table.SELECTION_ALL = AntTable.SELECTION_ALL;
-Table.SELECTION_INVERT = AntTable.SELECTION_INVERT;
-Table.SELECTION_NONE = AntTable.SELECTION_NONE;
-Table.Column = AntTable.Column;
-Table.ColumnGroup = AntTable.ColumnGroup;
-Table.Summary = AntTable.Summary;
+const ForwardTable = React.forwardRef(Table) as <RecordType extends AnyObject = AnyObject>(
+  props: React.PropsWithChildren<TableProps<RecordType>> & {
+    ref?: React.Ref<Reference>;
+  }
+) => React.ReactElement;
 
-export default Table;
+export default Object.assign(ForwardTable, {
+  SELECTION_COLUMN: AntTable.SELECTION_COLUMN,
+  EXPAND_COLUMN: AntTable.EXPAND_COLUMN,
+  SELECTION_ALL: AntTable.SELECTION_ALL,
+  SELECTION_INVERT: AntTable.SELECTION_INVERT,
+  SELECTION_NONE: AntTable.SELECTION_NONE,
+  Column: AntTable.Column,
+  ColumnGroup: AntTable.ColumnGroup,
+  Summary: AntTable.Summary as typeof Summary,
+});

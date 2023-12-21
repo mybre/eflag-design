@@ -91,7 +91,7 @@ function getRunnerArgs(transformerPath, parser = 'babylon', options = {}) {
     // override default babylon parser config to enable `decorator-legacy`
     // https://github.com/facebook/jscodeshift/blob/master/parser/babylon.js
     parserConfig: require('./babylon.config.json'),
-    extensions: ['js', 'jsx', 'ts', 'tsx', 'd.ts'].join(','),
+    extensions: ['js', 'jsx', 'ts', 'tsx'].join(','),
     transform: transformerPath,
     ignorePattern: '**/node_modules',
     ignoreConfig,
@@ -101,7 +101,10 @@ function getRunnerArgs(transformerPath, parser = 'babylon', options = {}) {
 }
 
 async function run(filePath, args = {}) {
-  for (const transformer of transformers) {
+  const targetTransformers =
+    args.transformer?.split(',')?.filter(transformer => transformers.includes(transformer)) ||
+    transformers;
+  for (const transformer of targetTransformers) {
     await transform(transformer, 'babylon', filePath, args);
   }
 }
@@ -250,9 +253,10 @@ async function upgradeDetect(targetDir, needOBCharts, needObUtil) {
 
 /**
  * options
- * --force             // force skip git checking (dangerously)
- * --cpus=1            // specify cpus cores to use
- * --disablePrettier   // disable prettier
+ * --force               // force skip git checking (dangerously)
+ * --cpus=1              // specify cpus cores to use
+ * --disablePrettier     // disable prettier
+ * --transformer=t1,t2   // specify target transformer
  */
 
 async function bootstrap() {
@@ -291,9 +295,9 @@ async function bootstrap() {
     console.log('[Prettier] format files running...');
     try {
       const isDir = isDirectory.sync(dir);
-      const path = isDir ? path.join(dir, '**/*.{js,jsx,ts,tsx,d.ts}') : dir;
+      const targetPath = isDir ? path.join(dir, '**/*.{js,jsx,ts,tsx}') : dir;
       const npxCommand = commandExistsSync('tnpx') ? 'tnpx' : 'npx';
-      await execa(npxCommand, ['prettier', '--write', path], { stdio: 'inherit' });
+      await execa(npxCommand, ['prettier', '--write', targetPath], { stdio: 'inherit' });
       console.log('\n[Prettier] format files completed!\n');
     } catch (err) {
       console.log('\n[Prettier] format files failed, please format it by yourself.\n', err);
